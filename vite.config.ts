@@ -8,6 +8,7 @@ import svgr from 'vite-plugin-svgr'
 import libAssetsPlugin from '@laynezh/vite-plugin-lib-assets'
 import { checker } from 'vite-plugin-checker'
 import react from '@vitejs/plugin-react'
+import pnpUswdsPackages from './pnp-uswds-packages'
 
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
 
@@ -30,6 +31,7 @@ export default defineConfig(({ mode: _mode }) => {
     mode,
     // ignore some plugins if running tests
     plugins: [
+      pnpUswdsPackages(),
       react(),
       !isTest &&
         checker({
@@ -105,14 +107,6 @@ export default defineConfig(({ mode: _mode }) => {
           includePaths: uswdsIncludePaths,
         },
       },
-    },
-    resolve: {
-      alias: [
-        {
-          find: 'uswds',
-          replacement: resolve(__dirname, './node_modules/@uswds/uswds'),
-        },
-      ],
     },
     test: {
       // bundles test added to default exclude list (so that it can be ran manually after build)
