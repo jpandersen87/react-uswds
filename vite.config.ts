@@ -12,11 +12,6 @@ import pnpUswdsPackages from './pnp-uswds-packages'
 
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
 
-const uswdsIncludePaths = [
-  'node_modules/@uswds',
-  'node_modules/@uswds/uswds/packages',
-]
-
 /**
  * Pass `--mode uswds` to build uswds assets
  */
@@ -31,7 +26,7 @@ export default defineConfig(({ mode: _mode }) => {
     mode,
     // ignore some plugins if running tests
     plugins: [
-      pnpUswdsPackages(),
+      pnpUswdsPackages(isUswds),
       react(),
       !isTest &&
         checker({
@@ -50,17 +45,15 @@ export default defineConfig(({ mode: _mode }) => {
         svgrOptions: { icon: true, memo: true },
         include: '**/*.svg?svgr',
       }),
-      !isTest && dts({ tsconfigPath: 'tsconfig.build.json' }),
+      //!isTest && dts({ tsconfigPath: 'tsconfig.build.json' }),
     ],
     build: {
       outDir: 'lib',
       emptyOutDir: !isUswds, // add uswds assets onto lib build
       lib: {
-        entry: isUswds
-          ? resolve(__dirname, 'node_modules/@uswds/uswds/dist/css/uswds.css')
-          : resolve(__dirname, `src/index.ts`),
+        entry: resolve(__dirname, `src/index.ts`),
         name: 'ReactUSWDS',
-        formats: !isUswds ? ['cjs', 'es', 'iife', 'umd'] : ['es'],
+        formats: ['cjs', 'es', 'iife', 'umd'],
         fileName: entryName,
       },
       cssCodeSplit: isUswds,
@@ -102,11 +95,6 @@ export default defineConfig(({ mode: _mode }) => {
     },
     css: {
       devSourcemap: true,
-      preprocessorOptions: {
-        scss: {
-          includePaths: uswdsIncludePaths,
-        },
-      },
     },
     test: {
       // bundles test added to default exclude list (so that it can be ran manually after build)
@@ -138,7 +126,7 @@ export default defineConfig(({ mode: _mode }) => {
         },
         {
           find: /.+\.(jpg|jpeg|png|gif|eot|otf|webp|ttf|svg|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$/,
-          replacement: resolve(__dirname, '__mocks__/fileMock.js'),
+          replacement: resolve(__dirname, './__mocks__/fileMock.js'),
         },
       ],
     },

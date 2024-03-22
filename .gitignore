@@ -79,6 +79,8 @@ storybook-static/
 
 .yarn-integrity
 .yarn/*
+# Uncomment following line to keep copy of pnp cache
+#!.yarn/cache
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
@@ -95,7 +97,9 @@ storybook-static/
 
 # editor config
 
-.vscode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
 .idea
 
 # happo output directory

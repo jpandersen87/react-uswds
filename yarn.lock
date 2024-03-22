@@ -3432,7 +3432,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-docs@npm:7.6.17":
+"@storybook/addon-docs@npm:7.6.17, @storybook/addon-docs@npm:^7.6.10":
   version: 7.6.17
   resolution: "@storybook/addon-docs@npm:7.6.17"
   dependencies:
@@ -3563,7 +3563,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-viewport@npm:7.6.17":
+"@storybook/addon-viewport@npm:7.6.17, @storybook/addon-viewport@npm:^7.6.10":
   version: 7.6.17
   resolution: "@storybook/addon-viewport@npm:7.6.17"
   dependencies:
@@ -4700,10 +4700,12 @@ __metadata:
     "@babel/core": ^7.23.9
     "@laynezh/vite-plugin-lib-assets": ^0.5.14
     "@storybook/addon-a11y": ^7.6.10
+    "@storybook/addon-docs": ^7.6.10
     "@storybook/addon-essentials": ^7.6.10
     "@storybook/addon-interactions": ^7.6.10
     "@storybook/addon-links": ^7.6.10
     "@storybook/addon-mdx-gfm": ^7.6.10
+    "@storybook/addon-viewport": ^7.6.10
     "@storybook/addons": ^7.6.10
     "@storybook/blocks": ^8.0.0
     "@storybook/manager-api": ^7.6.10
@@ -4715,6 +4717,7 @@ __metadata:
     "@testing-library/jest-dom": ^6.4.2
     "@testing-library/react": ^14.1.2
     "@testing-library/user-event": ^14.0.4
+    "@types/node": ^18.18
     "@types/react": ^18.2.48
     "@types/react-dom": ^18.2.18
     "@types/react-test-renderer": ^18.0.7
@@ -4742,7 +4745,9 @@ __metadata:
     happo.io: ^9.1.2
     husky: ^9.0.10
     jsdom: ^24.0.0
+    postcss: ^8.4.38
     prettier: ^3.2.5
+    prop-types: ^15.8.1
     react: ^18.2.0
     react-dom: ^18.2.0
     react-test-renderer: ^18.2.0
@@ -5153,6 +5158,15 @@ __metadata:
   dependencies:
     undici-types: ~5.26.4
   checksum: 89ba0923b4bfe961135d98cac3c1a726f5b61f23e90c8dcea4c44bde566a0ed3fb192198e0f1a700f4a1175027b63eb62a894992fb29b97a4af88b8dbbdc2fa6
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.18":
+  version: 18.19.26
+  resolution: "@types/node@npm:18.19.26"
+  dependencies:
+    undici-types: ~5.26.4
+  checksum: d72d4e7e520206a2a05cb3e03a73696fc3bdcdc6ba5330a75cfef4818cb137b260c32dfe85e8b4ea28e8fe92f1d1497e26336c607254c5eaf47032a1b1c8bb6e
   languageName: node
   linkType: hard
 
@@ -13701,6 +13715,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss@npm:^8.4.38":
+  version: 8.4.38
+  resolution: "postcss@npm:8.4.38"
+  dependencies:
+    nanoid: ^3.3.7
+    picocolors: ^1.0.0
+    source-map-js: ^1.2.0
+  checksum: 649f9e60a763ca4b5a7bbec446a069edf07f057f6d780a5a0070576b841538d1ecf7dd888f2fbfd1f76200e26c969e405aeeae66332e6927dbdc8bdcb90b9451
+  languageName: node
+  linkType: hard
+
 "prelude-ls@npm:^1.2.1":
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
@@ -15130,6 +15155,13 @@ __metadata:
   version: 1.0.2
   resolution: "source-map-js@npm:1.0.2"
   checksum: c049a7fc4deb9a7e9b481ae3d424cc793cb4845daa690bc5a05d428bf41bf231ced49b4cf0c9e77f9d42fdb3d20d6187619fc586605f5eabe995a316da8d377c
+  languageName: node
+  linkType: hard
+
+"source-map-js@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "source-map-js@npm:1.2.0"
+  checksum: 791a43306d9223792e84293b00458bf102a8946e7188f3db0e4e22d8d530b5f80a4ce468eb5ec0bf585443ad55ebbd630bf379c98db0b1f317fd902500217f97
   languageName: node
   linkType: hard
 
