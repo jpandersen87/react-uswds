@@ -45,7 +45,7 @@ export default defineConfig(({ mode: _mode }) => {
         svgrOptions: { icon: true, memo: true },
         include: '**/*.svg?svgr',
       }),
-      //!isTest && dts({ tsconfigPath: 'tsconfig.build.json' }),
+      !isTest && dts({ tsconfigPath: 'tsconfig.build.json' }),
     ],
     build: {
       outDir: 'lib',
