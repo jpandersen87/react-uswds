@@ -1,11 +1,11 @@
-import React, { ElementType, useState } from 'react'
-import classnames from 'classnames'
+import React, { type ElementType } from 'react'
 
 import AccordionItem, {
   type AccordionItemProps,
 } from '../AccordionItem/AccordionItem.js'
 import Box, { BoxProps } from '../../Box/Box.js'
 import { polymorphicBox } from '../../Box/utils.js'
+import withAccordion from './withAccordion.js'
 
 export interface BaseAccordionProps {
   bordered?: boolean
@@ -17,6 +17,9 @@ export interface BaseAccordionProps {
 export type AccordionProps<T extends ElementType | unknown = unknown> =
   BoxProps<T>
 
+/**
+ * @see https://designsystem.digital.gov/components/accordion/
+ */
 const Accordion = polymorphicBox<BaseAccordionProps>(
   ({
     asCustom,
@@ -27,35 +30,12 @@ const Accordion = polymorphicBox<BaseAccordionProps>(
     _ref,
     ...props
   }) => {
-    const [openItems, setOpenState] = useState(
-      items.filter((i) => !!i.expanded).map((i) => i.id)
-    )
-
-    const classes = classnames(
-      'usa-accordion',
-      {
-        'usa-accordion--bordered': bordered,
-      },
-      className
-    )
-
-    const toggleItem = (itemId: AccordionItemProps['id']): void => {
-      const newOpenItems = [...openItems]
-      const itemIndex = openItems.indexOf(itemId)
-      const isMultiselectable = multiselectable
-
-      if (itemIndex > -1) {
-        newOpenItems.splice(itemIndex, 1)
-      } else {
-        if (isMultiselectable) {
-          newOpenItems.push(itemId)
-        } else {
-          newOpenItems.splice(0, newOpenItems.length)
-          newOpenItems.push(itemId)
-        }
-      }
-      setOpenState(newOpenItems)
-    }
+    const { classes, toggleItem, openItems } = withAccordion({
+      items,
+      bordered,
+      className,
+      multiselectable,
+    })
 
     return (
       <Box
