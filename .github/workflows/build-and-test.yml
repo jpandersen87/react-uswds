@@ -2,9 +2,9 @@ name: Build and Test
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   pull_request:
-    branches: [main]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node: ['20', '22']
+        node: [ '20', '22' ]
 
     name: Node ${{ matrix.node }} tests
 
