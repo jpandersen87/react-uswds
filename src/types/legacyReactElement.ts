@@ -1,4 +1,4 @@
-import { type ReactElement } from 'react'
+import { type JSX } from 'react'
 
 /**
  * @deprecated ReactElement defaults to unknown as of React 19,
@@ -7,4 +7,4 @@ import { type ReactElement } from 'react'
  * @todo Remove this file when this type is longer in use.
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export type LegacyReactElement = ReactElement<any>
+export type LegacyReactElement = JSX.Element
