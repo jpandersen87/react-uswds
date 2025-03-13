@@ -10,7 +10,7 @@ type RangeInputProps = {
   max?: number
   textPreposition?: string
   textUnit?: string
-  inputRef?: React.RefObject<HTMLInputElement>
+  inputRef?: LegacyInputRef
 }
 
 export const RangeInput = ({

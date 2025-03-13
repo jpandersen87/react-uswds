@@ -84,7 +84,6 @@ export const applyGridClasses = (gridLayout: GridProps): string => {
 }
 
 export function Grid(props: DefaultGridProps): LegacyReactElement
-
 export function Grid<T>(props: CustomGridProps<T>): LegacyReactElement
 export function Grid<FCProps = DefaultGridProps>(
   props: DefaultGridProps | CustomGridProps<FCProps>

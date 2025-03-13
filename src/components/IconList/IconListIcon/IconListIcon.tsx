@@ -1,5 +1,6 @@
 import classnames from 'classnames'
-import React, { ReactElement, ReactNode, JSX } from 'react'
+import React, { ReactNode, JSX } from 'react'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface IconListIconProps {
   className?: string

@@ -10,7 +10,6 @@ import {
 import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export function IdentifierLink(props: DefaultLinkProps): LegacyReactElement
-
 export function IdentifierLink<T>(props: CustomLinkProps<T>): LegacyReactElement
 export function IdentifierLink<FCProps = DefaultLinkProps>({
   className,

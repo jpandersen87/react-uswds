@@ -1,6 +1,8 @@
 import React, { forwardRef, JSX } from 'react'
 import classnames from 'classnames'
 import { ValidationStatus } from '../../../types/validationStatus'
+import { LegacyInputRef } from '../../../types/legacyInputRef'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type RequiredTextInputProps = {
   id: string
@@ -12,7 +14,7 @@ type CustomTextInputProps = {
   className?: string
   validationStatus?: ValidationStatus
   inputSize?: 'small' | 'medium'
-  inputRef?: React.RefObject<HTMLInputElement>
+  inputRef?: LegacyInputRef
   inputProps?: JSX.IntrinsicElements['input']
 }
 

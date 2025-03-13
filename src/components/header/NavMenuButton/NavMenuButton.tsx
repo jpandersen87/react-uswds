@@ -1,4 +1,5 @@
 import React, { JSX } from 'react'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type NavMenuButtonProps = {
   label: React.ReactNode

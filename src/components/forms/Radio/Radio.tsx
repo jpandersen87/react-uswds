@@ -8,7 +8,7 @@ type RadioProps = {
   name: string
   className?: string
   label: React.ReactNode
-  inputRef?: React.RefObject<HTMLInputElement>
+  inputRef?: LegacyInputRef
   tile?: boolean
   labelDescription?: React.ReactNode
 }

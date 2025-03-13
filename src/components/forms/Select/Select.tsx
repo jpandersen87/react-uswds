@@ -10,7 +10,7 @@ type SelectProps = {
   className?: string
   children: React.ReactNode
   validationStatus?: ValidationStatus
-  inputRef?: React.RefObject<HTMLSelectElement>
+  inputRef?: LegacyInputRef<HTMLSelectElement>
 }
 
 export const Select = ({
