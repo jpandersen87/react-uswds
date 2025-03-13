@@ -5,6 +5,7 @@ import { Fieldset } from '../Fieldset/Fieldset'
 import { Label } from '../Label/Label'
 import { Select } from '../Select/Select'
 import { FormGroup } from '../FormGroup/FormGroup'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Date input',
@@ -22,7 +23,7 @@ Source: https://designsystem.digital.gov/components/text-input/
   },
 }
 
-export const MonthDateInput = (): React.ReactElement => (
+export const MonthDateInput = (): LegacyReactElement => (
   <DateInput
     id="testDateInput"
     name="testName"
@@ -33,7 +34,7 @@ export const MonthDateInput = (): React.ReactElement => (
   />
 )
 
-export const DayDateInput = (): React.ReactElement => (
+export const DayDateInput = (): LegacyReactElement => (
   <DateInput
     id="testDateInput"
     name="testName"
@@ -44,7 +45,7 @@ export const DayDateInput = (): React.ReactElement => (
   />
 )
 
-export const YearDateInput = (): React.ReactElement => (
+export const YearDateInput = (): LegacyReactElement => (
   <DateInput
     id="testDateInput"
     name="testName"
@@ -55,7 +56,7 @@ export const YearDateInput = (): React.ReactElement => (
   />
 )
 
-export const DateOfBirthExample = (): React.ReactElement => (
+export const DateOfBirthExample = (): LegacyReactElement => (
   <Fieldset legend="Date of birth">
     <span className="usa-hint" id="dateOfBirthHint">
       For example: April 28 1986

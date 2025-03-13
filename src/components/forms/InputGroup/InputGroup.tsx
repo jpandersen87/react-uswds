@@ -1,5 +1,6 @@
 import React from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export interface InputGroupProps {
   children: React.ReactNode
@@ -11,7 +12,7 @@ export const InputGroup = ({
   children,
   className,
   error,
-}: InputGroupProps): React.ReactElement => {
+}: InputGroupProps): LegacyReactElement => {
   const classes = classnames(
     'usa-input-group',
     { 'usa-input-group--error': error },

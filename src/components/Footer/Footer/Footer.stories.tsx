@@ -13,6 +13,7 @@ import { TextInput } from '../../forms/TextInput/TextInput'
 
 // assets
 import logoImg from '@uswds/uswds/img/logo-img.png'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Footer',
@@ -50,7 +51,7 @@ const socialLinkItems = [
   <SocialLink key="rss" name="RSS" href="#" />,
 ]
 
-const SignUpForm = (): React.ReactElement => {
+const SignUpForm = (): LegacyReactElement => {
   return (
     <div className="usa-sign-up">
       <h3 className="usa-sign-up__heading">Sign up</h3>
@@ -63,7 +64,7 @@ const SignUpForm = (): React.ReactElement => {
   )
 }
 
-export const SlimFooter = (): React.ReactElement => (
+export const SlimFooter = (): LegacyReactElement => (
   <Footer
     size="slim"
     returnToTop={returnToTop}
@@ -110,7 +111,7 @@ export const SlimFooter = (): React.ReactElement => (
   />
 )
 
-export const MediumFooter = (): React.ReactElement => (
+export const MediumFooter = (): LegacyReactElement => (
   <Footer
     size="medium"
     returnToTop={returnToTop}
@@ -157,7 +158,7 @@ export const MediumFooter = (): React.ReactElement => (
   />
 )
 
-export const BigFooter = (): React.ReactElement => (
+export const BigFooter = (): LegacyReactElement => (
   <Footer
     size="big"
     returnToTop={returnToTop}

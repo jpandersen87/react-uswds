@@ -7,6 +7,7 @@ import { FormGroup } from '../FormGroup/FormGroup'
 import { Label } from '../Label/Label'
 import { TextInput } from '../TextInput/TextInput'
 import { ValidationStatus } from '../../../types/validationStatus'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Date picker',
@@ -56,7 +57,7 @@ type StorybookArguments = {
 }
 
 export const CompleteDatePicker = {
-  render: (argTypes: StorybookArguments): React.ReactElement => (
+  render: (argTypes: StorybookArguments): LegacyReactElement => (
     <Form onSubmit={argTypes.onSubmit}>
       <FormGroup error={argTypes.validationStatus === 'error'}>
         <Label

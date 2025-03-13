@@ -1,5 +1,7 @@
 import React from 'react'
-export const RequiredMarker = (): React.ReactElement => {
+import { LegacyReactElement } from '../../../types/legacyReactElement'
+
+export const RequiredMarker = (): LegacyReactElement => {
   return (
     <abbr title="required" className="usa-hint usa-hint--required">
       *

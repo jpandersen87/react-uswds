@@ -1,6 +1,7 @@
 import React, { JSX } from 'react'
 import classnames from 'classnames'
 import { RequiredMarker } from './RequiredMarker'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type LabelProps = {
   children: React.ReactNode
@@ -21,7 +22,7 @@ export const Label = ({
   srOnly,
   requiredMarker,
   ...labelProps
-}: LabelProps & JSX.IntrinsicElements['label']): React.ReactElement => {
+}: LabelProps & JSX.IntrinsicElements['label']): LegacyReactElement => {
   const classes = classnames(
     {
       'usa-label': !srOnly,

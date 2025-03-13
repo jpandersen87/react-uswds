@@ -1,5 +1,6 @@
 import React from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type FormGroupProps = {
   children: React.ReactNode
@@ -11,7 +12,7 @@ export const FormGroup = ({
   children,
   className,
   error,
-}: FormGroupProps): React.ReactElement => {
+}: FormGroupProps): LegacyReactElement => {
   const classes = classnames(
     'usa-form-group',
     { 'usa-form-group--error': error },

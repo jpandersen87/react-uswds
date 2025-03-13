@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { NavDropDownButton } from './NavDropDownButton'
 import { Header } from '../Header/Header'
 import { PrimaryNav } from '../PrimaryNav/PrimaryNav'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Header/NavDropDownButton',
@@ -25,7 +26,7 @@ const mockToggle = (): void => {
   /* mock submit fn */
 }
 
-export const DefaultDropDownMenu = (): React.ReactElement => {
+export const DefaultDropDownMenu = (): LegacyReactElement => {
   const [isOpen, setIsOpen] = useState([false, false])
 
   const onToggle = (index: number): void => {

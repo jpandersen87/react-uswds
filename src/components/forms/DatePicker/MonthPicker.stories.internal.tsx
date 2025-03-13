@@ -2,6 +2,7 @@ import React from 'react'
 
 import { MonthPicker } from './MonthPicker'
 import { parseDateString } from './utils'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 /*
 // THIS STORY FOR INTERNAL DEVELOPMENT ONLY
@@ -24,13 +25,13 @@ const testProps = {
 
 export const monthPicker = (
   argTypes: StorybookArguments
-): React.ReactElement => (
+): LegacyReactElement => (
   <MonthPicker {...testProps} handleSelectMonth={argTypes.handleSelectMonth} />
 )
 
 export const withMinAndMax = (
   argTypes: StorybookArguments
-): React.ReactElement => (
+): LegacyReactElement => (
   <MonthPicker
     {...testProps}
     handleSelectMonth={argTypes.handleSelectMonth}

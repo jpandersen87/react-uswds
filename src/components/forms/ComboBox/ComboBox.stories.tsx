@@ -6,6 +6,7 @@ import { Label } from '../Label/Label'
 import { Button } from '../../Button/Button'
 import { fruits, veggies } from './foods'
 import { Radio } from '../Radio/Radio'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Combo box',
@@ -27,7 +28,7 @@ const noop = (): void => {
   return
 }
 
-export const DefaultComboBoxWithPropOptions = (): React.ReactElement => {
+export const DefaultComboBoxWithPropOptions = (): LegacyReactElement => {
   const fruitList = Object.entries(fruits).map(([key, value]) => ({
     value: key,
     label: value,
@@ -46,7 +47,7 @@ export const DefaultComboBoxWithPropOptions = (): React.ReactElement => {
   )
 }
 
-export const WithDefaultValue = (): React.ReactElement => {
+export const WithDefaultValue = (): LegacyReactElement => {
   const fruitList = Object.entries(fruits).map(([value, key]) => ({
     value: value,
     label: key,
@@ -66,7 +67,7 @@ export const WithDefaultValue = (): React.ReactElement => {
   )
 }
 
-export const WithLabel = (): React.ReactElement => {
+export const WithLabel = (): LegacyReactElement => {
   const fruitList = Object.entries(fruits).map(([value, key]) => ({
     value: value,
     label: key,
@@ -86,7 +87,7 @@ export const WithLabel = (): React.ReactElement => {
   )
 }
 
-export const Disabled = (): React.ReactElement => {
+export const Disabled = (): LegacyReactElement => {
   const fruitList = Object.entries(fruits).map(([value, key]) => ({
     value: value,
     label: key,
@@ -106,7 +107,7 @@ export const Disabled = (): React.ReactElement => {
   )
 }
 
-export const WithOtherFields = (): React.ReactElement => {
+export const WithOtherFields = (): LegacyReactElement => {
   const fruitList = Object.entries(fruits).map(([value, key]) => ({
     value: value,
     label: key,
@@ -152,7 +153,7 @@ export const WithOtherFields = (): React.ReactElement => {
   )
 }
 
-export const ExposedRefMethods = (): React.ReactElement => {
+export const ExposedRefMethods = (): LegacyReactElement => {
   const ref = useRef<ComboBoxRef>(null)
 
   const fruitList = Object.entries(fruits).map(([value, key]) => ({
@@ -184,7 +185,7 @@ export const ExposedRefMethods = (): React.ReactElement => {
   )
 }
 
-export const CustomInputChangeHandler = (): React.ReactElement => {
+export const CustomInputChangeHandler = (): LegacyReactElement => {
   const fruitList = Object.entries(fruits).map(([value, key]) => ({
     value: value,
     label: key,

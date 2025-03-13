@@ -1,5 +1,6 @@
 import React, { ReactElement, JSX } from 'react'
 import classNames from 'classnames'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type BannerButtonProps = {
   isOpen: boolean
@@ -12,7 +13,7 @@ export const BannerButton = ({
   className,
   spanProps,
   ...buttonProps
-}: BannerButtonProps & JSX.IntrinsicElements['button']): ReactElement => {
+}: BannerButtonProps & JSX.IntrinsicElements['button']): LegacyReactElement => {
   const classes = classNames(
     'usa-accordion__button usa-banner__button',
     className

@@ -33,6 +33,7 @@ import {
 import logoImg from '@uswds/uswds/img/logo-img.png'
 import circleSvg from '@uswds/uswds/img/circle-gray-20.svg'
 import { MediaBlockBody } from '../../components/mediablock/MediaBlockBody/MediaBlockBody'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Page Templates/Create Account',
@@ -127,7 +128,7 @@ const mockSubmit = (): void => {
   /* Blank function for mocking form submission */
 }
 
-export const CreateAccount = (): React.ReactElement => {
+export const CreateAccount = (): LegacyReactElement => {
   const [showPassword, setShowPassword] = React.useState(false)
 
   return (

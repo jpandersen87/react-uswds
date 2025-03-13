@@ -3,6 +3,7 @@ import classnames from 'classnames'
 
 import { TextInput, TextInputProps } from '../TextInput/TextInput'
 import { Textarea, TextareaProps } from '../Textarea/Textarea'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 /* Defaults
   This is a fallback for character count and validation message.
@@ -66,7 +67,7 @@ export const CharacterCount = ({
   ...remainingProps
 }:
   | TextInputCharacterCountProps
-  | TextareaCharacterCountProps): React.ReactElement => {
+  | TextareaCharacterCountProps): LegacyReactElement => {
   const initialCount = getCharacterCount(value || defaultValue)
   const [length, setLength] = useState(initialCount)
   const [message, setMessage] = useState(getMessage(initialCount, maxLength))
@@ -117,7 +118,7 @@ export const CharacterCount = ({
     if (callback) callback(e)
   }
 
-  let InputComponent: React.ReactElement
+  let InputComponent: LegacyReactElement
   if (isTextArea) {
     const { onBlur, onChange, inputRef, ...textAreaProps } =
       remainingProps as Partial<TextareaCharacterCountProps>

@@ -1,11 +1,12 @@
 import React, { JSX } from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export const CardGroup = ({
   children,
   className,
   ...ulProps
-}: JSX.IntrinsicElements['ul']): React.ReactElement => {
+}: JSX.IntrinsicElements['ul']): LegacyReactElement => {
   const classes = classnames('usa-card-group', className)
 
   return (

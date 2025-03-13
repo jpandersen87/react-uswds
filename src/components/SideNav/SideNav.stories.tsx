@@ -1,5 +1,6 @@
 import React from 'react'
 import { SideNav } from './SideNav'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Components/Side navigation',
@@ -60,14 +61,14 @@ const testItemsThreeLevels = [
   </a>,
 ]
 
-export const SingleLevel = (): React.ReactElement => (
+export const SingleLevel = (): LegacyReactElement => (
   <SideNav items={testItems} />
 )
 
-export const TwoLevels = (): React.ReactElement => (
+export const TwoLevels = (): LegacyReactElement => (
   <SideNav items={testItemsWithSubnav} />
 )
 
-export const ThreeLevels = (): React.ReactElement => (
+export const ThreeLevels = (): LegacyReactElement => (
   <SideNav items={testItemsThreeLevels} />
 )

@@ -1,5 +1,6 @@
 import React, { JSX } from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 // These props we want to require always, even on custom components
 type StyledLinkProps<T> = {
@@ -59,11 +60,12 @@ function linkClasses<T>(
       )
 }
 
-export function Link(props: DefaultLinkProps): React.ReactElement
-export function Link<T>(props: CustomLinkProps<T>): React.ReactElement
+export function Link(props: DefaultLinkProps): LegacyReactElement
+
+export function Link<T>(props: CustomLinkProps<T>): LegacyReactElement
 export function Link<
   FCProps extends React.PropsWithChildren<object> = DefaultLinkProps,
->(props: DefaultLinkProps | CustomLinkProps<FCProps>): React.ReactElement {
+>(props: DefaultLinkProps | CustomLinkProps<FCProps>): LegacyReactElement {
   if (isCustomProps(props)) {
     const { variant, className, asCustom, children, ...remainingProps } = props
     // 1. We know props is AsCustomProps<FCProps>

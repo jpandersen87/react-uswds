@@ -1,5 +1,6 @@
 import React from 'react'
 import { Tag } from './Tag'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Components/Tag',
@@ -17,12 +18,12 @@ Source: https://designsystem.digital.gov/components/tag/
   },
 }
 
-export const DefaultTag = (): React.ReactElement => <Tag>My Tag</Tag>
+export const DefaultTag = (): LegacyReactElement => <Tag>My Tag</Tag>
 
-export const CustomBg = (): React.ReactElement => (
+export const CustomBg = (): LegacyReactElement => (
   <Tag background="#d83933">My Tag</Tag>
 )
 
-export const CustomClass = (): React.ReactElement => (
+export const CustomClass = (): LegacyReactElement => (
   <Tag className="bg-secondary">My Tag</Tag>
 )

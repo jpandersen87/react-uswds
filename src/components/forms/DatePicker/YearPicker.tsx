@@ -11,6 +11,7 @@ import {
   handleTabKey,
   isIosDevice,
 } from './utils'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface YearPickerProps {
   date: Date
@@ -26,7 +27,7 @@ export const YearPicker = ({
   maxDate,
   handleSelectYear,
   setStatuses,
-}: YearPickerProps): React.ReactElement => {
+}: YearPickerProps): LegacyReactElement => {
   const prevYearChunkEl = useRef<HTMLButtonElement>(null)
   const nextYearChunkEl = useRef<HTMLButtonElement>(null)
   const focusedYearEl = useRef<HTMLButtonElement>(null)

@@ -1,5 +1,6 @@
 import React, { JSX } from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type InputSuffixProps = {
   className?: string
@@ -10,7 +11,7 @@ export const InputSuffix = ({
   className,
   children,
   ...divProps
-}: InputSuffixProps): React.ReactElement => {
+}: InputSuffixProps): LegacyReactElement => {
   const classes = classnames('usa-input-suffix', className)
 
   return (

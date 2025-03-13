@@ -1,5 +1,6 @@
 import React from 'react'
 import { Checkbox } from './Checkbox'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Checkbox',
@@ -17,19 +18,19 @@ Source: https://designsystem.digital.gov/components/checkbox
   },
 }
 
-export const DefaultCheckbox = (): React.ReactElement => (
+export const DefaultCheckbox = (): LegacyReactElement => (
   <Checkbox id="checkbox" name="checkbox" label="My Checkbox" />
 )
 
-export const Checked = (): React.ReactElement => (
+export const Checked = (): LegacyReactElement => (
   <Checkbox id="checkbox" name="checkbox" label="My Checkbox" defaultChecked />
 )
 
-export const Disabled = (): React.ReactElement => (
+export const Disabled = (): LegacyReactElement => (
   <Checkbox id="checkbox" name="checkbox" label="My Checkbox" disabled />
 )
 
-export const WithRichLabel = (): React.ReactElement => (
+export const WithRichLabel = (): LegacyReactElement => (
   <Checkbox
     id="checkbox"
     name="checkbox"
@@ -37,7 +38,7 @@ export const WithRichLabel = (): React.ReactElement => (
   />
 )
 
-export const WithLabelDescription = (): React.ReactElement => (
+export const WithLabelDescription = (): LegacyReactElement => (
   <Checkbox
     id="checkbox"
     name="checkbox"
@@ -46,11 +47,11 @@ export const WithLabelDescription = (): React.ReactElement => (
   />
 )
 
-export const Tile = (): React.ReactElement => (
+export const Tile = (): LegacyReactElement => (
   <Checkbox id="checkbox" name="checkbox" label="My Checkbox" tile />
 )
 
-export const TileWithLabelDescription = (): React.ReactElement => (
+export const TileWithLabelDescription = (): LegacyReactElement => (
   <Checkbox
     id="checkbox"
     name="checkbox"

@@ -1,5 +1,6 @@
 import React from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type FooterProps = {
   size?: 'big' | 'medium' | 'slim'
@@ -23,7 +24,7 @@ export const Footer = ({
   primary,
   secondary,
   ...footerAttributes
-}: FooterProps & React.HTMLAttributes<HTMLElement>): React.ReactElement => {
+}: FooterProps & React.HTMLAttributes<HTMLElement>): LegacyReactElement => {
   const classes = classnames(
     'usa-footer',
     {

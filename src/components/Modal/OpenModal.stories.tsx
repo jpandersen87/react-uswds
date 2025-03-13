@@ -6,6 +6,7 @@ import { ModalFooter } from './ModalFooter/ModalFooter'
 import { ButtonGroup } from '../ButtonGroup/ButtonGroup'
 import { Button } from '../Button/Button'
 import { ModalWrapper } from './ModalWrapper/ModalWrapper'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 type StorybookArguments = {
   handleClose: () => void
@@ -34,7 +35,7 @@ Source: http://designsystem.digital.gov/components/modal
 }
 
 export const DefaultModal = {
-  render: (argTypes: StorybookArguments): React.ReactElement => {
+  render: (argTypes: StorybookArguments): LegacyReactElement => {
     return (
       <ModalWrapper
         role="dialog"
@@ -77,7 +78,7 @@ export const DefaultModal = {
 }
 
 export const LargeModal = {
-  render: (argTypes: StorybookArguments): React.ReactElement => {
+  render: (argTypes: StorybookArguments): LegacyReactElement => {
     return (
       <ModalWrapper
         role="dialog"
@@ -121,7 +122,7 @@ export const LargeModal = {
 }
 
 export const ForceActionModal = {
-  render: (argTypes: StorybookArguments): React.ReactElement => {
+  render: (argTypes: StorybookArguments): LegacyReactElement => {
     return (
       <ModalWrapper
         role="dialog"

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Search } from './Search'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Search/Search',
@@ -25,15 +26,15 @@ const sampleLocalization = {
   buttonText: 'Buscar',
 }
 
-export const DefaultSearch = (): React.ReactElement => (
+export const DefaultSearch = (): LegacyReactElement => (
   <Search onSubmit={mockSubmit} />
 )
 
-export const BigSearch = (): React.ReactElement => (
+export const BigSearch = (): LegacyReactElement => (
   <Search size="big" onSubmit={mockSubmit} />
 )
 
-export const SmallSearch = (): React.ReactElement => (
+export const SmallSearch = (): LegacyReactElement => (
   <Search
     placeholder="(Optional) Placeholder Text"
     size="small"
@@ -41,15 +42,15 @@ export const SmallSearch = (): React.ReactElement => (
   />
 )
 
-export const DefaultSpanishSearch = (): React.ReactElement => (
+export const DefaultSpanishSearch = (): LegacyReactElement => (
   <Search onSubmit={mockSubmit} i18n={sampleLocalization} />
 )
 
-export const BigSpanishSearch = (): React.ReactElement => (
+export const BigSpanishSearch = (): LegacyReactElement => (
   <Search size="big" onSubmit={mockSubmit} i18n={sampleLocalization} />
 )
 
-export const SmallSpanishSearch = (): React.ReactElement => (
+export const SmallSpanishSearch = (): LegacyReactElement => (
   <Search
     placeholder="(Optional) Spanish Placeholder Text"
     size="small"

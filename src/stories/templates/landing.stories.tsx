@@ -24,6 +24,7 @@ import {
   SocialLinks,
   SocialLink,
 } from '../../components/Footer/SocialLinks/SocialLinks'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Page Templates/Landing Page',
@@ -41,7 +42,7 @@ Page templates
   },
 }
 
-export const LandingPage = (): React.ReactElement => {
+export const LandingPage = (): LegacyReactElement => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const [navDropdownOpen, setNavDropdownOpen] = useState([false, false])
 

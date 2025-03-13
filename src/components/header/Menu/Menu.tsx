@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavList, NavListProps } from '../NavList/NavList'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type MenuProps = {
   items: React.ReactNode[]
@@ -19,7 +20,7 @@ export const Menu = ({
   isOpen,
   type,
   ...navListProps
-}: MenuProps & NavListProps): React.ReactElement => {
+}: MenuProps & NavListProps): LegacyReactElement => {
   return (
     <NavList
       className={className}

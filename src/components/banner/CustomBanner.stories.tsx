@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from 'react'
+import React, { useState } from 'react'
 import { Icon } from '../Icon/Icons'
 import {
   Banner,
@@ -14,8 +14,9 @@ import {
 import flagImg from '@uswds/uswds/img/us_flag_small.png'
 import dotGovIcon from '@uswds/uswds/img/icon-dot-gov.svg'
 import httpsIcon from '@uswds/uswds/img/icon-https.svg'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
-export const CustomBanner = (): ReactElement => {
+export const CustomBanner = (): LegacyReactElement => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (

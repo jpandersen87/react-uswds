@@ -1,5 +1,6 @@
 import React from 'react'
 import { GovBanner } from './GovBanner'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Banner',
@@ -17,11 +18,11 @@ Source: https://designsystem.digital.gov/components/banner/
   },
 }
 
-export const GovBannerDefault = (): React.ReactElement => (
+export const GovBannerDefault = (): LegacyReactElement => (
   <GovBanner aria-label="Official government website" />
 )
 
-export const GovBannerEnglishDotGov = (): React.ReactElement => (
+export const GovBannerEnglishDotGov = (): LegacyReactElement => (
   <GovBanner
     language="english"
     tld=".gov"
@@ -29,7 +30,7 @@ export const GovBannerEnglishDotGov = (): React.ReactElement => (
   />
 )
 
-export const GovBannerEnglishDotMil = (): React.ReactElement => (
+export const GovBannerEnglishDotMil = (): LegacyReactElement => (
   <GovBanner
     language="english"
     tld=".mil"
@@ -37,7 +38,7 @@ export const GovBannerEnglishDotMil = (): React.ReactElement => (
   />
 )
 
-export const GovBannerSpanishDotGov = (): React.ReactElement => (
+export const GovBannerSpanishDotGov = (): LegacyReactElement => (
   <GovBanner
     language="spanish"
     tld=".gov"
@@ -45,7 +46,7 @@ export const GovBannerSpanishDotGov = (): React.ReactElement => (
   />
 )
 
-export const GovBannerSpanishDotMil = (): React.ReactElement => (
+export const GovBannerSpanishDotMil = (): LegacyReactElement => (
   <GovBanner
     language="spanish"
     tld=".mil"

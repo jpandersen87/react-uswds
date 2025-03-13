@@ -4,6 +4,7 @@ import { Logo } from './Logo'
 
 // assets
 import logoImg from '@uswds/uswds/img/logo-img.png'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Footer/Logo',
@@ -21,7 +22,7 @@ Source: https://designsystem.digital.gov/components/footer
   },
 }
 
-export const Slim = (): React.ReactElement => (
+export const Slim = (): LegacyReactElement => (
   <div className="usa-footer__secondary-section">
     <Logo
       size="slim"
@@ -33,7 +34,7 @@ export const Slim = (): React.ReactElement => (
   </div>
 )
 
-export const NoHeading = (): React.ReactElement => (
+export const NoHeading = (): LegacyReactElement => (
   <div className="usa-footer__secondary-section">
     <Logo
       image={

@@ -1,6 +1,7 @@
 import React, { JSX } from 'react'
 import classnames from 'classnames'
 import { HeadingLevel } from '../../../types/headingLevel'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface BaseProcessListHeadingProps {
   type: string
@@ -32,7 +33,7 @@ export const ProcessListHeading = ({
   ...headingProps
 }:
   | ProcessListParagraphHeadingProps
-  | ProcessListHeadingProps): React.ReactElement => {
+  | ProcessListHeadingProps): LegacyReactElement => {
   const classes = classnames('usa-process-list__heading', className)
   const Tag = type
   return (

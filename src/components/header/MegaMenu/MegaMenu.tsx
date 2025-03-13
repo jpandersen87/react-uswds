@@ -2,6 +2,7 @@ import React from 'react'
 import classnames from 'classnames'
 
 import { NavList, NavListProps } from '../NavList/NavList'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type MegaMenuProps = {
   items: React.ReactNode[][]
@@ -13,7 +14,7 @@ export const MegaMenu = ({
   isOpen,
   className,
   ...navListProps
-}: MegaMenuProps & NavListProps): React.ReactElement => {
+}: MegaMenuProps & NavListProps): LegacyReactElement => {
   const classes = classnames('usa-nav__submenu usa-megamenu', className)
 
   return (

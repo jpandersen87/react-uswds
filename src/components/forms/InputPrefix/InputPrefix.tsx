@@ -1,5 +1,6 @@
 import React, { JSX } from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type InputPrefixProps = {
   className?: string
@@ -10,7 +11,7 @@ export const InputPrefix = ({
   className,
   children,
   ...divProps
-}: InputPrefixProps): React.ReactElement => {
+}: InputPrefixProps): LegacyReactElement => {
   const classes = classnames('usa-input-prefix', className)
 
   return (

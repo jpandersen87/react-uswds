@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavCloseButton } from './NavCloseButton'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Header/NavCloseButton',
@@ -17,7 +18,7 @@ Source: https://designsystem.digital.gov/components/header/
   },
 }
 
-export const DefaultMenuNavCloseButton = (): React.ReactElement => (
+export const DefaultMenuNavCloseButton = (): LegacyReactElement => (
   <nav className="usa-nav is-visible">
     <NavCloseButton />
   </nav>

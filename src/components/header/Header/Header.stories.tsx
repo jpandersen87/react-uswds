@@ -9,6 +9,7 @@ import { MegaMenu } from '../MegaMenu/MegaMenu'
 import { NavMenuButton } from '../NavMenuButton/NavMenuButton'
 import { NavDropDownButton } from '../NavDropDownButton/NavDropDownButton'
 import { ExtendedNav } from '../ExtendedNav/ExtendedNav'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Header',
@@ -41,7 +42,8 @@ const onToggle = (
     return newIsOpen
   })
 }
-export const BasicHeader = (): React.ReactElement => {
+
+export const BasicHeader = (): LegacyReactElement => {
   const [expanded, setExpanded] = useState(false)
   const onClick = (): void => setExpanded((prvExpanded) => !prvExpanded)
 
@@ -102,7 +104,7 @@ export const BasicHeader = (): React.ReactElement => {
   )
 }
 
-export const BasicHeaderWithMegaMenu = (): React.ReactElement => {
+export const BasicHeaderWithMegaMenu = (): LegacyReactElement => {
   const [expanded, setExpanded] = useState(false)
   const onClick = (): void => setExpanded((prvExpanded) => !prvExpanded)
 
@@ -211,7 +213,7 @@ export const BasicHeaderWithMegaMenu = (): React.ReactElement => {
   )
 }
 
-export const ExtendedHeader = (): React.ReactElement => {
+export const ExtendedHeader = (): LegacyReactElement => {
   const [expanded, setExpanded] = useState(false)
   const onClick = (): void => setExpanded((prvExpanded) => !prvExpanded)
   const [isOpen, setIsOpen] = useState([false])
@@ -269,7 +271,7 @@ export const ExtendedHeader = (): React.ReactElement => {
   )
 }
 
-export const ExtendedHeaderWithMegaMenu = (): React.ReactElement => {
+export const ExtendedHeaderWithMegaMenu = (): LegacyReactElement => {
   const [expanded, setExpanded] = useState(false)
   const onClick = (): void => setExpanded((prvExpanded) => !prvExpanded)
 

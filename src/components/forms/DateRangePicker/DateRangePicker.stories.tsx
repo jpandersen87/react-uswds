@@ -2,6 +2,7 @@ import React from 'react'
 
 import { DateRangePicker } from './DateRangePicker'
 import { Form } from '../Form/Form'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Date range picker',
@@ -40,7 +41,7 @@ type StorybookArguments = {
 }
 
 export const CompleteDateRangePicker = {
-  render: (argTypes: StorybookArguments): React.ReactElement => (
+  render: (argTypes: StorybookArguments): LegacyReactElement => (
     <Form onSubmit={argTypes.onSubmit}>
       <DateRangePicker
         startDateLabel="Event start date"
@@ -63,7 +64,7 @@ export const CompleteDateRangePicker = {
 }
 
 export const WithDefaultValues = {
-  render: (argTypes: StorybookArguments): React.ReactElement => (
+  render: (argTypes: StorybookArguments): LegacyReactElement => (
     <Form onSubmit={argTypes.onSubmit}>
       <DateRangePicker
         startDateLabel="Event start date"
@@ -88,7 +89,7 @@ export const WithDefaultValues = {
 }
 
 export const WithAllowableRanges = {
-  render: (argTypes: StorybookArguments): React.ReactElement => (
+  render: (argTypes: StorybookArguments): LegacyReactElement => (
     <Form onSubmit={argTypes.onSubmit}>
       <DateRangePicker
         startDateLabel="Event start date"

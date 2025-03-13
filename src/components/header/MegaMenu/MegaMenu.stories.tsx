@@ -1,5 +1,6 @@
 import React from 'react'
 import { MegaMenu } from './MegaMenu'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Header/MegaMenu',
@@ -36,6 +37,6 @@ const testItems = [
   ],
 ]
 
-export const DefaultMegaMenu = (): React.ReactElement => (
+export const DefaultMegaMenu = (): LegacyReactElement => (
   <MegaMenu items={testItems} key="testItemOne" isOpen={true} />
 )

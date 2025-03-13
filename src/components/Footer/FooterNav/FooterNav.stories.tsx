@@ -3,6 +3,7 @@ import React from 'react'
 
 import { Footer } from '../Footer/Footer'
 import { FooterNav } from './FooterNav'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Footer/FooterNav',
@@ -20,7 +21,7 @@ Source: https://designsystem.digital.gov/components/footer
   },
 }
 
-export const SlimFooterNav = (): React.ReactElement => (
+export const SlimFooterNav = (): LegacyReactElement => (
   <FooterNav
     aria-label="Footer navigation"
     size="slim"
@@ -32,7 +33,7 @@ export const SlimFooterNav = (): React.ReactElement => (
   />
 )
 
-export const MediumFooterNav = (): React.ReactElement => (
+export const MediumFooterNav = (): LegacyReactElement => (
   <FooterNav
     aria-label="Footer navigation"
     size="medium"
@@ -45,7 +46,7 @@ export const MediumFooterNav = (): React.ReactElement => (
 )
 
 export const BigFooterNav = {
-  render: (): React.ReactElement => (
+  render: (): LegacyReactElement => (
     <Footer
       size="big"
       primary={

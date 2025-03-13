@@ -1,5 +1,6 @@
 import React, { JSX } from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type RequiredFormProps = {
   children: React.ReactNode
@@ -23,7 +24,7 @@ export const Form = ({
   large,
   search,
   ...formProps
-}: FormProps): React.ReactElement => {
+}: FormProps): LegacyReactElement => {
   const classes = classnames(
     {
       'usa-form': !search,

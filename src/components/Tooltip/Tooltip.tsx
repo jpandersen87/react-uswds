@@ -1,7 +1,6 @@
 import React, {
   createElement,
   ForwardRefExoticComponent,
-  ReactElement,
   ReactNode,
   useEffect,
   useRef,
@@ -11,6 +10,7 @@ import React, {
 import classnames from 'classnames'
 
 import { isElementInViewport, calculateMarginOffset } from './utils'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 type TooltipProps<T> = {
   label: ReactNode
@@ -56,7 +56,7 @@ export function Tooltip<
   wrapperclasses,
   className,
   ...props
-}: DefaultTooltipProps | CustomTooltipProps<FCProps>): ReactElement {
+}: DefaultTooltipProps | CustomTooltipProps<FCProps>): LegacyReactElement {
   const triggerElementRef = useRef<HTMLElement & HTMLButtonElement>(null)
   const tooltipBodyRef = useRef<HTMLElement>(null)
   const tooltipID = useRef(`tooltip-${genId()}`)

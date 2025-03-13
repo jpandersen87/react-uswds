@@ -1,5 +1,6 @@
 import React from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type LogoProps = {
   size?: 'big' | 'medium' | 'slim'
@@ -12,7 +13,7 @@ export const Logo = ({
   heading,
   image,
   ...elementAttributes
-}: LogoProps & React.HtmlHTMLAttributes<HTMLElement>): React.ReactElement => {
+}: LogoProps & React.HtmlHTMLAttributes<HTMLElement>): LegacyReactElement => {
   const isBig = size === 'big'
   const isMedium = size === 'medium'
   const isSlim = size === 'slim'

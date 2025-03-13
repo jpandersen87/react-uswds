@@ -1,11 +1,12 @@
 import React from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export const ModalHeading = ({
   className,
   children,
   ...headingProps
-}: React.HTMLProps<HTMLHeadingElement>): React.ReactElement => {
+}: React.HTMLProps<HTMLHeadingElement>): LegacyReactElement => {
   const classes = classnames('usa-modal__heading', className)
 
   return (

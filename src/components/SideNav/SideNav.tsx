@@ -1,5 +1,6 @@
 import React from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 type SideNavProps = {
   items: React.ReactNode[]
@@ -9,7 +10,7 @@ type SideNavProps = {
 export const SideNav = ({
   items,
   isSubnav = false,
-}: SideNavProps): React.ReactElement => {
+}: SideNavProps): LegacyReactElement => {
   const classes = classnames({
     'usa-sidenav': !isSubnav,
     'usa-sidenav__sublist': isSubnav,

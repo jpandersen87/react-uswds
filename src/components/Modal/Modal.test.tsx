@@ -15,6 +15,7 @@ import { ModalFooter } from './ModalFooter/ModalFooter'
 import { ModalToggleButton } from './ModalToggleButton'
 import { Button } from '../Button/Button'
 import { ButtonGroup } from '../ButtonGroup/ButtonGroup'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 vi.mock('./utils', async (importOriginal) => {
   const utils = await importOriginal<typeof import('./utils')>()
@@ -32,7 +33,7 @@ vi.mock('./utils', async (importOriginal) => {
  * incompatibility. See: https://github.com/focus-trap/tabbable#testing-in-jsdom
  */
 const renderWithModalRoot = (
-  ui: React.ReactElement,
+  ui: LegacyReactElement,
   options: RenderOptions = {}
 ) => {
   const appContainer = document.createElement('div')
@@ -55,7 +56,7 @@ const ExampleModal = ({
   forceAction = false,
 }: {
   forceAction?: boolean
-}): React.ReactElement => {
+}): LegacyReactElement => {
   const modalRef = useRef<ModalRef>(null)
 
   return (
@@ -101,7 +102,7 @@ const ExampleModal = ({
   )
 }
 
-const ExampleModalWithFocusElement = (): React.ReactElement => {
+const ExampleModalWithFocusElement = (): LegacyReactElement => {
   const modalRef = useRef<ModalRef>(null)
 
   return (

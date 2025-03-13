@@ -1,5 +1,6 @@
 import React from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type AddressProps = {
   size?: 'big' | 'medium' | 'slim'
@@ -13,7 +14,7 @@ export const Address = ({
   size,
   className,
   items,
-}: AddressProps & React.HTMLAttributes<HTMLElement>): React.ReactElement => {
+}: AddressProps & React.HTMLAttributes<HTMLElement>): LegacyReactElement => {
   const isBig = size === 'big'
   const isMedium = size === 'medium'
   const isSlim = size === 'slim'

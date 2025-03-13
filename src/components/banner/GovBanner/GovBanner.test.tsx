@@ -1,6 +1,5 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import renderer from 'react-test-renderer'
 
 import { GovBanner } from './GovBanner'
 
@@ -32,36 +31,28 @@ describe('GovBanner component', () => {
 
   describe('static content', () => {
     it('renders consistently with default props', () => {
-      const tree = renderer.create(<GovBanner />).toJSON()
-      expect(tree).toMatchSnapshot()
+      const tree = render(<GovBanner />)
+      expect(tree.container).toMatchSnapshot()
     })
 
     it('renders consistently in English for .gov sites', () => {
-      const tree = renderer
-        .create(<GovBanner language="english" tld=".gov" />)
-        .toJSON()
-      expect(tree).toMatchSnapshot()
+      const tree = render(<GovBanner language="english" tld=".gov" />)
+      expect(tree.container).toMatchSnapshot()
     })
 
     it('renders consistently in English for .mil sites', () => {
-      const tree = renderer
-        .create(<GovBanner language="english" tld=".mil" />)
-        .toJSON()
-      expect(tree).toMatchSnapshot()
+      const tree = render(<GovBanner language="english" tld=".mil" />)
+      expect(tree.container).toMatchSnapshot()
     })
 
     it('renders consistently in Spanish for .gov sites', () => {
-      const tree = renderer
-        .create(<GovBanner language="spanish" tld=".gov" />)
-        .toJSON()
-      expect(tree).toMatchSnapshot()
+      const tree = render(<GovBanner language="spanish" tld=".gov" />)
+      expect(tree.container).toMatchSnapshot()
     })
 
     it('renders consistently in Spanish for .mil sites', () => {
-      const tree = renderer
-        .create(<GovBanner language="spanish" tld=".mil" />)
-        .toJSON()
-      expect(tree).toMatchSnapshot()
+      const tree = render(<GovBanner language="spanish" tld=".mil" />)
+      expect(tree.container).toMatchSnapshot()
     })
   })
 })

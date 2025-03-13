@@ -3,6 +3,7 @@ import { render } from '@testing-library/react'
 
 import { GridContainer } from './GridContainer'
 import { Grid } from '../Grid/Grid'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 const testContent = 'a grid container item'
 const testGridContent = (
@@ -46,7 +47,7 @@ describe('GridContainer component', () => {
       children,
       className,
       ...ulProps
-    }: CustomGridContainerProps): React.ReactElement => (
+    }: CustomGridContainerProps): LegacyReactElement => (
       <ul className={className} {...ulProps}>
         {children}
       </ul>

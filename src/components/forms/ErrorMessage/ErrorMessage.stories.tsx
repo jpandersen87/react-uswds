@@ -1,5 +1,6 @@
 import React from 'react'
 import { ErrorMessage } from './ErrorMessage'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Form elements/ErrorMessage',
@@ -17,6 +18,6 @@ Source: https://designsystem.digital.gov/components/form-controls/
   },
 }
 
-export const DefaultErrorMessage = (): React.ReactElement => (
+export const DefaultErrorMessage = (): LegacyReactElement => (
   <ErrorMessage>Helpful error message</ErrorMessage>
 )

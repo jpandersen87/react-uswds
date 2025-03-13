@@ -2,6 +2,7 @@ import React from 'react'
 import { InPageNavigation } from './InPageNavigation'
 import { CONTENT } from './content'
 import { HeadingLevel } from '../../types/headingLevel'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Components/In-Page Navigation',
@@ -48,7 +49,7 @@ type StorybookArguments = {
   title: string
 }
 
-export const Default = (argTypes: StorybookArguments): React.ReactElement => (
+export const Default = (argTypes: StorybookArguments): LegacyReactElement => (
   <InPageNavigation
     content={CONTENT}
     headingLevel={argTypes.headingLevel}
@@ -63,7 +64,7 @@ export const Default = (argTypes: StorybookArguments): React.ReactElement => (
 // so this story is just to demonstrate how the scroll offset works
 export const ScrollOffset = (
   argTypes: StorybookArguments
-): React.ReactElement => (
+): LegacyReactElement => (
   <InPageNavigation
     content={CONTENT}
     headingLevel={argTypes.headingLevel}

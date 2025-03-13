@@ -1,5 +1,6 @@
 import React from 'react'
 import { Address } from './Address'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Footer/Address',
@@ -17,7 +18,7 @@ Source: https://designsystem.digital.gov/components/footer
   },
 }
 
-export const WithLinks = (): React.ReactElement => (
+export const WithLinks = (): LegacyReactElement => (
   <Address
     items={[
       <a key="phone" href="tel:123-456-7890">

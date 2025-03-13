@@ -2,6 +2,7 @@ import React from 'react'
 import { ButtonGroup } from './ButtonGroup'
 import { Button } from '../Button/Button'
 import { Link } from '../Link/Link'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Components/Button groups',
@@ -19,7 +20,7 @@ Source: https://designsystem.digital.gov/components/button-groups/
   },
 }
 
-export const Default = (): React.ReactElement => (
+export const Default = (): LegacyReactElement => (
   <ButtonGroup type="default">
     <Link href="#" className="usa-button usa-button--outline">
       Back
@@ -28,7 +29,7 @@ export const Default = (): React.ReactElement => (
   </ButtonGroup>
 )
 
-export const Segmented = (): React.ReactElement => (
+export const Segmented = (): LegacyReactElement => (
   <ButtonGroup type="segmented">
     <Button type="button">Map</Button>
     <Button type="button" outline>

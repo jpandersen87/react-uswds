@@ -6,13 +6,15 @@ import {
   isCustomProps,
   Link,
 } from '../../Link/Link'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
-export function BreadcrumbLink(props: DefaultLinkProps): React.ReactElement
-export function BreadcrumbLink<T>(props: CustomLinkProps<T>): React.ReactElement
+export function BreadcrumbLink(props: DefaultLinkProps): LegacyReactElement
+
+export function BreadcrumbLink<T>(props: CustomLinkProps<T>): LegacyReactElement
 export function BreadcrumbLink<FCProps = DefaultLinkProps>({
   className,
   ...passThroughProps
-}: DefaultLinkProps | CustomLinkProps<FCProps>): React.ReactElement {
+}: DefaultLinkProps | CustomLinkProps<FCProps>): LegacyReactElement {
   const classes = classnames(className, 'usa-breadcrumb__link')
 
   const linkProps = {

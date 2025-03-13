@@ -2,6 +2,7 @@ import React, { JSX } from 'react'
 import { Breadcrumb } from '../Breadcrumb/Breadcrumb'
 import { BreadcrumbBar } from './BreadcrumbBar'
 import { BreadcrumbLink } from '../BreadcrumbLink/BreadcrumbLink'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Breadcrumb',
@@ -22,7 +23,7 @@ Source: https://designsystem.digital.gov/components/breadcrumb/
   },
 }
 
-export const DefaultBreadcrumb = (): React.ReactElement => (
+export const DefaultBreadcrumb = (): LegacyReactElement => (
   <BreadcrumbBar>
     <Breadcrumb>
       <BreadcrumbLink href="#">
@@ -45,7 +46,7 @@ export const DefaultBreadcrumb = (): React.ReactElement => (
   </BreadcrumbBar>
 )
 
-export const BreadcrumbWithRdfaMetadata = (): React.ReactElement => {
+export const BreadcrumbWithRdfaMetadata = (): LegacyReactElement => {
   const rdfaMetadata = {
     ol: {
       vocab: 'http://schema.org/',
@@ -95,7 +96,7 @@ export const BreadcrumbWithRdfaMetadata = (): React.ReactElement => {
   )
 }
 
-export const WrappingBreadcrumb = (): React.ReactElement => (
+export const WrappingBreadcrumb = (): LegacyReactElement => (
   <BreadcrumbBar variant="wrap">
     <Breadcrumb>
       <BreadcrumbLink href="#">
@@ -118,7 +119,7 @@ export const WrappingBreadcrumb = (): React.ReactElement => (
   </BreadcrumbBar>
 )
 
-export const CustomBreadcrumbLinks = (): React.ReactElement => {
+export const CustomBreadcrumbLinks = (): LegacyReactElement => {
   type MockLinkProps = React.PropsWithChildren<{
     to: string
     className: string
@@ -130,7 +131,7 @@ export const CustomBreadcrumbLinks = (): React.ReactElement => {
     className,
     children,
     ...linkProps
-  }: MockLinkProps): React.ReactElement => (
+  }: MockLinkProps): LegacyReactElement => (
     <a href={to} className={className} {...linkProps}>
       {children}
     </a>

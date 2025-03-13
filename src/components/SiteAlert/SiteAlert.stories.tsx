@@ -4,6 +4,7 @@ import React from 'react'
 
 import { SiteAlert } from './SiteAlert'
 import { Link } from '../Link/Link'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Components/SiteAlert',
@@ -98,33 +99,33 @@ const shortAlertContent = (
   </p>
 )
 
-export const StandardInformationalSiteAlert = (): React.ReactElement => (
+export const StandardInformationalSiteAlert = (): LegacyReactElement => (
   <SiteAlert variant="info" heading={infoHeading}>
     {additionalContext}
   </SiteAlert>
 )
 
-export const StandardEmergencySiteAlert = (): React.ReactElement => (
+export const StandardEmergencySiteAlert = (): LegacyReactElement => (
   <SiteAlert variant="emergency" heading={emergencyHeading}>
     {additionalContext}
   </SiteAlert>
 )
 
-export const InformationalAlertWithNoHeader = (): React.ReactElement => (
+export const InformationalAlertWithNoHeader = (): LegacyReactElement => (
   <SiteAlert variant="info">{shortAlertContent}</SiteAlert>
 )
 
-export const EmergencyAlertWithNoHeader = (): React.ReactElement => (
+export const EmergencyAlertWithNoHeader = (): LegacyReactElement => (
   <SiteAlert variant="emergency">{shortAlertContent}</SiteAlert>
 )
 
-export const InformationalAlertWithList = (): React.ReactElement => (
+export const InformationalAlertWithList = (): LegacyReactElement => (
   <SiteAlert variant="info" heading={infoHeading}>
     {infoWithList}
   </SiteAlert>
 )
 
-export const EmergencyAlertWithList = (): React.ReactElement => (
+export const EmergencyAlertWithList = (): LegacyReactElement => (
   <SiteAlert
     variant="emergency"
     heading={emergencyHeading}
@@ -133,20 +134,20 @@ export const EmergencyAlertWithList = (): React.ReactElement => (
   </SiteAlert>
 )
 
-export const SlimEmergencyAlert = (): React.ReactElement => (
+export const SlimEmergencyAlert = (): LegacyReactElement => (
   <SiteAlert slim variant="emergency">
     {shortAlertContent}
   </SiteAlert>
 )
 
-export const EmergencyAlertNoIcon = (): React.ReactElement => (
+export const EmergencyAlertNoIcon = (): LegacyReactElement => (
   <SiteAlert showIcon={false} variant="emergency">
     {shortAlertContent}
   </SiteAlert>
 )
 
 export const AlertWithCustomControls = {
-  render: (argTypes: StorybookArguments): React.ReactElement => (
+  render: (argTypes: StorybookArguments): LegacyReactElement => (
     <SiteAlert
       slim={argTypes.slim}
       showIcon={argTypes.showIcon}
@@ -156,11 +157,11 @@ export const AlertWithCustomControls = {
   ),
 }
 
-export const AlertWithStringContent = (): React.ReactElement => (
+export const AlertWithStringContent = (): LegacyReactElement => (
   <SiteAlert variant="info">Short alert content</SiteAlert>
 )
 
-export const AlertWithMultipleChildContent = (): React.ReactElement => (
+export const AlertWithMultipleChildContent = (): LegacyReactElement => (
   <SiteAlert variant="info">
     <p className="usa-alert__text">Alert content</p>
     <em>which includes</em> <strong>formatting tags</strong> and{' '}

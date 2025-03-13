@@ -1,5 +1,6 @@
 import React from 'react'
 import { ExtendedNav } from './ExtendedNav'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Header/ExtendedNav',
@@ -44,7 +45,7 @@ const testSecondaryItems = [
   </a>,
 ]
 
-export const DefaultExtendedNav = (): React.ReactElement => (
+export const DefaultExtendedNav = (): LegacyReactElement => (
   <ExtendedNav
     id="extended-nav"
     onToggleMobileNav={mockToggle}

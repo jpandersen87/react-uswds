@@ -24,6 +24,7 @@ import {
 } from '../../components/Footer/SocialLinks/SocialLinks'
 
 import { SideNav } from '../../components/SideNav/SideNav'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Page Templates/Documentation',
@@ -38,7 +39,7 @@ Page templates
   },
 }
 
-export const DocumentationPage = (): React.ReactElement => {
+export const DocumentationPage = (): LegacyReactElement => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const [navDropdownOpen, setNavDropdownOpen] = useState([false, false])
 

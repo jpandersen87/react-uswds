@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import classnames from 'classnames'
 import { HeadingLevel } from '../../../types/headingLevel'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface SummaryBoxHeadingProps {
   children: ReactNode
@@ -17,7 +18,7 @@ export const SummaryBoxHeading = ({
   React.DetailedHTMLProps<
     React.HTMLAttributes<HTMLHeadingElement>,
     HTMLHeadingElement
-  >): React.ReactElement => {
+  >): LegacyReactElement => {
   const classes = classnames('usa-summary-box__heading', className)
   const Heading = headingLevel
   return (

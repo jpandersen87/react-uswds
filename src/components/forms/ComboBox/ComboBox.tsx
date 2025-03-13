@@ -10,6 +10,7 @@ import React, {
 import classnames from 'classnames'
 
 import { ActionTypes, Action, State, useComboBox } from './useComboBox'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 /*  As per USWDS spec, ComboBox includes a HTML <select> with options AND a separate <input> and dropdown <ul> with items.
     The select is usa-sr-only and is always hidden via CSS. The input and dropdown list are the elements used for interaction.
@@ -65,7 +66,7 @@ interface InputProps {
 const Input = ({
   focused,
   ...inputProps
-}: InputProps & JSX.IntrinsicElements['input']): React.ReactElement => {
+}: InputProps & JSX.IntrinsicElements['input']): LegacyReactElement => {
   const inputRef = useRef<HTMLInputElement>(null)
   useEffect(() => {
     if (focused && inputRef.current) {
@@ -112,7 +113,7 @@ const ComboBoxForwardRef: React.ForwardRefRenderFunction<
     disableFiltering = false,
   },
   ref
-): React.ReactElement => {
+): LegacyReactElement => {
   const isDisabled = !!disabled
 
   let defaultOption

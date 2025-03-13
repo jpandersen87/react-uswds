@@ -4,6 +4,7 @@ import classnames from 'classnames'
 import { formatDate, isIosDevice } from './utils'
 
 import { DatePickerLocalization, EN_US } from './i18n'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface DayProps {
   date: Date
@@ -47,7 +48,7 @@ const DayForwardRef: React.ForwardRefRenderFunction<
     i18n = EN_US,
   },
   ref
-): React.ReactElement => {
+): LegacyReactElement => {
   const day = date.getDate()
   const month = date.getMonth()
   const year = date.getFullYear()

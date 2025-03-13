@@ -12,6 +12,7 @@ import { RequiredMarker } from '../Label/RequiredMarker'
 import { TextInput } from '../TextInput/TextInput'
 import { Textarea } from '../Textarea/Textarea'
 import { Select } from '../Select/Select'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Form templates',
@@ -33,7 +34,7 @@ const mockSubmit = (): void => {
   /* mock submit fn */
 }
 
-export const TextInputForm = (): React.ReactElement => (
+export const TextInputForm = (): LegacyReactElement => (
   <div style={{ marginLeft: '4rem' }}>
     <Form onSubmit={mockSubmit}>
       <Label htmlFor="input-type-text">Text input label</Label>
@@ -77,7 +78,7 @@ export const TextInputForm = (): React.ReactElement => (
   </div>
 )
 
-export const NameForm = (): React.ReactElement => (
+export const NameForm = (): LegacyReactElement => (
   <Form onSubmit={mockSubmit}>
     <Fieldset legend="Name" legendStyle="large">
       <Label htmlFor="first-name">First or given name</Label>
@@ -108,7 +109,7 @@ export const NameForm = (): React.ReactElement => (
   </Form>
 )
 
-export const AddressForm = (): React.ReactElement => (
+export const AddressForm = (): LegacyReactElement => (
   <Form onSubmit={mockSubmit} large>
     <Fieldset legend="Mailing address" legendStyle="large">
       <p>
@@ -205,7 +206,7 @@ export const AddressForm = (): React.ReactElement => (
   </Form>
 )
 
-export const SignInForm = (): React.ReactElement => {
+export const SignInForm = (): LegacyReactElement => {
   const [showPassword, setShowPassword] = React.useState(false)
 
   return (
@@ -254,7 +255,8 @@ export const SignInForm = (): React.ReactElement => {
     </Form>
   )
 }
-export const PasswordResetForm = (): React.ReactElement => {
+
+export const PasswordResetForm = (): LegacyReactElement => {
   const [showPassword, setShowPassword] = React.useState(false)
 
   return (

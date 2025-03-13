@@ -1,5 +1,6 @@
 import React from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type ErrorMessageProps = {
   children: React.ReactNode
@@ -11,7 +12,7 @@ export const ErrorMessage = ({
   children,
   className,
   id,
-}: ErrorMessageProps): React.ReactElement => {
+}: ErrorMessageProps): LegacyReactElement => {
   const classes = classnames('usa-error-message', className)
 
   return (

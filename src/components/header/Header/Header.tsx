@@ -1,5 +1,6 @@
 import React, { JSX } from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type HeaderProps = {
   basic?: boolean
@@ -17,7 +18,7 @@ export const Header = ({
   showMobileOverlay,
   className,
   ...headerProps
-}: HeaderProps & JSX.IntrinsicElements['header']): React.ReactElement => {
+}: HeaderProps & JSX.IntrinsicElements['header']): LegacyReactElement => {
   const classes = classnames(
     'usa-header',
     {

@@ -13,6 +13,7 @@ import {
   MIN_STEP,
   TIME_PICKER_CUSTOM_FILTER,
 } from './constants'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type BaseTimePickerProps = {
   id: string
@@ -43,7 +44,7 @@ export const TimePicker = ({
   step = DEFAULT_STEP,
   hint,
   className,
-}: TimePickerProps): React.ReactElement => {
+}: TimePickerProps): LegacyReactElement => {
   const classes = classnames('usa-time-picker', className)
 
   const parsedMinTime = parseTimeString(minTime) || DEFAULT_MIN_TIME_MINUTES

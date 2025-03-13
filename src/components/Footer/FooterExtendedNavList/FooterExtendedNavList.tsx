@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import classnames from 'classnames'
 import { NavList } from '../../header/NavList/NavList'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export type ExtendedNavLinksType = React.ReactNode[][]
 
@@ -20,7 +21,7 @@ export const FooterExtendedNavList = ({
   isMobile,
   nestedLinks,
 }: FooterExtendedNavListProps &
-  React.HTMLAttributes<HTMLElement>): React.ReactElement => {
+  React.HTMLAttributes<HTMLElement>): LegacyReactElement => {
   const classes = classnames('grid-row grid-gap-4', className)
   const isClient = window && typeof window === 'object'
 
@@ -83,7 +84,7 @@ const Section = ({
   isOpen: boolean
   links: React.ReactNode[]
   onToggle?: () => void
-}): React.ReactElement => {
+}): LegacyReactElement => {
   const [primaryLinkOrHeading, ...secondaryLinks] = links
   const classes = classnames(
     'usa-footer__primary-content usa-footer__primary-content--collapsible',

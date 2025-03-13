@@ -2,6 +2,7 @@ import React, { JSX } from 'react'
 import { render } from '@testing-library/react'
 
 import { Grid, getGridClasses, applyGridClasses } from './Grid'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 describe('getGridClasses function', () => {
   it('returns the classes with no breakpoint', () => {
@@ -132,7 +133,7 @@ describe('Grid component', () => {
       children,
       className,
       ...sectionProps
-    }: CustomGridProps): React.ReactElement => (
+    }: CustomGridProps): LegacyReactElement => (
       <section role="grid" className={className} {...sectionProps}>
         {children}
       </section>

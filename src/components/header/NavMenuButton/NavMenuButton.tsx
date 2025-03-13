@@ -9,7 +9,7 @@ export const NavMenuButton = ({
   onClick,
   ...buttonProps
 }: NavMenuButtonProps &
-  JSX.IntrinsicElements['button']): React.ReactElement => {
+  JSX.IntrinsicElements['button']): LegacyReactElement => {
   return (
     <button
       className="usa-menu-btn"

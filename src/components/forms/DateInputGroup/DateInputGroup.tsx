@@ -1,11 +1,12 @@
 import React, { JSX } from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export const DateInputGroup = ({
   children,
   className,
   ...divAttributes
-}: JSX.IntrinsicElements['div']): React.ReactElement => {
+}: JSX.IntrinsicElements['div']): LegacyReactElement => {
   const classes = classnames('usa-memorable-date', className)
 
   return (

@@ -4,6 +4,7 @@ import classnames from 'classnames'
 import { Icon } from '../../Icon/Icons'
 
 import { Button } from '../../Button/Button'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type SearchLocalization = {
   buttonText: string
@@ -21,7 +22,7 @@ export const SearchButton = ({
   className,
   i18n,
   buttonAriaLabel,
-}: SearchButtonProps): React.ReactElement => {
+}: SearchButtonProps): LegacyReactElement => {
   const buttonText = i18n?.buttonText || 'Search'
   const isSmall = size === 'small'
   const isBig = size === 'big'

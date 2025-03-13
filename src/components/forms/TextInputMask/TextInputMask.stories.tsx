@@ -2,6 +2,7 @@ import React from 'react'
 import { TextInputMask } from './TextInputMask'
 import { Label } from '../Label/Label'
 import { Form } from '../../..'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Text input mask',
@@ -19,7 +20,7 @@ Source: https://designsystem.digital.gov/components/input-mask/
   },
 }
 
-export const Default = (): React.ReactElement => (
+export const Default = (): LegacyReactElement => (
   <Form
     onSubmit={(): void => {
       return

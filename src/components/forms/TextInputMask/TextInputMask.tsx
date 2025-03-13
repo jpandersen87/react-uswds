@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import classnames from 'classnames'
 import { TextInput, TextInputProps } from '../TextInput/TextInput'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export type AllProps = TextInputProps & {
   mask: string
@@ -49,7 +50,7 @@ export const TextInputMask = ({
   charset,
   onChange,
   ...inputProps
-}: AllProps): React.ReactElement => {
+}: AllProps): LegacyReactElement => {
   const classes = classnames(
     {
       'usa-masked': mask,

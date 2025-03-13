@@ -5,6 +5,7 @@ import { DatePicker, DatePickerProps } from '../DatePicker/DatePicker'
 import { formatDate, parseDateString } from '../DatePicker/utils'
 import { FormGroup } from '../FormGroup/FormGroup'
 import { Label } from '../Label/Label'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type DateRangePickerProps = {
   startDateLabel?: string
@@ -18,7 +19,7 @@ type DateRangePickerProps = {
 
 export const DateRangePicker = (
   props: DateRangePickerProps & JSX.IntrinsicElements['div']
-): React.ReactElement => {
+): LegacyReactElement => {
   const {
     startDateLabel,
     startDateHint,

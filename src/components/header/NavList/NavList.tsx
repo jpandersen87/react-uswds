@@ -1,5 +1,6 @@
 import React, { JSX } from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type CustomNavListProps = {
   items: React.ReactNode[]
@@ -19,7 +20,7 @@ export const NavList = ({
   type,
   className,
   ...ulProps
-}: NavListProps): React.ReactElement => {
+}: NavListProps): LegacyReactElement => {
   const isPrimary = type === 'primary'
   const isSecondary = type === 'secondary'
   const isSubnav = type === 'subnav'

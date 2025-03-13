@@ -1,5 +1,6 @@
 import React, { JSX } from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 type SiteAlertProps = {
   variant: 'info' | 'emergency'
@@ -18,7 +19,7 @@ export const SiteAlert = ({
   slim = false,
   className,
   ...sectionProps
-}: SiteAlertProps & JSX.IntrinsicElements['section']): React.ReactElement => {
+}: SiteAlertProps & JSX.IntrinsicElements['section']): LegacyReactElement => {
   const classes = classnames(
     'usa-site-alert',
     {

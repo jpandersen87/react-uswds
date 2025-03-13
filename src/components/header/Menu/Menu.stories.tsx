@@ -1,5 +1,6 @@
 import React from 'react'
 import { Menu } from './Menu'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Header/Menu',
@@ -26,6 +27,6 @@ const testItems = [
   </a>,
 ]
 
-export const DefaultDropDownMenu = (): React.ReactElement => (
+export const DefaultDropDownMenu = (): LegacyReactElement => (
   <Menu items={testItems} isOpen={true} />
 )

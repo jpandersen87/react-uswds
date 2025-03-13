@@ -28,6 +28,7 @@ import {
 
 import logoImg from '@uswds/uswds/img/logo-img.png'
 import circleSvg from '@uswds/uswds/img/circle-gray-20.svg'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Page Templates/Multiple Sign In Options',
@@ -109,7 +110,7 @@ const identifierLinksText = [
   'Privacy policy',
 ]
 
-export const MultipleSignInOptions = (): React.ReactElement => {
+export const MultipleSignInOptions = (): LegacyReactElement => {
   return (
     <>
       <a className="usa-skipnav" href="#main-content">

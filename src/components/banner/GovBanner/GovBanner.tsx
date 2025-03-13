@@ -13,6 +13,7 @@ import { Icon } from '../../Icon/Icons'
 import flagImg from '@uswds/uswds/img/us_flag_small.png'
 import dotGovIcon from '@uswds/uswds/img/icon-dot-gov.svg'
 import httpsIcon from '@uswds/uswds/img/icon-https.svg'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type Language = 'english' | 'spanish'
 
@@ -117,7 +118,7 @@ export const GovBanner = ({
   language = 'english',
   className,
   ...sectionProps
-}: GovBannerProps & JSX.IntrinsicElements['section']): ReactElement => {
+}: GovBannerProps & JSX.IntrinsicElements['section']): LegacyReactElement => {
   const [isOpen, setIsOpen] = useState(false)
 
   const {

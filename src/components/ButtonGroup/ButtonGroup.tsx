@@ -1,5 +1,6 @@
 import React, { JSX } from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 type ButtonGroupProps = {
   children: React.ReactNode
@@ -12,7 +13,7 @@ export const ButtonGroup = ({
   children,
   type = 'default',
   ...restProps
-}: ButtonGroupProps): React.ReactElement => {
+}: ButtonGroupProps): LegacyReactElement => {
   const classes = classnames(
     'usa-button-group',
     {

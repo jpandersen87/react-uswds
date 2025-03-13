@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavMenuButton } from './NavMenuButton'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Header/NavMenuButton',
@@ -17,6 +18,6 @@ Source: https://designsystem.digital.gov/components/header/
   },
 }
 
-export const DefaultMenuNavMenuButton = (): React.ReactElement => (
+export const DefaultMenuNavMenuButton = (): LegacyReactElement => (
   <NavMenuButton label="Menu" />
 )

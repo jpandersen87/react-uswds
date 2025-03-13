@@ -4,6 +4,7 @@ import { FormGroup } from './FormGroup'
 import { Label } from '../Label/Label'
 import { TextInput } from '../TextInput/TextInput'
 import { ErrorMessage } from '../ErrorMessage/ErrorMessage'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Form elements/FormGroup',
@@ -21,14 +22,14 @@ Source: https://designsystem.digital.gov/components/form-templates/
   },
 }
 
-export const TextInputFormGroup = (): React.ReactElement => (
+export const TextInputFormGroup = (): LegacyReactElement => (
   <FormGroup>
     <Label htmlFor="input-type-text">Text input label</Label>
     <TextInput id="input-type-text" name="input-type-text" type="text" />
   </FormGroup>
 )
 
-export const TextInputErrorFormGroup = (): React.ReactElement => (
+export const TextInputErrorFormGroup = (): LegacyReactElement => (
   <FormGroup error>
     <Label htmlFor="input-type-text" error>
       Text input label

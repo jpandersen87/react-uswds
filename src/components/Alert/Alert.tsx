@@ -4,6 +4,7 @@ import classnames from 'classnames'
 import { HeadingLevel } from '../../types/headingLevel'
 
 import styles from './Alert.module.scss'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 type AlertProps = {
   type: 'success' | 'warning' | 'error' | 'info'
@@ -27,7 +28,7 @@ export const Alert = ({
   className,
   validation,
   ...props
-}: AlertProps & React.HTMLAttributes<HTMLDivElement>): React.ReactElement => {
+}: AlertProps & React.HTMLAttributes<HTMLDivElement>): LegacyReactElement => {
   const classes = classnames(
     'usa-alert',
     {

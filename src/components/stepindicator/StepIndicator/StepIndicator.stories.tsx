@@ -1,6 +1,7 @@
 import React from 'react'
 import { StepIndicatorStep } from '../StepIndicatorStep/StepIndicatorStep'
 import { StepIndicator, StepStatusText } from '../StepIndicator/StepIndicator'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Step Indicator',
@@ -40,7 +41,7 @@ type StorybookArguments = {
 
 export const DefaultStepIndicator = (
   args: StorybookArguments
-): React.ReactElement => (
+): LegacyReactElement => (
   <StepIndicator
     headingLevel="h4"
     ofText={args.ofText}
@@ -54,7 +55,7 @@ export const DefaultStepIndicator = (
   </StepIndicator>
 )
 
-export const NoLabels = (args: StorybookArguments): React.ReactElement => (
+export const NoLabels = (args: StorybookArguments): LegacyReactElement => (
   <StepIndicator
     showLabels={false}
     headingLevel="h4"
@@ -69,7 +70,7 @@ export const NoLabels = (args: StorybookArguments): React.ReactElement => (
   </StepIndicator>
 )
 
-export const Centered = (args: StorybookArguments): React.ReactElement => (
+export const Centered = (args: StorybookArguments): LegacyReactElement => (
   <StepIndicator
     centered
     headingLevel="h4"
@@ -84,7 +85,7 @@ export const Centered = (args: StorybookArguments): React.ReactElement => (
   </StepIndicator>
 )
 
-export const Counters = (args: StorybookArguments): React.ReactElement => (
+export const Counters = (args: StorybookArguments): LegacyReactElement => (
   <StepIndicator
     counters="default"
     headingLevel="h4"
@@ -99,7 +100,7 @@ export const Counters = (args: StorybookArguments): React.ReactElement => (
   </StepIndicator>
 )
 
-export const SmallCounters = (args: StorybookArguments): React.ReactElement => (
+export const SmallCounters = (args: StorybookArguments): LegacyReactElement => (
   <StepIndicator
     counters="small"
     headingLevel="h4"
@@ -116,7 +117,7 @@ export const SmallCounters = (args: StorybookArguments): React.ReactElement => (
 
 export const DifferentHeadingLevel = (
   args: StorybookArguments
-): React.ReactElement => (
+): LegacyReactElement => (
   <StepIndicator
     headingLevel="h2"
     ofText={args.ofText}

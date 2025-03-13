@@ -3,6 +3,7 @@ import React from 'react'
 import { SummaryBox } from './SummaryBox'
 import { SummaryBoxHeading } from '../SummaryBoxHeading/SummaryBoxHeading'
 import { SummaryBoxContent } from '../SummaryBoxContent/SummaryBoxContent'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Summary box',
@@ -61,7 +62,7 @@ const summaryBoxContent = (
   </ul>
 )
 
-export const SummaryBoxDefault = (): React.ReactElement => (
+export const SummaryBoxDefault = (): LegacyReactElement => (
   <SummaryBox>
     <SummaryBoxHeading headingLevel="h3">Key Information</SummaryBoxHeading>
     <SummaryBoxContent>{summaryBoxContent}</SummaryBoxContent>

@@ -1,12 +1,13 @@
 import React, { ReactElement, JSX } from 'react'
 import classNames from 'classnames'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export const BannerIcon = ({
   src,
   alt,
   className,
   ...imgProps
-}: JSX.IntrinsicElements['img']): ReactElement => {
+}: JSX.IntrinsicElements['img']): LegacyReactElement => {
   const classes = classNames('usa-banner__icon usa-media-block__img', className)
 
   return (

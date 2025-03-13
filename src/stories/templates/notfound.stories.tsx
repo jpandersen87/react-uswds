@@ -33,6 +33,7 @@ import {
   SocialLink,
   SocialLinks,
 } from '../../index'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Page Templates/Not Found',
@@ -50,7 +51,7 @@ Page templates
   },
 }
 
-export const NotFoundPage = (): React.ReactElement => {
+export const NotFoundPage = (): LegacyReactElement => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const [navDropdownOpen, setNavDropdownOpen] = useState([false, false])
 

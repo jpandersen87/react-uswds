@@ -1,5 +1,6 @@
 import React, { JSX } from 'react'
 import classnames from 'classnames'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export type ButtonProps = {
   type: 'button' | 'submit' | 'reset'
@@ -26,7 +27,7 @@ export const Button = ({
   onClick,
   className,
   ...defaultProps
-}: ButtonProps & JSX.IntrinsicElements['button']): React.ReactElement => {
+}: ButtonProps & JSX.IntrinsicElements['button']): LegacyReactElement => {
   const classes = classnames(
     'usa-button',
     {

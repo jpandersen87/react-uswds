@@ -3,6 +3,7 @@ import { render } from '@testing-library/react'
 import { Breadcrumb } from '../Breadcrumb/Breadcrumb'
 import { BreadcrumbBar } from './BreadcrumbBar'
 import { BreadcrumbLink } from '../BreadcrumbLink/BreadcrumbLink'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 const testPageName = 'Test Page'
 const testParentPageName = 'Test Parent Page'
@@ -46,7 +47,7 @@ describe('BreadcrumbBar component', () => {
       children,
       className,
       ...linkProps
-    }: CustomLinkProps): React.ReactElement => (
+    }: CustomLinkProps): LegacyReactElement => (
       <a href={to} className={className} {...linkProps}>
         {children}
       </a>

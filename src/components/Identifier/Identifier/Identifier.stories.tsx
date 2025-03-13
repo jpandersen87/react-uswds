@@ -14,6 +14,7 @@ import { IdentifierLogos } from '../IdentifierLogos/IdentifierLogos'
 import { Link } from '../../Link/Link'
 
 import dotGovIcon from '@uswds/uswds/img/icon-dot-gov.svg'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Identifier',
@@ -125,7 +126,7 @@ const testIdentifierGovContentSpanish = (
   </>
 )
 
-export const IdentifierDefault = (): React.ReactElement => (
+export const IdentifierDefault = (): LegacyReactElement => (
   <Identifier>
     <IdentifierMasthead aria-label="Agency identifier">
       <IdentifierLogos>
@@ -146,7 +147,7 @@ export const IdentifierDefault = (): React.ReactElement => (
   </Identifier>
 )
 
-export const IdentifierSpanish = (): React.ReactElement => (
+export const IdentifierSpanish = (): LegacyReactElement => (
   <Identifier>
     <IdentifierMasthead aria-label="Identificador de la agencia">
       <IdentifierLogos>
@@ -166,7 +167,7 @@ export const IdentifierSpanish = (): React.ReactElement => (
   </Identifier>
 )
 
-export const MultipleParentsAndLogos = (): React.ReactElement => (
+export const MultipleParentsAndLogos = (): LegacyReactElement => (
   <Identifier>
     <IdentifierMasthead aria-label="Agency identifier">
       <IdentifierLogos>
@@ -190,7 +191,7 @@ export const MultipleParentsAndLogos = (): React.ReactElement => (
   </Identifier>
 )
 
-export const MultipleParentsAndLogosSpanish = (): React.ReactElement => (
+export const MultipleParentsAndLogosSpanish = (): LegacyReactElement => (
   <Identifier>
     <IdentifierMasthead aria-label="Identificador de la agencia">
       <IdentifierLogos>
@@ -211,7 +212,7 @@ export const MultipleParentsAndLogosSpanish = (): React.ReactElement => (
   </Identifier>
 )
 
-export const MoreThanTwoParentsAndLogos = (): React.ReactElement => (
+export const MoreThanTwoParentsAndLogos = (): LegacyReactElement => (
   <Identifier>
     <IdentifierMasthead aria-label="Agency identifier">
       <IdentifierLogos>
@@ -238,7 +239,7 @@ export const MoreThanTwoParentsAndLogos = (): React.ReactElement => (
   </Identifier>
 )
 
-export const NoLogosEnglish = (): React.ReactElement => (
+export const NoLogosEnglish = (): LegacyReactElement => (
   <Identifier>
     <IdentifierMasthead aria-label="Agency identifier">
       <IdentifierIdentity domain="domain.edu.mil.gov">
@@ -256,7 +257,7 @@ export const NoLogosEnglish = (): React.ReactElement => (
   </Identifier>
 )
 
-export const NoLogosSpanish = (): React.ReactElement => (
+export const NoLogosSpanish = (): LegacyReactElement => (
   <Identifier>
     <IdentifierMasthead aria-label="Identificador de la agencia">
       <IdentifierIdentity domain="domain.edu.mil.gov">
@@ -273,7 +274,7 @@ export const NoLogosSpanish = (): React.ReactElement => (
   </Identifier>
 )
 
-export const TaxDisclaimerEnglish = (): React.ReactElement => (
+export const TaxDisclaimerEnglish = (): LegacyReactElement => (
   <Identifier>
     <IdentifierMasthead aria-label="Agency identifier">
       <IdentifierLogos>
@@ -295,7 +296,7 @@ export const TaxDisclaimerEnglish = (): React.ReactElement => (
   </Identifier>
 )
 
-export const TaxDisclaimerSpanish = (): React.ReactElement => (
+export const TaxDisclaimerSpanish = (): LegacyReactElement => (
   <Identifier>
     <IdentifierMasthead aria-label="Identificador de la agencia">
       <IdentifierLogos>
@@ -317,7 +318,7 @@ export const TaxDisclaimerSpanish = (): React.ReactElement => (
 )
 
 export const TaxDisclaimerAndMultipleParentsAndLogos =
-  (): React.ReactElement => (
+  (): LegacyReactElement => (
     <Identifier>
       <IdentifierMasthead aria-label="Agency identifier">
         <IdentifierLogos>

@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Form } from '../Form/Form'
 import { TimePicker } from './TimePicker'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Time picker',
@@ -34,7 +35,7 @@ const noop = (): void => {
 
 export const CompleteTimePicker = (
   argTypes: StorybookArguments
-): React.ReactElement => (
+): LegacyReactElement => (
   <Form onSubmit={argTypes.onSubmit}>
     <TimePicker
       id="appointment-time"
@@ -49,7 +50,7 @@ export const CompleteTimePicker = (
 
 export const DefaultTimePicker = (
   argTypes: StorybookArguments
-): React.ReactElement => (
+): LegacyReactElement => (
   <Form onSubmit={argTypes.onSubmit}>
     <TimePicker
       id="appointment-time"
@@ -63,7 +64,7 @@ export const DefaultTimePicker = (
 
 export const WithMinAndMaxTimes = (
   argTypes: StorybookArguments
-): React.ReactElement => (
+): LegacyReactElement => (
   <Form onSubmit={argTypes.onSubmit}>
     <TimePicker
       id="appointment-time"
@@ -80,7 +81,7 @@ export const WithMinAndMaxTimes = (
 
 export const WithDefaultValue = (
   argTypes: StorybookArguments
-): React.ReactElement => (
+): LegacyReactElement => (
   <Form onSubmit={argTypes.onSubmit}>
     <TimePicker
       id="appointment-time"

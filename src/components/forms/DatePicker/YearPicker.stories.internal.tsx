@@ -2,6 +2,7 @@ import React from 'react'
 
 import { YearPicker } from './YearPicker'
 import { parseDateString } from './utils'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 /*
 // THIS STORY FOR INTERNAL DEVELOPMENT ONLY
@@ -28,7 +29,7 @@ const testProps = {
 
 export const yearPicker = (
   argTypes: StorybookArguments
-): React.ReactElement => (
+): LegacyReactElement => (
   <YearPicker
     {...testProps}
     handleSelectYear={argTypes.handleSelectYear}
@@ -38,7 +39,7 @@ export const yearPicker = (
 
 export const withMinAndMaxInCurrentChunk = (
   argTypes: StorybookArguments
-): React.ReactElement => (
+): LegacyReactElement => (
   <YearPicker
     {...testProps}
     handleSelectYear={argTypes.handleSelectYear}
@@ -50,7 +51,7 @@ export const withMinAndMaxInCurrentChunk = (
 
 export const withMinInCurrentChunk = (
   argTypes: StorybookArguments
-): React.ReactElement => (
+): LegacyReactElement => (
   <YearPicker
     {...testProps}
     handleSelectYear={argTypes.handleSelectYear}
@@ -61,7 +62,7 @@ export const withMinInCurrentChunk = (
 
 export const withMaxInCurrentChunk = (
   argTypes: StorybookArguments
-): React.ReactElement => (
+): LegacyReactElement => (
   <YearPicker
     {...testProps}
     handleSelectYear={argTypes.handleSelectYear}

@@ -4,6 +4,7 @@ import classnames from 'classnames'
 import { TextInput, OptionalTextInputProps } from '../TextInput/TextInput'
 import { Label } from '../Label/Label'
 import { FormGroup } from '../FormGroup/FormGroup'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type DateInputElementProps = {
   id: string
@@ -23,7 +24,7 @@ export const DateInput = ({
   minLength,
   className,
   ...inputProps
-}: DateInputElementProps & OptionalTextInputProps): React.ReactElement => {
+}: DateInputElementProps & OptionalTextInputProps): LegacyReactElement => {
   const formGroupClasses = classnames({
     'usa-form-group--month': unit == 'month',
     'usa-form-group--day': unit == 'day',

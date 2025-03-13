@@ -1,4 +1,5 @@
 import React from 'react'
+import { LegacyReactElement } from '../types/legacyReactElement'
 
 export default {
   title: 'Design tokens/Swatches',
@@ -9,7 +10,7 @@ export default {
   },
 }
 
-export const Swatches = (): React.ReactElement => (
+export const Swatches = (): LegacyReactElement => (
   <div className="grid-container">
     <h1>Color swatches</h1>
     <h2>Primary</h2>

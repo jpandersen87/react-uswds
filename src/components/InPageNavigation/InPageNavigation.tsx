@@ -3,6 +3,7 @@ import classnames from 'classnames'
 import { HeadingLevel } from '../../types/headingLevel'
 import { Link } from '../Link/Link'
 import styles from './InPageNavigation.module.scss'
+import { LegacyReactElement } from '../../types/legacyReactElement'
 
 type InPageNavigationProps = {
   className?: string
@@ -28,7 +29,7 @@ export const InPageNavigation = ({
   title = 'On this page',
   ...divProps
 }: InPageNavigationProps &
-  Omit<JSX.IntrinsicElements['div'], 'content'>): React.ReactElement => {
+  Omit<JSX.IntrinsicElements['div'], 'content'>): LegacyReactElement => {
   const asideClasses = classnames('usa-in-page-nav', styles.target, className)
   const { className: navClassName, ...remainingNavProps } = navProps || {}
   const navClasses = classnames('usa-in-page-nav__nav', navClassName)

@@ -1,11 +1,12 @@
 import React, { ReactElement, JSX } from 'react'
 import classNames from 'classnames'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export const MediaBlockBody = ({
   children,
   className,
   ...divProps
-}: JSX.IntrinsicElements['div']): ReactElement => {
+}: JSX.IntrinsicElements['div']): LegacyReactElement => {
   const classes = classNames('usa-media-block__body', className)
 
   return (

@@ -1,5 +1,7 @@
 import React, { JSX } from 'react'
 import classnames from 'classnames'
+import { LegacyInputRef } from '../../../types/legacyInputRef'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type CheckboxProps = {
   id: string
@@ -20,7 +22,7 @@ export const Checkbox = ({
   tile,
   labelDescription,
   ...inputProps
-}: CheckboxProps & JSX.IntrinsicElements['input']): React.ReactElement => {
+}: CheckboxProps & JSX.IntrinsicElements['input']): LegacyReactElement => {
   const classes = classnames('usa-checkbox', className)
   const checkboxClasses = classnames('usa-checkbox__input', {
     'usa-checkbox__input--tile': tile,

@@ -7,13 +7,15 @@ import {
   isCustomProps,
   Link,
 } from '../../Link/Link'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
-export function IdentifierLink(props: DefaultLinkProps): React.ReactElement
-export function IdentifierLink<T>(props: CustomLinkProps<T>): React.ReactElement
+export function IdentifierLink(props: DefaultLinkProps): LegacyReactElement
+
+export function IdentifierLink<T>(props: CustomLinkProps<T>): LegacyReactElement
 export function IdentifierLink<FCProps = DefaultLinkProps>({
   className,
   ...passThroughProps
-}: DefaultLinkProps | CustomLinkProps<FCProps>): React.ReactElement {
+}: DefaultLinkProps | CustomLinkProps<FCProps>): LegacyReactElement {
   const classes = classnames(className, 'usa-identifier__required-link')
   const linkProps = {
     ...passThroughProps,

@@ -7,6 +7,7 @@ import { Label } from '../Label/Label'
 import { TextInput } from '../TextInput/TextInput'
 import { ValidationChecklist } from './ValidationChecklist'
 import { ValidationItem } from './ValidationItem'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Validation',
@@ -38,7 +39,7 @@ const validate = (type: string, value: string): boolean => {
   }
 }
 
-export const Default = (): React.ReactElement => {
+export const Default = (): LegacyReactElement => {
   const [validations, setValidations] = useState({
     uppercase: false,
     numerical: false,

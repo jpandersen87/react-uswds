@@ -2,6 +2,7 @@ import React, { JSX } from 'react'
 import classnames from 'classnames'
 import { StepIndicatorStepProps } from '../StepIndicatorStep/StepIndicatorStep'
 import { HeadingLevel } from '../../../types/headingLevel'
+import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export type StepStatusText = {
   complete: string
@@ -27,7 +28,7 @@ type StepIndicatorProps = {
 }
 export const StepIndicator = (
   props: StepIndicatorProps
-): React.ReactElement => {
+): LegacyReactElement => {
   const {
     showLabels = true,
     counters = 'none',

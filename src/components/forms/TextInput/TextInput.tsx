@@ -25,7 +25,7 @@ export const TextInput = forwardRef(
   (
     props: TextInputProps,
     ref: React.ForwardedRef<HTMLInputElement> | undefined
-  ): React.ReactElement => {
+  ): LegacyReactElement => {
     const {
       id,
       name,
