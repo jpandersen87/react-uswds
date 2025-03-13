@@ -1,8 +1,7 @@
-import React, { useState, JSX } from 'react'
+import React, { useState, type JSX } from 'react'
 import classnames from 'classnames'
 
 import { HeadingLevel } from '../../types/headingLevel'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export interface AccordionItemProps {
   title: React.ReactNode | string
@@ -29,7 +28,7 @@ export const AccordionItem = ({
   className,
   headingLevel,
   handleToggle,
-}: AccordionItemProps): LegacyReactElement => {
+}: AccordionItemProps): JSX.Element => {
   const headingClasses = classnames('usa-accordion__heading', className)
   const contentClasses = classnames(
     'usa-accordion__content',
@@ -68,7 +67,7 @@ export const Accordion = ({
   items,
   className,
   multiselectable = false,
-}: AccordionProps & JSX.IntrinsicElements['div']): LegacyReactElement => {
+}: AccordionProps & JSX.IntrinsicElements['div']): JSX.Element => {
   const [openItems, setOpenState] = useState(
     items.filter((i) => !!i.expanded).map((i) => i.id)
   )

@@ -1,10 +1,9 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import { render } from '@testing-library/react'
 
 import { IdentifierLinks } from './IdentifierLinks'
 import { IdentifierLinkItem } from '../IdentifierLinkItem/IdentifierLinkItem'
 import { IdentifierLink } from '../IdentifierLink/IdentifierLink'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 const testPageName = 'Test Page'
 
@@ -51,7 +50,7 @@ describe('IdentifierLinks component', () => {
       children,
       className,
       ...linkProps
-    }: CustomLinkProps): LegacyReactElement => (
+    }: CustomLinkProps): JSX.Element => (
       <a href={to} className={className} {...linkProps}>
         {children}
       </a>

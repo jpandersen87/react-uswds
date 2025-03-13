@@ -1,12 +1,11 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classname from 'classnames'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export const CollectionDescription = ({
   className,
   children,
   ...props
-}: JSX.IntrinsicElements['p']): LegacyReactElement => {
+}: JSX.IntrinsicElements['p']): JSX.Element => {
   const classes = classname('usa-collection__description', className)
   return (
     <p className={classes} {...props}>

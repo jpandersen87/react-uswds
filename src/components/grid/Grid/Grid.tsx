@@ -1,8 +1,7 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
 
 import { GridItemProps, BreakpointKeys, breakpoints } from '../types'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export type GridProps = GridItemProps & {
   [P in BreakpointKeys]?: GridItemProps
@@ -83,11 +82,11 @@ export const applyGridClasses = (gridLayout: GridProps): string => {
   return classes
 }
 
-export function Grid(props: DefaultGridProps): LegacyReactElement
-export function Grid<T>(props: CustomGridProps<T>): LegacyReactElement
+export function Grid(props: DefaultGridProps): JSX.Element
+export function Grid<T>(props: CustomGridProps<T>): JSX.Element
 export function Grid<FCProps = DefaultGridProps>(
   props: DefaultGridProps | CustomGridProps<FCProps>
-): LegacyReactElement {
+): JSX.Element {
   const {
     children,
     className,

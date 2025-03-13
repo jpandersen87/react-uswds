@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface SummaryBoxTextProps {
   children?: React.ReactNode
@@ -11,7 +10,7 @@ export const SummaryBoxContent = ({
   children,
   className,
   ...divProps
-}: SummaryBoxTextProps & JSX.IntrinsicElements['div']): LegacyReactElement => {
+}: SummaryBoxTextProps & JSX.IntrinsicElements['div']): JSX.Element => {
   const classes = classnames('usa-summary-box__text', className)
   return (
     <div className={classes} {...divProps}>

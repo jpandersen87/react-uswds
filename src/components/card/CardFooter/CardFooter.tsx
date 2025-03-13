@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export const CardFooter = ({
   exdent,
@@ -9,7 +8,7 @@ export const CardFooter = ({
   ...footerProps
 }: {
   exdent?: boolean
-} & JSX.IntrinsicElements['div']): LegacyReactElement => {
+} & JSX.IntrinsicElements['div']): JSX.Element => {
   const classes = classnames(
     'usa-card__footer',
     {

@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 
 import { Icon } from './Icons'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 type StorybookArgs = {
   size: 3 | 4 | 5 | 6 | 7 | 8 | 9
@@ -35,7 +34,7 @@ Source: https://designsystem.digital.gov/components/icon/
   },
 }
 
-export const AllIcons = (args: StorybookArgs): LegacyReactElement => (
+export const AllIcons = (args: StorybookArgs): JSX.Element => (
   <div>
     <Icon.AccessibilityNew {...args} />
     <Icon.AccessibleForward {...args} />

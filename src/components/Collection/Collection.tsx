@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 type CollectionProps = {
   condensed?: boolean
@@ -11,7 +10,7 @@ export const Collection = ({
   className,
   condensed,
   ...ulProps
-}: CollectionProps & JSX.IntrinsicElements['ul']): LegacyReactElement => {
+}: CollectionProps & JSX.IntrinsicElements['ul']): JSX.Element => {
   const classes = classnames(
     'usa-collection',
     { 'usa-collection--condensed': condensed },

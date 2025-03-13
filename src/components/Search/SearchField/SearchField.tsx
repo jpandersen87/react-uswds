@@ -1,4 +1,4 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
 
 import { Label } from '../../forms/Label/Label'
@@ -6,7 +6,6 @@ import {
   TextInput,
   OptionalTextInputProps,
 } from '../../forms/TextInput/TextInput'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type SearchFieldProps = {
   isBig?: boolean
@@ -28,7 +27,7 @@ export const SearchField = ({
   label = 'Search',
   inputId = 'search-field',
   inputProps,
-}: SearchFieldProps & OptionalTextInputProps): LegacyReactElement => {
+}: SearchFieldProps & OptionalTextInputProps): JSX.Element => {
   const classes = classnames(
     {
       'usa-search--big': isBig,

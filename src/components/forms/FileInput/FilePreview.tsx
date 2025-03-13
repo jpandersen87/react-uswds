@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { type JSX, useEffect, useRef, useState } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 /** Moving the SPACER_GIF definition here instead of the constants.ts file,
  * as webpack was exporting that entire file, including use of the File
@@ -15,7 +14,7 @@ export const FilePreview = ({
 }: {
   imageId: string
   file: File
-}): LegacyReactElement => {
+}): JSX.Element => {
   const fileReaderRef = useRef<FileReader>(new FileReader())
   const [isLoading, setIsLoading] = useState(true)
   const [previewSrc, setPreviewSrc] = useState(SPACER_GIF)

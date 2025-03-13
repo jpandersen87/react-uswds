@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 
 import { DatePicker } from './DatePicker'
 import { sampleLocalization } from './i18n'
@@ -7,7 +7,6 @@ import { FormGroup } from '../FormGroup/FormGroup'
 import { Label } from '../Label/Label'
 import { TextInput } from '../TextInput/TextInput'
 import { ValidationStatus } from '../../../types/validationStatus'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Date picker',
@@ -57,7 +56,7 @@ type StorybookArguments = {
 }
 
 export const CompleteDatePicker = {
-  render: (argTypes: StorybookArguments): LegacyReactElement => (
+  render: (argTypes: StorybookArguments): JSX.Element => (
     <Form onSubmit={argTypes.onSubmit}>
       <FormGroup error={argTypes.validationStatus === 'error'}>
         <Label

@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type NavDropDownButtonProps = {
   label: string
@@ -21,8 +20,7 @@ export const NavDropDownButton = ({
   isCurrent,
   className,
   ...buttonProps
-}: NavDropDownButtonProps &
-  JSX.IntrinsicElements['button']): LegacyReactElement => {
+}: NavDropDownButtonProps & JSX.IntrinsicElements['button']): JSX.Element => {
   const classes = classnames(
     'usa-accordion__button',
     'usa-nav__link',

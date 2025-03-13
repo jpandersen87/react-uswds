@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 import { Label } from './Label'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Form elements/Label',
@@ -18,23 +17,23 @@ Source: https://designsystem.digital.gov/components/form-controls/
   },
 }
 
-export const DefaultLabel = (): LegacyReactElement => (
+export const DefaultLabel = (): JSX.Element => (
   <Label htmlFor="testInput">Text input label</Label>
 )
 
-export const Error = (): LegacyReactElement => (
+export const Error = (): JSX.Element => (
   <Label htmlFor="testInputError" error>
     Text input error
   </Label>
 )
 
-export const WithHint = (): LegacyReactElement => (
+export const WithHint = (): JSX.Element => (
   <Label htmlFor="testInputHint" hint={<> (optional)</>}>
     Text input
   </Label>
 )
 
-export const WithRequiredMarker = (): LegacyReactElement => (
+export const WithRequiredMarker = (): JSX.Element => (
   <Label htmlFor="testInputRequired" requiredMarker>
     Text input
   </Label>

@@ -1,6 +1,5 @@
-import React, { ReactNode, JSX } from 'react'
+import React, { ReactNode, type JSX } from 'react'
 import classNames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type BannerHeaderProps = {
   isOpen: boolean
@@ -23,7 +22,7 @@ export const BannerHeader = ({
   headerActionProps,
   className,
   ...headerProps
-}: BannerHeaderProps & JSX.IntrinsicElements['header']): LegacyReactElement => {
+}: BannerHeaderProps & JSX.IntrinsicElements['header']): JSX.Element => {
   const classes = classNames(
     'usa-banner__header',
     {

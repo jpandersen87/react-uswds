@@ -10,7 +10,6 @@ import classnames from 'classnames'
 
 import { FilePreview } from './FilePreview'
 import { makeSafeForID } from './utils'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type FileInputProps = {
   id: string
@@ -50,7 +49,7 @@ export const FileInputForwardRef: React.ForwardRefRenderFunction<
     ...inputProps
   },
   ref
-): LegacyReactElement => {
+): JSX.Element => {
   const internalRef = useRef<HTMLInputElement>(null)
   const [isDragging, setIsDragging] = useState(false)
   const [showError, setShowError] = useState(false)

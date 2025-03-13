@@ -1,5 +1,5 @@
 /*  eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React, { type JSX } from 'react'
 import { Form } from './Form'
 
 import { Alert } from '../../Alert/Alert'
@@ -12,7 +12,6 @@ import { RequiredMarker } from '../Label/RequiredMarker'
 import { TextInput } from '../TextInput/TextInput'
 import { Textarea } from '../Textarea/Textarea'
 import { Select } from '../Select/Select'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Form templates',
@@ -34,7 +33,7 @@ const mockSubmit = (): void => {
   /* mock submit fn */
 }
 
-export const TextInputForm = (): LegacyReactElement => (
+export const TextInputForm = (): JSX.Element => (
   <div style={{ marginLeft: '4rem' }}>
     <Form onSubmit={mockSubmit}>
       <Label htmlFor="input-type-text">Text input label</Label>
@@ -78,7 +77,7 @@ export const TextInputForm = (): LegacyReactElement => (
   </div>
 )
 
-export const NameForm = (): LegacyReactElement => (
+export const NameForm = (): JSX.Element => (
   <Form onSubmit={mockSubmit}>
     <Fieldset legend="Name" legendStyle="large">
       <Label htmlFor="first-name">First or given name</Label>
@@ -109,7 +108,7 @@ export const NameForm = (): LegacyReactElement => (
   </Form>
 )
 
-export const AddressForm = (): LegacyReactElement => (
+export const AddressForm = (): JSX.Element => (
   <Form onSubmit={mockSubmit} large>
     <Fieldset legend="Mailing address" legendStyle="large">
       <p>
@@ -206,7 +205,7 @@ export const AddressForm = (): LegacyReactElement => (
   </Form>
 )
 
-export const SignInForm = (): LegacyReactElement => {
+export const SignInForm = (): JSX.Element => {
   const [showPassword, setShowPassword] = React.useState(false)
 
   return (
@@ -256,7 +255,7 @@ export const SignInForm = (): LegacyReactElement => {
   )
 }
 
-export const PasswordResetForm = (): LegacyReactElement => {
+export const PasswordResetForm = (): JSX.Element => {
   const [showPassword, setShowPassword] = React.useState(false)
 
   return (

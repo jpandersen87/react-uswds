@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 import { PrimaryNav } from './PrimaryNav'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Header/PrimaryNav',
@@ -30,6 +29,6 @@ const testBasicHeaderItems = [
   </a>,
 ]
 
-export const DefaultPrimaryNav = (): LegacyReactElement => (
+export const DefaultPrimaryNav = (): JSX.Element => (
   <PrimaryNav items={testBasicHeaderItems} onToggleMobileNav={mockToggle} />
 )

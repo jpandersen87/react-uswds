@@ -1,10 +1,9 @@
-import React, { useState, useRef } from 'react'
+import React, { type JSX, useRef, useState } from 'react'
 
 import { FileInput, FileInputRef } from './FileInput'
 import { FormGroup } from '../FormGroup/FormGroup'
 import { Label } from '../Label/Label'
 import { ErrorMessage } from '../ErrorMessage/ErrorMessage'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/File input',
@@ -30,14 +29,14 @@ type StorybookArguments = {
   onDrop: React.DragEventHandler<Element>
 }
 
-export const SingleFileInput = (): LegacyReactElement => (
+export const SingleFileInput = (): JSX.Element => (
   <FormGroup>
     <Label htmlFor="file-input-single">Input accepts a single file</Label>
     <FileInput id="file-input-single" name="file-input-single" />
   </FormGroup>
 )
 
-export const AcceptTextAndPDF = (): LegacyReactElement => (
+export const AcceptTextAndPDF = (): JSX.Element => (
   <FormGroup>
     <Label htmlFor="file-input-specific">
       Input accepts only specific file types
@@ -55,7 +54,7 @@ export const AcceptTextAndPDF = (): LegacyReactElement => (
   </FormGroup>
 )
 
-export const AcceptImages = (): LegacyReactElement => (
+export const AcceptImages = (): JSX.Element => (
   <FormGroup>
     <Label htmlFor="file-input-wildcard">Input accepts any kind of image</Label>
     <span className="usa-hint" id="file-input-wildcard-hint">
@@ -71,7 +70,7 @@ export const AcceptImages = (): LegacyReactElement => (
   </FormGroup>
 )
 
-export const MultipleFilesInput = (): LegacyReactElement => (
+export const MultipleFilesInput = (): JSX.Element => (
   <FormGroup>
     <Label htmlFor="file-input-multiple">Input accepts multiple files</Label>
     <span className="usa-hint" id="file-input-multiple-hint">
@@ -86,7 +85,7 @@ export const MultipleFilesInput = (): LegacyReactElement => (
   </FormGroup>
 )
 
-export const WithError = (): LegacyReactElement => (
+export const WithError = (): JSX.Element => (
   <div style={{ marginLeft: '1.25em' }}>
     <FormGroup error>
       <Label htmlFor="file-input-error" error>
@@ -107,7 +106,7 @@ export const WithError = (): LegacyReactElement => (
   </div>
 )
 
-export const Disabled = (): LegacyReactElement => (
+export const Disabled = (): JSX.Element => (
   <FormGroup>
     <Label htmlFor="file-input-disabled">Input in a disabled state</Label>
     <FileInput id="file-input-disabled" name="file-input-disabled" disabled />
@@ -115,7 +114,7 @@ export const Disabled = (): LegacyReactElement => (
 )
 
 export const WithRefAndCustomHandlers = {
-  render: (argTypes: StorybookArguments): LegacyReactElement => {
+  render: (argTypes: StorybookArguments): JSX.Element => {
     const [files, setFiles] = useState<FileList | null>(null)
     const fileInputRef = useRef<FileInputRef>(null)
 
@@ -160,7 +159,7 @@ export const WithRefAndCustomHandlers = {
   },
 }
 
-export const CustomText = (): LegacyReactElement => (
+export const CustomText = (): JSX.Element => (
   <FormGroup>
     <Label htmlFor="file-input-single">La entrada acepta un solo archivo</Label>
     <FileInput

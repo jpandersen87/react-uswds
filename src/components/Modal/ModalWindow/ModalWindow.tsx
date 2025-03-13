@@ -1,8 +1,7 @@
-import React, { forwardRef, JSX } from 'react'
+import React, { forwardRef, type JSX } from 'react'
 import classnames from 'classnames'
 
 import { ModalCloseButton } from '../ModalCloseButton/ModalCloseButton'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface ModalWindowProps {
   modalId: string
@@ -27,7 +26,7 @@ export const ModalWindowForwardRef: React.ForwardRefRenderFunction<
     ...divProps
   },
   ref
-): LegacyReactElement => {
+): JSX.Element => {
   const classes = classnames(
     'usa-modal',
     {

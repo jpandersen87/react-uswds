@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 
 import { Calendar } from './Calendar'
 import { FocusMode } from './DatePicker'
 import { parseDateString } from './utils'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 /*
 // THIS STORY FOR INTERNAL DEVELOPMENT ONLY
@@ -28,9 +27,7 @@ const defaultProps = {
   focusMode: FocusMode.None,
 }
 
-export const defaultCalendar = (
-  argTypes: StorybookArguments
-): LegacyReactElement => (
+export const defaultCalendar = (argTypes: StorybookArguments): JSX.Element => (
   <Calendar
     {...defaultProps}
     handleSelectDate={argTypes.handleSelectDate}
@@ -38,7 +35,7 @@ export const defaultCalendar = (
   />
 )
 
-export const givenDate = (argTypes: StorybookArguments): LegacyReactElement => (
+export const givenDate = (argTypes: StorybookArguments): JSX.Element => (
   <Calendar
     {...defaultProps}
     handleSelectDate={argTypes.handleSelectDate}
@@ -47,9 +44,7 @@ export const givenDate = (argTypes: StorybookArguments): LegacyReactElement => (
   />
 )
 
-export const selectedDate = (
-  argTypes: StorybookArguments
-): LegacyReactElement => (
+export const selectedDate = (argTypes: StorybookArguments): JSX.Element => (
   <Calendar
     {...defaultProps}
     handleSelectDate={argTypes.handleSelectDate}
@@ -58,7 +53,7 @@ export const selectedDate = (
   />
 )
 
-export const minAndMax = (argTypes: StorybookArguments): LegacyReactElement => (
+export const minAndMax = (argTypes: StorybookArguments): JSX.Element => (
   <Calendar
     {...defaultProps}
     handleSelectDate={argTypes.handleSelectDate}
@@ -69,7 +64,7 @@ export const minAndMax = (argTypes: StorybookArguments): LegacyReactElement => (
   />
 )
 
-export const rangeDate = (argTypes: StorybookArguments): LegacyReactElement => (
+export const rangeDate = (argTypes: StorybookArguments): JSX.Element => (
   <Calendar
     {...defaultProps}
     handleSelectDate={argTypes.handleSelectDate}

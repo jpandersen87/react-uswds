@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface IdentifierMastheadProps {
   className?: string
@@ -11,8 +10,7 @@ export const IdentifierMasthead = ({
   className,
   children,
   ...sectionProps
-}: IdentifierMastheadProps &
-  JSX.IntrinsicElements['section']): LegacyReactElement => {
+}: IdentifierMastheadProps & JSX.IntrinsicElements['section']): JSX.Element => {
   const classes = classnames(
     'usa-identifier__section usa-identifier__section--masthead',
     className

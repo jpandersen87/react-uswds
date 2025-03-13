@@ -1,4 +1,10 @@
-import React, { useState, useEffect, useRef, KeyboardEvent } from 'react'
+import React, {
+  type JSX,
+  useState,
+  useEffect,
+  useRef,
+  KeyboardEvent,
+} from 'react'
 import classnames from 'classnames'
 
 import {
@@ -12,7 +18,6 @@ import {
 } from './utils'
 
 import { DatePickerLocalization, EN_US } from './i18n'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export const MonthPicker = ({
   date,
@@ -26,7 +31,7 @@ export const MonthPicker = ({
   maxDate?: Date
   handleSelectMonth: (value: number) => void
   i18n?: DatePickerLocalization
-}): LegacyReactElement => {
+}): JSX.Element => {
   const selectedMonth = date.getMonth()
   const [monthToDisplay, setMonthToDisplay] = useState(selectedMonth)
   const monthPickerEl = useRef<HTMLDivElement>(null)

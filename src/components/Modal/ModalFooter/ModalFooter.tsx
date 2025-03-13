@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface ModalFooterProps {
   children: React.ReactNode
@@ -11,7 +10,7 @@ export const ModalFooter = ({
   children,
   className,
   ...divProps
-}: ModalFooterProps & JSX.IntrinsicElements['div']): LegacyReactElement => {
+}: ModalFooterProps & JSX.IntrinsicElements['div']): JSX.Element => {
   const classes = classnames('usa-modal__footer', className)
 
   return (

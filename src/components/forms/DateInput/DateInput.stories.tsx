@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 import { DateInput } from './DateInput'
 import { DateInputGroup } from '../DateInputGroup/DateInputGroup'
 import { Fieldset } from '../Fieldset/Fieldset'
 import { Label } from '../Label/Label'
 import { Select } from '../Select/Select'
 import { FormGroup } from '../FormGroup/FormGroup'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Date input',
@@ -23,7 +22,7 @@ Source: https://designsystem.digital.gov/components/text-input/
   },
 }
 
-export const MonthDateInput = (): LegacyReactElement => (
+export const MonthDateInput = (): JSX.Element => (
   <DateInput
     id="testDateInput"
     name="testName"
@@ -34,7 +33,7 @@ export const MonthDateInput = (): LegacyReactElement => (
   />
 )
 
-export const DayDateInput = (): LegacyReactElement => (
+export const DayDateInput = (): JSX.Element => (
   <DateInput
     id="testDateInput"
     name="testName"
@@ -45,7 +44,7 @@ export const DayDateInput = (): LegacyReactElement => (
   />
 )
 
-export const YearDateInput = (): LegacyReactElement => (
+export const YearDateInput = (): JSX.Element => (
   <DateInput
     id="testDateInput"
     name="testName"
@@ -56,7 +55,7 @@ export const YearDateInput = (): LegacyReactElement => (
   />
 )
 
-export const DateOfBirthExample = (): LegacyReactElement => (
+export const DateOfBirthExample = (): JSX.Element => (
   <Fieldset legend="Date of birth">
     <span className="usa-hint" id="dateOfBirthHint">
       For example: April 28 1986

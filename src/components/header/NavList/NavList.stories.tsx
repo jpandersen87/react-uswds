@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 import { NavList } from './NavList'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Header/NavList',
@@ -27,6 +26,6 @@ const testItems = [
   </a>,
 ]
 
-export const BasicNavList = (): LegacyReactElement => (
+export const BasicNavList = (): JSX.Element => (
   <NavList items={testItems} type="primary" />
 )

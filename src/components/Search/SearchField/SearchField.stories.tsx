@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 import { SearchField } from './SearchField'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Search/SearchField',
@@ -18,10 +17,10 @@ Source: https://designsystem.digital.gov/components/search/
   },
 }
 
-export const DefaultSearchField = (): LegacyReactElement => (
+export const DefaultSearchField = (): JSX.Element => (
   <SearchField placeholder="Search..." />
 )
 
-export const BigSearchField = (): LegacyReactElement => (
+export const BigSearchField = (): JSX.Element => (
   <SearchField placeholder="Type something here..." isBig />
 )

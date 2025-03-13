@@ -1,7 +1,6 @@
 /*  eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React, { type JSX } from 'react'
 import { SocialLinks, SocialLink } from './SocialLinks'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Footer/SocialLinks',
@@ -27,4 +26,4 @@ const links = [
   <SocialLink key="rss" name="RSS" href="#" />,
 ]
 
-export const Example = (): LegacyReactElement => <SocialLinks links={links} />
+export const Example = (): JSX.Element => <SocialLinks links={links} />

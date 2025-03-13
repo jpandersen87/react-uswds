@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 
 import { ModalRef } from './Modal'
 import {
@@ -7,7 +7,6 @@ import {
   isCustomProps,
   Link,
 } from '../Link/Link'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 type ModalOpenLinkProps = {
   modalRef: React.RefObject<ModalRef | null>
@@ -15,16 +14,16 @@ type ModalOpenLinkProps = {
 
 export function ModalOpenLink(
   props: DefaultLinkProps & ModalOpenLinkProps
-): LegacyReactElement
+): JSX.Element
 export function ModalOpenLink<T>(
   props: CustomLinkProps<T> & ModalOpenLinkProps
-): LegacyReactElement
+): JSX.Element
 export function ModalOpenLink<FCProps = DefaultLinkProps & ModalOpenLinkProps>({
   modalRef,
   ...props
 }:
   | (DefaultLinkProps & ModalOpenLinkProps)
-  | (CustomLinkProps<FCProps> & ModalOpenLinkProps)): LegacyReactElement {
+  | (CustomLinkProps<FCProps> & ModalOpenLinkProps)): JSX.Element {
   const handleClick: React.MouseEventHandler<HTMLAnchorElement> = (e) => {
     if (!modalRef || !modalRef.current) {
       console.error('ModalRef is required')

@@ -1,6 +1,5 @@
-import React, { forwardRef, JSX } from 'react'
+import React, { forwardRef, type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface ModalWrapperProps {
   id: string
@@ -17,7 +16,7 @@ export const ModalWrapperForwardRef: React.ForwardRefRenderFunction<
 > = (
   { id, children, isVisible, forceAction, className, handleClose, ...divProps },
   ref
-): LegacyReactElement => {
+): JSX.Element => {
   const classes = classnames(
     'usa-modal-wrapper',
     {

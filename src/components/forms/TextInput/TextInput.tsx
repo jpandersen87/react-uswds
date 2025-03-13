@@ -1,8 +1,7 @@
-import React, { forwardRef, JSX } from 'react'
+import React, { forwardRef, type JSX } from 'react'
 import classnames from 'classnames'
 import { ValidationStatus } from '../../../types/validationStatus'
 import { LegacyInputRef } from '../../../types/legacyInputRef'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type RequiredTextInputProps = {
   id: string
@@ -27,7 +26,7 @@ export const TextInput = forwardRef(
   (
     props: TextInputProps,
     ref: React.ForwardedRef<HTMLInputElement> | undefined
-  ): LegacyReactElement => {
+  ): JSX.Element => {
     const {
       id,
       name,

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React, { type JSX } from 'react'
 import {
   GridContainer,
   Grid,
@@ -31,7 +31,6 @@ import {
 
 import logoImg from '@uswds/uswds/img/logo-img.png'
 import circleSvg from '@uswds/uswds/img/circle-gray-20.svg'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Page Templates/Sign In',
@@ -117,7 +116,7 @@ const mockSubmit = (): void => {
   /* Blank function for mocking form submission */
 }
 
-export const SignIn = (): LegacyReactElement => {
+export const SignIn = (): JSX.Element => {
   const [showPassword, setShowPassword] = React.useState(false)
 
   return (

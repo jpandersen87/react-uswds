@@ -1,8 +1,7 @@
 import classnames from 'classnames'
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 
 import { StepStatusText } from '../StepIndicator/StepIndicator'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export interface StepIndicatorStepProps {
   label: string
@@ -13,7 +12,7 @@ export interface StepIndicatorStepProps {
 
 export const StepIndicatorStep = (
   props: StepIndicatorStepProps & JSX.IntrinsicElements['li']
-): LegacyReactElement => {
+): JSX.Element => {
   const {
     label,
     status = 'incomplete',

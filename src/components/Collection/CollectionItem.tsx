@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 interface CollectionItemProps {
   variantComponent?: React.ReactNode
@@ -11,7 +10,7 @@ export const CollectionItem = ({
   children,
   variantComponent,
   ...props
-}: CollectionItemProps & JSX.IntrinsicElements['li']): LegacyReactElement => {
+}: CollectionItemProps & JSX.IntrinsicElements['li']): JSX.Element => {
   const classes = classnames('usa-collection__item', className)
 
   return (

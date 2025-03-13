@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 import { Icon } from '../Icon/Icons'
 import { IconList } from './IconList'
 import { IconListItem } from './IconListItem/IconListItem'
 import { IconListIcon } from './IconListIcon/IconListIcon'
 import { IconListTitle } from './IconListTitle/IconListTitle'
 import { IconListContent } from './IconListContent/IconListContent'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Components/Icon list',
@@ -21,7 +20,7 @@ Source: https://designsystem.digital.gov/components/icon-list/
   },
 }
 
-export const Default = (): LegacyReactElement => (
+export const Default = (): JSX.Element => (
   <IconList>
     <IconListItem>
       <IconListIcon className="text-green">
@@ -46,7 +45,7 @@ export const Default = (): LegacyReactElement => (
   </IconList>
 )
 
-export const SimpleContent = (): LegacyReactElement => (
+export const SimpleContent = (): JSX.Element => (
   <>
     <p className="margin-bottom-2">Benefits of joining Global Entry program:</p>
     <IconList className="usa-icon-list--primary">
@@ -80,7 +79,7 @@ export const SimpleContent = (): LegacyReactElement => (
   </>
 )
 
-export const RichContent = (): LegacyReactElement => (
+export const RichContent = (): JSX.Element => (
   <IconList>
     <IconListItem>
       <IconListIcon className="text-ink">
@@ -132,7 +131,7 @@ export const RichContent = (): LegacyReactElement => (
   </IconList>
 )
 
-export const CustomSizeWithRichContent = (): LegacyReactElement => (
+export const CustomSizeWithRichContent = (): JSX.Element => (
   <>
     <p className="margin-bottom-2">
       Here are a few easy ways you can help reduce energy use and costs while
@@ -185,7 +184,7 @@ export const CustomSizeWithRichContent = (): LegacyReactElement => (
   </>
 )
 
-export const CustomSize = (): LegacyReactElement => (
+export const CustomSize = (): JSX.Element => (
   <IconList className="usa-icon-list--size-lg">
     <IconListItem>
       <IconListIcon className="text-blue">

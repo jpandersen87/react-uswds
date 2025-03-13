@@ -1,7 +1,6 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
 import { HeadingLevel } from '../../../types/headingLevel'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface BaseIconListTitleProps {
   type: string
@@ -30,9 +29,7 @@ export const IconListTitle = ({
   type,
   children,
   className,
-}:
-  | IconListParagraphTitleProps
-  | IconListHeadingTitleProps): LegacyReactElement => {
+}: IconListParagraphTitleProps | IconListHeadingTitleProps): JSX.Element => {
   const classes = classnames(className, 'usa-icon-list__title')
   const Tag = type
   return (

@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 import { Accordion, AccordionItemProps } from './Accordion'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Components/Accordion',
@@ -101,15 +100,15 @@ const testItems: AccordionItemProps[] = [
   },
 ]
 
-export const Borderless = (): LegacyReactElement => (
+export const Borderless = (): JSX.Element => (
   <Accordion bordered={false} items={testItems} />
 )
 
-export const Bordered = (): LegacyReactElement => (
+export const Bordered = (): JSX.Element => (
   <Accordion bordered={true} items={testItems} />
 )
 
-export const Multiselectable = (): LegacyReactElement => (
+export const Multiselectable = (): JSX.Element => (
   <Accordion items={testItems} multiselectable={true} />
 )
 
@@ -167,6 +166,6 @@ const customTestItems: AccordionItemProps[] = [
   },
 ]
 
-export const CustomTitles = (): LegacyReactElement => (
+export const CustomTitles = (): JSX.Element => (
   <Accordion bordered={true} items={customTestItems} />
 )

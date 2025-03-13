@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
 
 import styles from './Table.module.scss'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 type TableProps = {
   bordered?: boolean
@@ -28,7 +27,7 @@ export const Table = ({
   striped,
   compact,
   stackedStyle = 'none',
-}: TableProps): LegacyReactElement => {
+}: TableProps): JSX.Element => {
   const classes = classnames(
     'usa-table',
     {

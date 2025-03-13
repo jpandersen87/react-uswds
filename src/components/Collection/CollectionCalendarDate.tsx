@@ -1,5 +1,4 @@
-import React from 'react'
-import { LegacyReactElement } from '../../types/legacyReactElement'
+import React, { type JSX } from 'react'
 
 interface CollectionCalendarDateProps {
   datetime: string
@@ -22,7 +21,7 @@ const SHORT_MONTH_LABELS = [
 
 export const CollectionCalendarDate = ({
   datetime,
-}: CollectionCalendarDateProps): LegacyReactElement => {
+}: CollectionCalendarDateProps): JSX.Element => {
   const dateObj = new Date(datetime)
   const isDateInvalid = dateObj && dateObj.getTime && isNaN(dateObj.getTime())
 

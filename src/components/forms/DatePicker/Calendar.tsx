@@ -1,4 +1,10 @@
-import React, { useState, useRef, useEffect, KeyboardEvent } from 'react'
+import React, {
+  type JSX,
+  useState,
+  useRef,
+  useEffect,
+  KeyboardEvent,
+} from 'react'
 
 import {
   today,
@@ -39,7 +45,6 @@ import { YearPicker } from './YearPicker'
 import { FocusMode } from './DatePicker'
 
 import { DatePickerLocalization, EN_US } from './i18n'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface CalendarProps {
   date?: Date
@@ -63,7 +68,7 @@ export const Calendar = ({
   setStatuses,
   focusMode,
   i18n = EN_US,
-}: CalendarProps): LegacyReactElement => {
+}: CalendarProps): JSX.Element => {
   const prevYearEl = useRef<HTMLButtonElement>(null)
   const prevMonthEl = useRef<HTMLButtonElement>(null)
   const nextMonthEl = useRef<HTMLButtonElement>(null)

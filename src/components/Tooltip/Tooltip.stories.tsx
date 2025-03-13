@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import { Tooltip } from './Tooltip'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Components/Tooltip',
@@ -32,13 +31,13 @@ Source: https://designsystem.digital.gov/components/tooltip/
   },
 }
 
-export const TooltipDefault = (): LegacyReactElement => (
+export const TooltipDefault = (): JSX.Element => (
   <div className="margin-4">
     <Tooltip label="Default">Default</Tooltip>
   </div>
 )
 
-export const TooltipTop = (): LegacyReactElement => (
+export const TooltipTop = (): JSX.Element => (
   <div className="margin-4">
     <Tooltip position="top" label="Top">
       Show on top
@@ -46,7 +45,7 @@ export const TooltipTop = (): LegacyReactElement => (
   </div>
 )
 
-export const TooltipBottom = (): LegacyReactElement => (
+export const TooltipBottom = (): JSX.Element => (
   <div className="margin-4">
     <Tooltip position="bottom" label="Bottom">
       Show on bottom
@@ -54,7 +53,7 @@ export const TooltipBottom = (): LegacyReactElement => (
   </div>
 )
 
-export const TooltipRight = (): LegacyReactElement => (
+export const TooltipRight = (): JSX.Element => (
   <div className="margin-4">
     <Tooltip position="right" label="Right">
       Show on right
@@ -62,7 +61,7 @@ export const TooltipRight = (): LegacyReactElement => (
   </div>
 )
 
-export const TooltipLeft = (): LegacyReactElement => (
+export const TooltipLeft = (): JSX.Element => (
   <div className="margin-4">
     <Tooltip position="left" label="Left">
       Show on left
@@ -70,7 +69,7 @@ export const TooltipLeft = (): LegacyReactElement => (
   </div>
 )
 
-export const TooltipWithUtilityClass = (): LegacyReactElement => (
+export const TooltipWithUtilityClass = (): JSX.Element => (
   <div className="margin-4">
     <Tooltip
       wrapperclasses="width-full tablet:width-auto"
@@ -81,7 +80,7 @@ export const TooltipWithUtilityClass = (): LegacyReactElement => (
   </div>
 )
 
-export const CustomComponent = (): LegacyReactElement => {
+export const CustomComponent = (): JSX.Element => {
   type CustomLinkProps = React.PropsWithChildren<{
     to: string
     className?: string
@@ -113,7 +112,7 @@ export const CustomComponent = (): LegacyReactElement => {
   )
 }
 
-export const TooltipTopLeftWrap = (): LegacyReactElement => (
+export const TooltipTopLeftWrap = (): JSX.Element => (
   <div style={{ marginTop: '32px' }}>
     <Tooltip label="You can only add 10 links to a collection. To add more links, please create a new collection.">
       Default
@@ -121,7 +120,7 @@ export const TooltipTopLeftWrap = (): LegacyReactElement => (
   </div>
 )
 
-export const TooltipBottomLeftWrap = (): LegacyReactElement => (
+export const TooltipBottomLeftWrap = (): JSX.Element => (
   <div style={{ position: 'absolute', bottom: '32px' }}>
     <Tooltip label="You can only add 10 links to a collection. To add more links, please create a new collection.">
       Default
@@ -129,7 +128,7 @@ export const TooltipBottomLeftWrap = (): LegacyReactElement => (
   </div>
 )
 
-export const TooltipTopRightWrap = (): LegacyReactElement => (
+export const TooltipTopRightWrap = (): JSX.Element => (
   <div style={{ marginTop: '32px', textAlign: 'right' }}>
     <Tooltip label="You can only add 10 links to a collection. To add more links, please create a new collection.">
       Default
@@ -137,7 +136,7 @@ export const TooltipTopRightWrap = (): LegacyReactElement => (
   </div>
 )
 
-export const TooltipBottomRightWrap = (): LegacyReactElement => (
+export const TooltipBottomRightWrap = (): JSX.Element => (
   <div
     style={{
       position: 'absolute',

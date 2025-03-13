@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 type LanguageSelectorButtonProps = {
   label: string
@@ -19,7 +18,7 @@ export const LanguageSelectorButton = ({
   controls,
   ...buttonProps
 }: LanguageSelectorButtonProps &
-  JSX.IntrinsicElements['button']): LegacyReactElement => {
+  JSX.IntrinsicElements['button']): JSX.Element => {
   const classes = classnames('usa-button', 'usa-language__link', className)
   const buttonContents = labelAttr ? (
     <span lang={labelAttr}>{label}</span>

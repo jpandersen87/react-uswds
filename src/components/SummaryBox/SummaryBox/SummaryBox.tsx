@@ -1,7 +1,6 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type SummaryBoxProps = {
   children?: React.ReactNode
@@ -12,7 +11,7 @@ export const SummaryBox = ({
   children,
   className,
   ...divProps
-}: SummaryBoxProps & JSX.IntrinsicElements['div']): LegacyReactElement => {
+}: SummaryBoxProps & JSX.IntrinsicElements['div']): JSX.Element => {
   const classes = classnames('usa-summary-box', className)
   return (
     <div className={classes} data-testid="summary-box" {...divProps}>

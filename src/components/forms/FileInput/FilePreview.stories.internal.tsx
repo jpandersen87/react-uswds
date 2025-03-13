@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 
 import { FilePreview } from './FilePreview'
 import {
@@ -9,7 +9,6 @@ import {
   TEST_VIDEO_FILE,
   TEST_PNG_FILE,
 } from './constants'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 /*
 // THIS STORY FOR INTERNAL DEVELOPMENT ONLY
@@ -24,26 +23,24 @@ const testProps = {
   file: TEST_TEXT_FILE,
 }
 
-export const loadingPreview = (): LegacyReactElement => (
-  <FilePreview {...testProps} />
-)
+export const loadingPreview = (): JSX.Element => <FilePreview {...testProps} />
 
-export const pdfPreview = (): LegacyReactElement => (
+export const pdfPreview = (): JSX.Element => (
   <FilePreview {...testProps} file={TEST_PDF_FILE} />
 )
 
-export const docPreview = (): LegacyReactElement => (
+export const docPreview = (): JSX.Element => (
   <FilePreview {...testProps} file={TEST_DOC_FILE} />
 )
 
-export const xlsPreview = (): LegacyReactElement => (
+export const xlsPreview = (): JSX.Element => (
   <FilePreview {...testProps} file={TEST_XLS_FILE} />
 )
 
-export const videoPreview = (): LegacyReactElement => (
+export const videoPreview = (): JSX.Element => (
   <FilePreview {...testProps} file={TEST_VIDEO_FILE} />
 )
 
-export const imagePreview = (): LegacyReactElement => (
+export const imagePreview = (): JSX.Element => (
   <FilePreview {...testProps} file={TEST_PNG_FILE} />
 )

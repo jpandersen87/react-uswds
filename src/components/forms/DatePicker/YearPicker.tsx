@@ -1,4 +1,10 @@
-import React, { useEffect, useState, useRef, KeyboardEvent } from 'react'
+import React, {
+  type JSX,
+  useEffect,
+  useState,
+  useRef,
+  KeyboardEvent,
+} from 'react'
 import classnames from 'classnames'
 
 import { YEAR_CHUNK } from './constants'
@@ -11,7 +17,6 @@ import {
   handleTabKey,
   isIosDevice,
 } from './utils'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface YearPickerProps {
   date: Date
@@ -27,7 +32,7 @@ export const YearPicker = ({
   maxDate,
   handleSelectYear,
   setStatuses,
-}: YearPickerProps): LegacyReactElement => {
+}: YearPickerProps): JSX.Element => {
   const prevYearChunkEl = useRef<HTMLButtonElement>(null)
   const nextYearChunkEl = useRef<HTMLButtonElement>(null)
   const focusedYearEl = useRef<HTMLButtonElement>(null)

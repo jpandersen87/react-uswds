@@ -1,9 +1,8 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
 import { Icon } from '../Icon/Icons'
 import { Link } from '../Link/Link'
 import { Button } from '../Button/Button'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 type PaginationProps = {
   pathname: string // pathname of results page
@@ -84,7 +83,7 @@ export const Pagination = ({
   onClickNext,
   onClickPageNumber,
   ...props
-}: PaginationProps & JSX.IntrinsicElements['nav']): LegacyReactElement => {
+}: PaginationProps & JSX.IntrinsicElements['nav']): JSX.Element => {
   const navClasses = classnames('usa-pagination', className)
 
   const isOnFirstPage = currentPage === 1

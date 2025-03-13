@@ -1,7 +1,6 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
 import { LegacyInputRef } from '../../../types/legacyInputRef'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export interface TextareaProps {
   id: string
@@ -22,7 +21,7 @@ export const Textarea = ({
   children,
   inputRef,
   ...inputProps
-}: TextareaProps & JSX.IntrinsicElements['textarea']): LegacyReactElement => {
+}: TextareaProps & JSX.IntrinsicElements['textarea']): JSX.Element => {
   const classes = classnames(
     'usa-textarea',
     {

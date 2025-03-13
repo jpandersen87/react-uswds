@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent } from 'react'
+import React, { ChangeEvent, type JSX, useState } from 'react'
 import { Alert } from '../../Alert/Alert'
 import { Button } from '../../Button/Button'
 import { Fieldset } from '../Fieldset/Fieldset'
@@ -7,7 +7,6 @@ import { Label } from '../Label/Label'
 import { TextInput } from '../TextInput/TextInput'
 import { ValidationChecklist } from './ValidationChecklist'
 import { ValidationItem } from './ValidationItem'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Validation',
@@ -39,7 +38,7 @@ const validate = (type: string, value: string): boolean => {
   }
 }
 
-export const Default = (): LegacyReactElement => {
+export const Default = (): JSX.Element => {
   const [validations, setValidations] = useState({
     uppercase: false,
     numerical: false,

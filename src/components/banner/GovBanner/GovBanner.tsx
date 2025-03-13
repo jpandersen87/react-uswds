@@ -1,4 +1,4 @@
-import React, { useState, JSX } from 'react'
+import React, { useState, type JSX } from 'react'
 import { Banner } from '../Banner/Banner'
 import { BannerHeader } from '../BannerHeader/BannerHeader'
 import { BannerFlag } from '../BannerFlag/BannerFlag'
@@ -13,7 +13,6 @@ import { Icon } from '../../Icon/Icons'
 import flagImg from '@uswds/uswds/img/us_flag_small.png'
 import dotGovIcon from '@uswds/uswds/img/icon-dot-gov.svg'
 import httpsIcon from '@uswds/uswds/img/icon-https.svg'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type Language = 'english' | 'spanish'
 
@@ -118,7 +117,7 @@ export const GovBanner = ({
   language = 'english',
   className,
   ...sectionProps
-}: GovBannerProps & JSX.IntrinsicElements['section']): LegacyReactElement => {
+}: GovBannerProps & JSX.IntrinsicElements['section']): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false)
 
   const {

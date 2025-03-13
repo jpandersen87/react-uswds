@@ -12,7 +12,6 @@ import { useModal, getScrollbarWidth } from './utils'
 import { ModalWindow } from './ModalWindow/ModalWindow'
 import { ModalWrapper } from './ModalWrapper/ModalWrapper'
 import ReactDOM from 'react-dom'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 interface ModalComponentProps {
   id: string
@@ -54,7 +53,7 @@ export const ModalForwardRef: React.ForwardRefRenderFunction<
     ...divProps
   },
   ref
-): LegacyReactElement => {
+): JSX.Element => {
   const { isOpen, toggleModal } = useModal(isInitiallyOpen)
   const [mounted, setMounted] = useState(false)
   const initialPaddingRef = useRef<string>(undefined)

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from 'react'
+import React, { type JSX, useState } from 'react'
 import logoImg from '@uswds/uswds/img/logo-img.png'
 import circleImg from '@uswds/uswds/img/circle-124.png'
 
@@ -24,7 +24,6 @@ import {
   SocialLinks,
   SocialLink,
 } from '../../components/Footer/SocialLinks/SocialLinks'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Page Templates/Landing Page',
@@ -42,7 +41,7 @@ Page templates
   },
 }
 
-export const LandingPage = (): LegacyReactElement => {
+export const LandingPage = (): JSX.Element => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const [navDropdownOpen, setNavDropdownOpen] = useState([false, false])
 

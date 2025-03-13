@@ -1,6 +1,5 @@
-import React, { ReactNode, JSX } from 'react'
+import React, { ReactNode, type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface IconListItemProps {
   className?: string
@@ -11,7 +10,7 @@ export const IconListItem = ({
   className,
   children,
   ...liProps
-}: IconListItemProps & JSX.IntrinsicElements['li']): LegacyReactElement => {
+}: IconListItemProps & JSX.IntrinsicElements['li']): JSX.Element => {
   const classes = classnames(className, 'usa-icon-list__item')
 
   return (

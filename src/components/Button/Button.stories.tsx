@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 import { Button } from './Button'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Components/Button',
@@ -18,65 +17,65 @@ Source: https://designsystem.digital.gov/components/button/
   },
 }
 
-export const DefaultButton = (): LegacyReactElement => (
+export const DefaultButton = (): JSX.Element => (
   <Button type="button">Click Me</Button>
 )
 
-export const Secondary = (): LegacyReactElement => (
+export const Secondary = (): JSX.Element => (
   <Button type="button" secondary>
     Click Me
   </Button>
 )
 
-export const AccentCool = (): LegacyReactElement => (
+export const AccentCool = (): JSX.Element => (
   <Button type="button" accentStyle="cool">
     Click Me
   </Button>
 )
 
-export const AccentWarm = (): LegacyReactElement => (
+export const AccentWarm = (): JSX.Element => (
   <Button type="button" accentStyle="warm">
     Click Me
   </Button>
 )
 
-export const Base = (): LegacyReactElement => (
+export const Base = (): JSX.Element => (
   <Button type="button" base>
     Click Me
   </Button>
 )
 
-export const Outline = (): LegacyReactElement => (
+export const Outline = (): JSX.Element => (
   <Button type="button" outline>
     Click Me
   </Button>
 )
 
-export const Inverse = (): LegacyReactElement => (
+export const Inverse = (): JSX.Element => (
   <Button type="button" inverse>
     Click Me
   </Button>
 )
 
-export const Big = (): LegacyReactElement => (
+export const Big = (): JSX.Element => (
   <Button type="button" size="big">
     Click Me
   </Button>
 )
 
-export const Unstyled = (): LegacyReactElement => (
+export const Unstyled = (): JSX.Element => (
   <Button type="button" unstyled>
     Click Me
   </Button>
 )
 
-export const CustomClass = (): LegacyReactElement => (
+export const CustomClass = (): JSX.Element => (
   <Button type="button" className="custom-class">
     Click Me
   </Button>
 )
 
-export const Disabled = (): LegacyReactElement => (
+export const Disabled = (): JSX.Element => (
   <Button type="button" disabled>
     Click Me
   </Button>

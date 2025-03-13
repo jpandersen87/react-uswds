@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface IdentifierGovProps {
   children?: React.ReactNode
@@ -11,8 +10,7 @@ export const IdentifierGov = ({
   children,
   className,
   ...sectionProps
-}: IdentifierGovProps &
-  JSX.IntrinsicElements['section']): LegacyReactElement => {
+}: IdentifierGovProps & JSX.IntrinsicElements['section']): JSX.Element => {
   const classes = classnames(
     'usa-identifier__section usa-identifier__section--usagov',
     className

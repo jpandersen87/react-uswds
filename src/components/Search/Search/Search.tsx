@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
 
 import { Form, OptionalFormProps } from '../../forms/Form/Form'
 import { SearchField } from '../SearchField/SearchField'
 import { SearchButton } from '../SearchButton/SearchButton'
 import { OptionalTextInputProps } from '../../forms/TextInput/TextInput'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type SearchLocalization = {
   buttonText: string
@@ -36,7 +35,7 @@ export const Search = ({
   buttonAriaLabel,
   inputProps,
   ...formProps
-}: SearchInputProps & OptionalFormProps): LegacyReactElement => {
+}: SearchInputProps & OptionalFormProps): JSX.Element => {
   const classes = classnames('usa-search', className)
 
   return (

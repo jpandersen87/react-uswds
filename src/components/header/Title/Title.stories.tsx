@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 import { Title } from './Title'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Header/Title',
@@ -20,4 +19,4 @@ Source: https://designsystem.digital.gov/components/header/
 
 const testTitle = <a href="#testlink">Project Title</a>
 
-export const DefaultTitle = (): LegacyReactElement => <Title>{testTitle}</Title>
+export const DefaultTitle = (): JSX.Element => <Title>{testTitle}</Title>

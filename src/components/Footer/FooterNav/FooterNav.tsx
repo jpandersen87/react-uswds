@@ -1,10 +1,9 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 import {
   FooterExtendedNavList,
   ExtendedNavLinksType,
 } from '../FooterExtendedNavList/FooterExtendedNavList'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 function isExtendedNavLinks(
   links: React.ReactNode[] | ExtendedNavLinksType
@@ -28,7 +27,7 @@ export const FooterNav = ({
   isMobile,
   links,
   ...elementAttributes
-}: FooterNavProps & React.HTMLAttributes<HTMLElement>): LegacyReactElement => {
+}: FooterNavProps & React.HTMLAttributes<HTMLElement>): JSX.Element => {
   const isBig = size === 'big'
   const isMedium = size === 'medium'
   const isSlim = size === 'slim'

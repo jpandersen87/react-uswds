@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 import { Fieldset } from './Fieldset'
 
 import { Label } from '../Label/Label'
@@ -6,7 +6,6 @@ import { TextInput } from '../TextInput/TextInput'
 import { Checkbox } from '../Checkbox/Checkbox'
 import { Radio } from '../Radio/Radio'
 import { RequiredMarker } from '../Label/RequiredMarker'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Form elements/Fieldset',
@@ -24,7 +23,7 @@ Source: https://designsystem.digital.gov/components/form-controls/
   },
 }
 
-export const NameFieldset = (): LegacyReactElement => (
+export const NameFieldset = (): JSX.Element => (
   <Fieldset legend="Name" legendStyle="large">
     <Label htmlFor="title" hint=" (optional)">
       Title
@@ -41,7 +40,7 @@ export const NameFieldset = (): LegacyReactElement => (
   </Fieldset>
 )
 
-export const CheckboxFieldset = (): LegacyReactElement => (
+export const CheckboxFieldset = (): JSX.Element => (
   <Fieldset legend="Historical figures 1" legendStyle="srOnly">
     <Checkbox
       id="truth"
@@ -71,7 +70,7 @@ export const CheckboxFieldset = (): LegacyReactElement => (
   </Fieldset>
 )
 
-export const CheckboxFieldsetWithDefaultLegend = (): LegacyReactElement => (
+export const CheckboxFieldsetWithDefaultLegend = (): JSX.Element => (
   <>
     <p>
       Required fields are marked with an asterisk (<RequiredMarker />
@@ -108,7 +107,7 @@ export const CheckboxFieldsetWithDefaultLegend = (): LegacyReactElement => (
   </>
 )
 
-export const RadioFieldset = (): LegacyReactElement => (
+export const RadioFieldset = (): JSX.Element => (
   <Fieldset legend="Historical figures 2" legendStyle="srOnly">
     <Radio
       id="stanton"
@@ -139,7 +138,7 @@ export const RadioFieldset = (): LegacyReactElement => (
   </Fieldset>
 )
 
-export const RadioFieldsetWithDefaultLegend = (): LegacyReactElement => (
+export const RadioFieldsetWithDefaultLegend = (): JSX.Element => (
   <Fieldset legend="Historical figures 2">
     <Radio
       id="stanton"

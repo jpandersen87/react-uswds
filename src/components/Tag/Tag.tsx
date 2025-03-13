@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 type TagProps = {
   children: React.ReactNode
@@ -12,7 +11,7 @@ export const Tag = ({
   background,
   className,
   ...spanProps
-}: TagProps & JSX.IntrinsicElements['span']): LegacyReactElement => {
+}: TagProps & JSX.IntrinsicElements['span']): JSX.Element => {
   const style: React.CSSProperties = {}
   if (background) {
     style.background = background

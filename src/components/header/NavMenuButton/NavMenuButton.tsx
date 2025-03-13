@@ -1,5 +1,4 @@
-import React, { JSX } from 'react'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
+import React, { type JSX } from 'react'
 
 type NavMenuButtonProps = {
   label: React.ReactNode
@@ -9,8 +8,7 @@ export const NavMenuButton = ({
   label,
   onClick,
   ...buttonProps
-}: NavMenuButtonProps &
-  JSX.IntrinsicElements['button']): LegacyReactElement => {
+}: NavMenuButtonProps & JSX.IntrinsicElements['button']): JSX.Element => {
   return (
     <button
       className="usa-menu-btn"

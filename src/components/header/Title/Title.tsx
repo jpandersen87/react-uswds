@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type TitleProps = {
   children: React.ReactNode
@@ -10,7 +9,7 @@ export const Title = ({
   className,
   children,
   ...divProps
-}: TitleProps & JSX.IntrinsicElements['div']): LegacyReactElement => {
+}: TitleProps & JSX.IntrinsicElements['div']): JSX.Element => {
   const classes = classnames('usa-logo', className)
 
   return (

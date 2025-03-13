@@ -1,10 +1,9 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import { render, screen, waitFor } from '@testing-library/react'
 
 import { ModalRef } from './Modal'
 import { ModalOpenLink } from './ModalOpenLink'
 import { userEvent } from '@testing-library/user-event'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 describe('ModalOpenLink', () => {
   it('renders an anchor tag with the modal control attributes', () => {
@@ -84,7 +83,7 @@ describe('ModalOpenLink', () => {
       children,
       className,
       ...linkProps
-    }: CustomLinkProps): LegacyReactElement => (
+    }: CustomLinkProps): JSX.Element => (
       <a href={to} className={className} {...linkProps}>
         {children}
       </a>

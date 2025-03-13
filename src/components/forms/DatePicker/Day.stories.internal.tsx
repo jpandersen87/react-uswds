@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 
 import { Day } from './Day'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 /*
 // THIS STORY FOR INTERNAL DEVELOPMENT ONLY
@@ -28,9 +27,7 @@ const defaultProps = {
   date: testDate,
 }
 
-export const defaultDay = (
-  argTypes: StorybookArguments
-): LegacyReactElement => (
+export const defaultDay = (argTypes: StorybookArguments): JSX.Element => (
   <Day
     {...defaultProps}
     onClick={argTypes.onClick}
@@ -39,7 +36,7 @@ export const defaultDay = (
   />
 )
 
-export const disabled = (argTypes: StorybookArguments): LegacyReactElement => (
+export const disabled = (argTypes: StorybookArguments): JSX.Element => (
   <Day
     {...defaultProps}
     onClick={argTypes.onClick}
@@ -49,7 +46,7 @@ export const disabled = (argTypes: StorybookArguments): LegacyReactElement => (
   />
 )
 
-export const selected = (argTypes: StorybookArguments): LegacyReactElement => (
+export const selected = (argTypes: StorybookArguments): JSX.Element => (
   <Day
     {...defaultProps}
     onClick={argTypes.onClick}
@@ -59,7 +56,7 @@ export const selected = (argTypes: StorybookArguments): LegacyReactElement => (
   />
 )
 
-export const focused = (argTypes: StorybookArguments): LegacyReactElement => (
+export const focused = (argTypes: StorybookArguments): JSX.Element => (
   <Day
     {...defaultProps}
     onClick={argTypes.onClick}
@@ -68,9 +65,7 @@ export const focused = (argTypes: StorybookArguments): LegacyReactElement => (
     isFocused
   />
 )
-export const previousMonth = (
-  argTypes: StorybookArguments
-): LegacyReactElement => (
+export const previousMonth = (argTypes: StorybookArguments): JSX.Element => (
   <Day
     {...defaultProps}
     onClick={argTypes.onClick}
@@ -80,7 +75,7 @@ export const previousMonth = (
   />
 )
 
-export const sameMonth = (argTypes: StorybookArguments): LegacyReactElement => (
+export const sameMonth = (argTypes: StorybookArguments): JSX.Element => (
   <Day
     {...defaultProps}
     onClick={argTypes.onClick}
@@ -90,7 +85,7 @@ export const sameMonth = (argTypes: StorybookArguments): LegacyReactElement => (
   />
 )
 
-export const nextMonth = (argTypes: StorybookArguments): LegacyReactElement => (
+export const nextMonth = (argTypes: StorybookArguments): JSX.Element => (
   <Day
     {...defaultProps}
     onClick={argTypes.onClick}
@@ -100,7 +95,7 @@ export const nextMonth = (argTypes: StorybookArguments): LegacyReactElement => (
   />
 )
 
-export const today = (argTypes: StorybookArguments): LegacyReactElement => (
+export const today = (argTypes: StorybookArguments): JSX.Element => (
   <Day
     {...defaultProps}
     onClick={argTypes.onClick}
@@ -110,9 +105,7 @@ export const today = (argTypes: StorybookArguments): LegacyReactElement => (
   />
 )
 
-export const isRangeDate = (
-  argTypes: StorybookArguments
-): LegacyReactElement => (
+export const isRangeDate = (argTypes: StorybookArguments): JSX.Element => (
   <Day
     {...defaultProps}
     onClick={argTypes.onClick}
@@ -122,9 +115,7 @@ export const isRangeDate = (
   />
 )
 
-export const isRangeStart = (
-  argTypes: StorybookArguments
-): LegacyReactElement => (
+export const isRangeStart = (argTypes: StorybookArguments): JSX.Element => (
   <Day
     {...defaultProps}
     onClick={argTypes.onClick}
@@ -133,9 +124,7 @@ export const isRangeStart = (
     isRangeStart
   />
 )
-export const isRangeEnd = (
-  argTypes: StorybookArguments
-): LegacyReactElement => (
+export const isRangeEnd = (argTypes: StorybookArguments): JSX.Element => (
   <Day
     {...defaultProps}
     onClick={argTypes.onClick}
@@ -144,9 +133,7 @@ export const isRangeEnd = (
     isRangeEnd
   />
 )
-export const isWithinRange = (
-  argTypes: StorybookArguments
-): LegacyReactElement => (
+export const isWithinRange = (argTypes: StorybookArguments): JSX.Element => (
   <Day
     {...defaultProps}
     onClick={argTypes.onClick}

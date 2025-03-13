@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classNames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type BannerContentProps = {
   isOpen: boolean
@@ -11,7 +10,7 @@ export const BannerContent = ({
   isOpen,
   className,
   ...divProps
-}: BannerContentProps & JSX.IntrinsicElements['div']): LegacyReactElement => {
+}: BannerContentProps & JSX.IntrinsicElements['div']): JSX.Element => {
   const classes = classNames(
     'usa-banner__content usa-accordion__content',
     className

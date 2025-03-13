@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export interface ProcessListItemProps {
   className?: string
@@ -11,7 +10,7 @@ export const ProcessListItem = ({
   className,
   children,
   ...liProps
-}: ProcessListItemProps & JSX.IntrinsicElements['li']): LegacyReactElement => {
+}: ProcessListItemProps & JSX.IntrinsicElements['li']): JSX.Element => {
   const liClasses = classnames('usa-process-list__item', className)
   return (
     <li className={liClasses} {...liProps}>

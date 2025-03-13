@@ -1,7 +1,6 @@
-import React, { ReactElement, JSX } from 'react'
+import React, { ReactElement, type JSX } from 'react'
 import classnames from 'classnames'
 import { IdentifierLinkItemProps } from '../IdentifierLinkItem/IdentifierLinkItem'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface IdentifierLinksProps {
   children:
@@ -17,7 +16,7 @@ export const IdentifierLinks = ({
   className,
   navProps,
   listProps,
-}: IdentifierLinksProps): LegacyReactElement => {
+}: IdentifierLinksProps): JSX.Element => {
   const classes = classnames(
     'usa-identifier__section usa-identifier__section--required-links',
     className

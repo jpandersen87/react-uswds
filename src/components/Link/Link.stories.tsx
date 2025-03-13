@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import { Link } from './Link'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Components/Link',
@@ -16,13 +15,13 @@ Based on Typography guide: https://designsystem.digital.gov/components/typograph
   },
 }
 
-export const Default = (): LegacyReactElement => (
+export const Default = (): JSX.Element => (
   <p>
     <Link href={'#'}> This</Link> is a text link.
   </p>
 )
 
-export const Visited = (): LegacyReactElement => (
+export const Visited = (): JSX.Element => (
   <p>
     <Link className="usa-color-text-visited" href={'#'}>
       This
@@ -31,7 +30,7 @@ export const Visited = (): LegacyReactElement => (
   </p>
 )
 
-export const DarkBackground = (): LegacyReactElement => (
+export const DarkBackground = (): JSX.Element => (
   <div className="usa-dark-background" style={{ padding: '10px' }}>
     <p>
       <Link href={'#'}>This</Link> is a text link on a dark background
@@ -39,7 +38,7 @@ export const DarkBackground = (): LegacyReactElement => (
   </div>
 )
 
-export const ExternalLink = (): LegacyReactElement => (
+export const ExternalLink = (): JSX.Element => (
   <p>
     This is a link that goes to an&nbsp;
     <Link variant="external" href={'http://www.truss.works'}>
@@ -49,7 +48,7 @@ export const ExternalLink = (): LegacyReactElement => (
   </p>
 )
 
-export const NavLink = (): LegacyReactElement => (
+export const NavLink = (): JSX.Element => (
   <p>
     This is a&nbsp;
     <Link variant="nav" href={'#'}>
@@ -58,7 +57,7 @@ export const NavLink = (): LegacyReactElement => (
   </p>
 )
 
-export const StyledAsButton = (): LegacyReactElement => (
+export const StyledAsButton = (): JSX.Element => (
   <p>
     <Link
       className="usa-button"
@@ -72,7 +71,7 @@ export const StyledAsButton = (): LegacyReactElement => (
   </p>
 )
 
-export const CustomComponentLink = (): LegacyReactElement => {
+export const CustomComponentLink = (): JSX.Element => {
   type MockLinkProps = React.PropsWithChildren<{
     to: string
     className: string
@@ -84,7 +83,7 @@ export const CustomComponentLink = (): LegacyReactElement => {
     className,
     children,
     ...linkProps
-  }: MockLinkProps): LegacyReactElement => (
+  }: MockLinkProps): JSX.Element => (
     <a href={to} className={className} {...linkProps}>
       {children}
     </a>

@@ -1,7 +1,6 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import { Icon } from '../../Icon/Icons'
 import { Button } from '../../Button/Button'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface ModalCloseButtonProps {
   handleClose: () => void
@@ -10,8 +9,7 @@ interface ModalCloseButtonProps {
 export const ModalCloseButton = ({
   handleClose,
   ...buttonProps
-}: ModalCloseButtonProps &
-  JSX.IntrinsicElements['button']): LegacyReactElement => {
+}: ModalCloseButtonProps & JSX.IntrinsicElements['button']): JSX.Element => {
   return (
     <Button
       aria-label="Close this window"

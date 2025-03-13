@@ -1,5 +1,4 @@
-import React from 'react'
-import { LegacyReactElement } from '../types/legacyReactElement'
+import React, { type JSX } from 'react'
 
 export default {
   title: 'Design tokens/Swatches',
@@ -10,7 +9,7 @@ export default {
   },
 }
 
-export const Swatches = (): LegacyReactElement => (
+export const Swatches = (): JSX.Element => (
   <div className="grid-container">
     <h1>Color swatches</h1>
     <h2>Primary</h2>

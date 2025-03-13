@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 
 import { ProcessList } from './ProcessList'
 import { ProcessListItem } from '../ProcessListItem/ProcessListItem'
 import { ProcessListHeading } from '../ProcessListHeading/ProcessListHeading'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/ProcessList',
@@ -21,7 +20,7 @@ Source: https://designsystem.digital.gov/components/process-list
   },
 }
 
-export const ProcessListDefault = (): LegacyReactElement => (
+export const ProcessListDefault = (): JSX.Element => (
   <ProcessList>
     <ProcessListItem>
       <ProcessListHeading type="h4">Start a process</ProcessListHeading>
@@ -67,7 +66,7 @@ export const ProcessListDefault = (): LegacyReactElement => (
   </ProcessList>
 )
 
-export const ProcessListNoTextCustomSizing = (): LegacyReactElement => (
+export const ProcessListNoTextCustomSizing = (): JSX.Element => (
   <ProcessList>
     <ProcessListItem className="padding-bottom-4">
       <ProcessListHeading type="p" className="font-sans-xl line-height-sans-1">
@@ -87,7 +86,7 @@ export const ProcessListNoTextCustomSizing = (): LegacyReactElement => (
   </ProcessList>
 )
 
-export const ProcessListCustomSizing = (): LegacyReactElement => (
+export const ProcessListCustomSizing = (): JSX.Element => (
   <ProcessList>
     <ProcessListItem className="padding-bottom-4">
       <ProcessListHeading type="h4" className="font-sans-xl line-height-sans-1">

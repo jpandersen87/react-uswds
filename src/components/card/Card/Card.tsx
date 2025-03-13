@@ -1,8 +1,7 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
 
 import { GridLayoutProp, applyGridClasses } from '../../grid/Grid/Grid'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type CardProps = {
   layout?: 'standardDefault' | 'flagDefault' | 'flagMediaRight'
@@ -18,9 +17,7 @@ export const Card = ({
   gridLayout,
   containerProps,
   ...liProps
-}: CardProps &
-  JSX.IntrinsicElements['li'] &
-  GridLayoutProp): LegacyReactElement => {
+}: CardProps & JSX.IntrinsicElements['li'] & GridLayoutProp): JSX.Element => {
   const { className: containerClass, ...restContainerProps } =
     containerProps || {}
 

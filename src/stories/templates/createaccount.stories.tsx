@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React, { type JSX } from 'react'
 import {
   GovBanner,
   Header,
@@ -33,7 +33,6 @@ import {
 import logoImg from '@uswds/uswds/img/logo-img.png'
 import circleSvg from '@uswds/uswds/img/circle-gray-20.svg'
 import { MediaBlockBody } from '../../components/mediablock/MediaBlockBody/MediaBlockBody'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Page Templates/Create Account',
@@ -128,7 +127,7 @@ const mockSubmit = (): void => {
   /* Blank function for mocking form submission */
 }
 
-export const CreateAccount = (): LegacyReactElement => {
+export const CreateAccount = (): JSX.Element => {
   const [showPassword, setShowPassword] = React.useState(false)
 
   return (

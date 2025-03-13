@@ -1,7 +1,6 @@
-import React, { ReactElement, JSX } from 'react'
+import React, { ReactElement, type JSX } from 'react'
 import classnames from 'classnames'
 import { BreadcrumbProps } from '../Breadcrumb/Breadcrumb'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type BreadcrumbBarProps = {
   children: ReactElement<BreadcrumbProps> | ReactElement<BreadcrumbProps>[]
@@ -17,7 +16,7 @@ export const BreadcrumbBar = ({
   className,
   navProps,
   listProps,
-}: BreadcrumbBarProps): LegacyReactElement => {
+}: BreadcrumbBarProps): JSX.Element => {
   const classes = classnames(
     'usa-breadcrumb',
     {

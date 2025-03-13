@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
 
 import { ContainerSizes } from '../types'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type GridContainerProps = {
   containerSize?: ContainerSizes
@@ -39,17 +38,15 @@ function gridContainerClasses(
   return classes
 }
 
-export function GridContainer(
-  props: DefaultGridContainerProps
-): LegacyReactElement
+export function GridContainer(props: DefaultGridContainerProps): JSX.Element
 export function GridContainer<T>(
   props: CustomGridContainerProps<T>
-): LegacyReactElement
+): JSX.Element
 export function GridContainer<
   FCProps extends React.PropsWithChildren<object> = DefaultGridContainerProps,
 >(
   props: DefaultGridContainerProps | CustomGridContainerProps<FCProps>
-): LegacyReactElement {
+): JSX.Element {
   if (isCustomProps(props)) {
     const { className, containerSize, asCustom, children, ...remainingProps } =
       props

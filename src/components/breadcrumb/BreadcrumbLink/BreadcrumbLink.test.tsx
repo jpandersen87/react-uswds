@@ -1,7 +1,6 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import { render } from '@testing-library/react'
 import { BreadcrumbLink } from './BreadcrumbLink'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 const testPageName = 'Test Page'
 
@@ -27,7 +26,7 @@ describe('BreadcrumbLink component', () => {
       children,
       className,
       ...linkProps
-    }: CustomLinkProps): LegacyReactElement => (
+    }: CustomLinkProps): JSX.Element => (
       <a href={to} className={className} {...linkProps}>
         {children}
       </a>

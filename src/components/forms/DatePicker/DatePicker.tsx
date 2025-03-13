@@ -26,7 +26,6 @@ import {
 } from './utils'
 import { Calendar } from './Calendar'
 import { ValidationStatus } from '../../../types/validationStatus'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type BaseDatePickerProps = {
   id: string
@@ -69,7 +68,7 @@ export const DatePicker = ({
   onBlur,
   i18n = EN_US,
   ...inputProps
-}: DatePickerProps): LegacyReactElement => {
+}: DatePickerProps): JSX.Element => {
   const datePickerEl = useRef<HTMLDivElement>(null)
   const externalInputEl = useRef<HTMLInputElement>(null)
 

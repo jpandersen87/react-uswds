@@ -1,14 +1,13 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
 // assets
 import { Icon } from '../../Icon/Icons'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export const NavCloseButton = ({
   onClick,
   className,
   ...buttonProps
-}: JSX.IntrinsicElements['button']): LegacyReactElement => {
+}: JSX.IntrinsicElements['button']): JSX.Element => {
   const classes = classnames('usa-nav__close', className)
 
   return (

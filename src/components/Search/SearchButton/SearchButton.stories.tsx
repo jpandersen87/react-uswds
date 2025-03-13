@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 import { SearchButton } from './SearchButton'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Search/SearchButton',
@@ -22,24 +21,20 @@ const sampleLocalization = {
   buttonText: 'Buscar',
 }
 
-export const DefaultSearchButton = (): LegacyReactElement => <SearchButton />
+export const DefaultSearchButton = (): JSX.Element => <SearchButton />
 
-export const BigSearchButton = (): LegacyReactElement => (
-  <SearchButton size="big" />
-)
+export const BigSearchButton = (): JSX.Element => <SearchButton size="big" />
 
-export const SmallSearch = (): LegacyReactElement => (
-  <SearchButton size="small" />
-)
+export const SmallSearch = (): JSX.Element => <SearchButton size="small" />
 
-export const DefaultSpanishSearchButton = (): LegacyReactElement => (
+export const DefaultSpanishSearchButton = (): JSX.Element => (
   <SearchButton i18n={sampleLocalization} />
 )
 
-export const BigSpanishSearchButton = (): LegacyReactElement => (
+export const BigSpanishSearchButton = (): JSX.Element => (
   <SearchButton size="big" i18n={sampleLocalization} />
 )
 
-export const SmallSpanishSearch = (): LegacyReactElement => (
+export const SmallSpanishSearch = (): JSX.Element => (
   <SearchButton size="small" i18n={sampleLocalization} />
 )

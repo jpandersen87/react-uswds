@@ -1,9 +1,8 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import { render } from '@testing-library/react'
 
 import { GridContainer } from './GridContainer'
 import { Grid } from '../Grid/Grid'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 const testContent = 'a grid container item'
 const testGridContent = (
@@ -47,7 +46,7 @@ describe('GridContainer component', () => {
       children,
       className,
       ...ulProps
-    }: CustomGridContainerProps): LegacyReactElement => (
+    }: CustomGridContainerProps): JSX.Element => (
       <ul className={className} {...ulProps}>
         {children}
       </ul>

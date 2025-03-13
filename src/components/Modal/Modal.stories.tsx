@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { type JSX, useRef } from 'react'
 
 import { Modal, ModalRef } from './Modal'
 import { ModalHeading } from './ModalHeading/ModalHeading'
@@ -6,7 +6,6 @@ import { ModalFooter } from './ModalFooter/ModalFooter'
 import { ModalToggleButton } from './ModalToggleButton'
 
 import { ButtonGroup } from '../ButtonGroup/ButtonGroup'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Components/Modal',
@@ -45,7 +44,7 @@ You can also use the provided ModalToggleButton and/or ModalOpenLink components,
   },
 }
 
-export const DefaultModal = (): LegacyReactElement => {
+export const DefaultModal = (): JSX.Element => {
   const modalRef = useRef<ModalRef>(null)
 
   return (
@@ -87,7 +86,7 @@ export const DefaultModal = (): LegacyReactElement => {
   )
 }
 
-export const LargeModal = (): LegacyReactElement => {
+export const LargeModal = (): JSX.Element => {
   const modalRef = useRef<ModalRef>(null)
 
   return (
@@ -128,7 +127,7 @@ export const LargeModal = (): LegacyReactElement => {
   )
 }
 
-export const ForceActionModal = (): LegacyReactElement => {
+export const ForceActionModal = (): JSX.Element => {
   const modalRef = useRef<ModalRef>(null)
 
   return (
@@ -171,7 +170,7 @@ export const ForceActionModal = (): LegacyReactElement => {
   )
 }
 
-export const CustomFocusElementModal = (): LegacyReactElement => {
+export const CustomFocusElementModal = (): JSX.Element => {
   const modalRef = useRef<ModalRef>(null)
 
   return (
@@ -215,7 +214,7 @@ export const CustomFocusElementModal = (): LegacyReactElement => {
   )
 }
 
-export const InitiallyOpenModal = (): LegacyReactElement => {
+export const InitiallyOpenModal = (): JSX.Element => {
   const modalRef = useRef<ModalRef>(null)
 
   return (

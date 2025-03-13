@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface CardMediaProps {
   exdent?: boolean
@@ -16,7 +15,7 @@ export const CardMedia = ({
   children,
   className,
   ...mediaProps
-}: CardMediaProps & JSX.IntrinsicElements['div']): LegacyReactElement => {
+}: CardMediaProps & JSX.IntrinsicElements['div']): JSX.Element => {
   const classes = classnames(
     'usa-card__media',
     {

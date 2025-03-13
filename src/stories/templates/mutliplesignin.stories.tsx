@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React, { type JSX } from 'react'
 import {
   GridContainer,
   Grid,
@@ -28,7 +28,6 @@ import {
 
 import logoImg from '@uswds/uswds/img/logo-img.png'
 import circleSvg from '@uswds/uswds/img/circle-gray-20.svg'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Page Templates/Multiple Sign In Options',
@@ -110,7 +109,7 @@ const identifierLinksText = [
   'Privacy policy',
 ]
 
-export const MultipleSignInOptions = (): LegacyReactElement => {
+export const MultipleSignInOptions = (): JSX.Element => {
   return (
     <>
       <a className="usa-skipnav" href="#main-content">

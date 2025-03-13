@@ -1,8 +1,7 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
 import { StepIndicatorStepProps } from '../StepIndicatorStep/StepIndicatorStep'
 import { HeadingLevel } from '../../../types/headingLevel'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export type StepStatusText = {
   complete: string
@@ -26,9 +25,7 @@ type StepIndicatorProps = {
   ofText?: string
   statusText?: StepStatusText
 }
-export const StepIndicator = (
-  props: StepIndicatorProps
-): LegacyReactElement => {
+export const StepIndicator = (props: StepIndicatorProps): JSX.Element => {
   const {
     showLabels = true,
     counters = 'none',

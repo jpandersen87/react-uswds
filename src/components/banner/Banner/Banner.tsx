@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classNames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type BannerProps = {
   divProps?: JSX.IntrinsicElements['div']
@@ -11,7 +10,7 @@ export const Banner = ({
   divProps,
   className,
   ...sectionProps
-}: BannerProps & JSX.IntrinsicElements['section']): LegacyReactElement => {
+}: BannerProps & JSX.IntrinsicElements['section']): JSX.Element => {
   const classes = classNames('usa-banner', className)
 
   const { className: divClassName, ...remainingDivProps } = divProps || {}

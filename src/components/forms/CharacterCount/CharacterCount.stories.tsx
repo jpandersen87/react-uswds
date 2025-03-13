@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 import { CharacterCount } from './CharacterCount'
 import { Form } from '../Form/Form'
 import { FormGroup } from '../FormGroup/FormGroup'
 import { Label } from '../Label/Label'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/CharacterCount',
@@ -24,7 +23,7 @@ const mockSubmit = (): void => {
   /* mock submit fn */
 }
 
-export const TextInput = (): LegacyReactElement => (
+export const TextInput = (): JSX.Element => (
   <Form onSubmit={mockSubmit}>
     <FormGroup>
       <Label htmlFor="with-hint-input">Text input</Label>
@@ -41,7 +40,7 @@ export const TextInput = (): LegacyReactElement => (
   </Form>
 )
 
-export const Textarea = (): LegacyReactElement => (
+export const Textarea = (): JSX.Element => (
   <Form onSubmit={mockSubmit}>
     <FormGroup>
       <Label htmlFor="with-hint-textarea">Textarea</Label>
@@ -60,7 +59,7 @@ export const Textarea = (): LegacyReactElement => (
   </Form>
 )
 
-const withCustomCharacterCount = (): LegacyReactElement => {
+const withCustomCharacterCount = (): JSX.Element => {
   const customEmojiCharacterCount = (text: string): number => {
     const starCount = (text.match(/⭐️/g) || []).length
     return Array.from(text).length - starCount * 2

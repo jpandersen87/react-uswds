@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from 'react'
+import React, { type JSX, useState } from 'react'
 import logoImg from '@uswds/uswds/img/logo-img.png'
 import circleSvg from '@uswds/uswds/img/circle-gray-20.svg'
 
@@ -33,7 +33,6 @@ import {
   SocialLink,
   SocialLinks,
 } from '../../index'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Page Templates/Not Found',
@@ -51,7 +50,7 @@ Page templates
   },
 }
 
-export const NotFoundPage = (): LegacyReactElement => {
+export const NotFoundPage = (): JSX.Element => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const [navDropdownOpen, setNavDropdownOpen] = useState([false, false])
 

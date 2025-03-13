@@ -10,7 +10,6 @@ import React, {
 import classnames from 'classnames'
 
 import { isElementInViewport, calculateMarginOffset } from './utils'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 type TooltipProps<T> = {
   label: ReactNode
@@ -47,8 +46,8 @@ const genId = (): string => {
   }
 }
 
-export function Tooltip(props: DefaultTooltipProps): LegacyReactElement
-export function Tooltip<T>(props: CustomTooltipProps<T>): LegacyReactElement
+export function Tooltip(props: DefaultTooltipProps): JSX.Element
+export function Tooltip<T>(props: CustomTooltipProps<T>): JSX.Element
 export function Tooltip<
   FCProps extends React.PropsWithChildren<object> = DefaultTooltipProps,
 >({
@@ -56,7 +55,7 @@ export function Tooltip<
   wrapperclasses,
   className,
   ...props
-}: DefaultTooltipProps | CustomTooltipProps<FCProps>): LegacyReactElement {
+}: DefaultTooltipProps | CustomTooltipProps<FCProps>): JSX.Element {
   const triggerElementRef = useRef<HTMLElement & HTMLButtonElement>(null)
   const tooltipBodyRef = useRef<HTMLElement>(null)
   const tooltipID = useRef(`tooltip-${genId()}`)

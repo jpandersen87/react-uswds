@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import React, { type JSX, useState } from 'react'
 import { LanguageSelector, LanguageDefinition } from './LanguageSelector'
 import { StoryFn } from '@storybook/react'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 export default {
   title: 'Components/LanguageSelector',
@@ -187,7 +186,7 @@ const languagesButton: LanguageDefinition[] = [
 
 export const TwoLanguagesAsALink = (
   argTypes: StorybookArguments
-): LegacyReactElement => (
+): JSX.Element => (
   <LanguageSelector
     langs={[languagesLink[2], languagesLink[3]]}
     small={argTypes.small}
@@ -196,7 +195,7 @@ export const TwoLanguagesAsALink = (
 
 export const TwoLanguagesAsAButton = (
   argTypes: StorybookArguments
-): LegacyReactElement => (
+): JSX.Element => (
   <LanguageSelector
     langs={[languagesButton[2], languagesButton[3]]}
     small={argTypes.small}
@@ -205,7 +204,7 @@ export const TwoLanguagesAsAButton = (
 
 export const MoreThanTwoLanguagesAsALink = (
   argTypes: StorybookArguments
-): LegacyReactElement => (
+): JSX.Element => (
   <LanguageSelector
     langs={languagesLink}
     label="Languages"
@@ -215,7 +214,7 @@ export const MoreThanTwoLanguagesAsALink = (
 
 export const MoreThanTwoLanguagesAsAButton = (
   argTypes: StorybookArguments
-): LegacyReactElement => (
+): JSX.Element => (
   <LanguageSelector
     langs={languagesButton}
     label="Languages"
@@ -223,9 +222,7 @@ export const MoreThanTwoLanguagesAsAButton = (
   />
 )
 
-export const CustomClass = (
-  argTypes: StorybookArguments
-): LegacyReactElement => (
+export const CustomClass = (argTypes: StorybookArguments): JSX.Element => (
   <LanguageSelector
     langs={languagesLink}
     label="Languages"

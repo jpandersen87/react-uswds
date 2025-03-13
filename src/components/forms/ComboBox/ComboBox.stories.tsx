@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { type JSX, useRef, useState } from 'react'
 
 import { ComboBox, ComboBoxRef } from './ComboBox'
 import { Form } from '../Form/Form'
@@ -6,7 +6,6 @@ import { Label } from '../Label/Label'
 import { Button } from '../../Button/Button'
 import { fruits, veggies } from './foods'
 import { Radio } from '../Radio/Radio'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Combo box',
@@ -28,7 +27,7 @@ const noop = (): void => {
   return
 }
 
-export const DefaultComboBoxWithPropOptions = (): LegacyReactElement => {
+export const DefaultComboBoxWithPropOptions = (): JSX.Element => {
   const fruitList = Object.entries(fruits).map(([key, value]) => ({
     value: key,
     label: value,
@@ -47,7 +46,7 @@ export const DefaultComboBoxWithPropOptions = (): LegacyReactElement => {
   )
 }
 
-export const WithDefaultValue = (): LegacyReactElement => {
+export const WithDefaultValue = (): JSX.Element => {
   const fruitList = Object.entries(fruits).map(([value, key]) => ({
     value: value,
     label: key,
@@ -67,7 +66,7 @@ export const WithDefaultValue = (): LegacyReactElement => {
   )
 }
 
-export const WithLabel = (): LegacyReactElement => {
+export const WithLabel = (): JSX.Element => {
   const fruitList = Object.entries(fruits).map(([value, key]) => ({
     value: value,
     label: key,
@@ -87,7 +86,7 @@ export const WithLabel = (): LegacyReactElement => {
   )
 }
 
-export const Disabled = (): LegacyReactElement => {
+export const Disabled = (): JSX.Element => {
   const fruitList = Object.entries(fruits).map(([value, key]) => ({
     value: value,
     label: key,
@@ -107,7 +106,7 @@ export const Disabled = (): LegacyReactElement => {
   )
 }
 
-export const WithOtherFields = (): LegacyReactElement => {
+export const WithOtherFields = (): JSX.Element => {
   const fruitList = Object.entries(fruits).map(([value, key]) => ({
     value: value,
     label: key,
@@ -153,7 +152,7 @@ export const WithOtherFields = (): LegacyReactElement => {
   )
 }
 
-export const ExposedRefMethods = (): LegacyReactElement => {
+export const ExposedRefMethods = (): JSX.Element => {
   const ref = useRef<ComboBoxRef>(null)
 
   const fruitList = Object.entries(fruits).map(([value, key]) => ({
@@ -185,7 +184,7 @@ export const ExposedRefMethods = (): LegacyReactElement => {
   )
 }
 
-export const CustomInputChangeHandler = (): LegacyReactElement => {
+export const CustomInputChangeHandler = (): JSX.Element => {
   const fruitList = Object.entries(fruits).map(([value, key]) => ({
     value: value,
     label: key,

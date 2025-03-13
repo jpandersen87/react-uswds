@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export interface IdentifierLogoProps {
   children: React.ReactNode
@@ -11,7 +10,7 @@ export const IdentifierLogo = ({
   children,
   className,
   ...anchorProps
-}: IdentifierLogoProps & JSX.IntrinsicElements['a']): LegacyReactElement => {
+}: IdentifierLogoProps & JSX.IntrinsicElements['a']): JSX.Element => {
   const classes = classnames('usa-identifier__logo', className)
   return (
     <a className={classes} {...anchorProps}>

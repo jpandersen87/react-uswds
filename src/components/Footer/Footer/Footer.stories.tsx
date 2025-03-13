@@ -1,5 +1,5 @@
 /*  eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React, { type JSX } from 'react'
 
 import { Address } from '../Address/Address'
 import { Button } from '../../Button/Button'
@@ -13,7 +13,6 @@ import { TextInput } from '../../forms/TextInput/TextInput'
 
 // assets
 import logoImg from '@uswds/uswds/img/logo-img.png'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Footer',
@@ -51,7 +50,7 @@ const socialLinkItems = [
   <SocialLink key="rss" name="RSS" href="#" />,
 ]
 
-const SignUpForm = (): LegacyReactElement => {
+const SignUpForm = (): JSX.Element => {
   return (
     <div className="usa-sign-up">
       <h3 className="usa-sign-up__heading">Sign up</h3>
@@ -64,7 +63,7 @@ const SignUpForm = (): LegacyReactElement => {
   )
 }
 
-export const SlimFooter = (): LegacyReactElement => (
+export const SlimFooter = (): JSX.Element => (
   <Footer
     size="slim"
     returnToTop={returnToTop}
@@ -111,7 +110,7 @@ export const SlimFooter = (): LegacyReactElement => (
   />
 )
 
-export const MediumFooter = (): LegacyReactElement => (
+export const MediumFooter = (): JSX.Element => (
   <Footer
     size="medium"
     returnToTop={returnToTop}
@@ -158,7 +157,7 @@ export const MediumFooter = (): LegacyReactElement => (
   />
 )
 
-export const BigFooter = (): LegacyReactElement => (
+export const BigFooter = (): JSX.Element => (
   <Footer
     size="big"
     returnToTop={returnToTop}

@@ -1,9 +1,8 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
 
 import { NavCloseButton } from '../NavCloseButton/NavCloseButton'
 import { NavList } from '../NavList/NavList'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type ExtendedNavProps = {
   primaryItems: React.ReactNode[]
@@ -22,7 +21,7 @@ export const ExtendedNav = ({
   className,
   onToggleMobileNav,
   ...navProps
-}: ExtendedNavProps & JSX.IntrinsicElements['nav']): LegacyReactElement => {
+}: ExtendedNavProps & JSX.IntrinsicElements['nav']): JSX.Element => {
   const classes = classnames(
     'usa-nav',
     {

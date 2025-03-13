@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 interface IdentifierIdentityProps {
   children: React.ReactNode
@@ -13,8 +12,7 @@ export const IdentifierIdentity = ({
   domain,
   className,
   ...divProps
-}: IdentifierIdentityProps &
-  JSX.IntrinsicElements['div']): LegacyReactElement => {
+}: IdentifierIdentityProps & JSX.IntrinsicElements['div']): JSX.Element => {
   const classes = classnames('usa-identifier__identity', className)
   return (
     <div data-testid="identifierIdentity" className={classes} {...divProps}>

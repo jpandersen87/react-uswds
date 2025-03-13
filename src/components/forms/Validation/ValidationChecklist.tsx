@@ -1,6 +1,5 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import classnames from 'classnames'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 type ValidationChecklistProps = {
   id: string
@@ -11,8 +10,7 @@ export const ValidationChecklist = ({
   children,
   className,
   ...ulProps
-}: ValidationChecklistProps &
-  JSX.IntrinsicElements['ul']): LegacyReactElement => {
+}: ValidationChecklistProps & JSX.IntrinsicElements['ul']): JSX.Element => {
   const classes = classnames(className, 'usa-checklist')
   return (
     <ul className={classes} data-testid="validationChecklist" {...ulProps}>

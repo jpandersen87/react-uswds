@@ -1,8 +1,7 @@
-import React, { JSX } from 'react'
+import React, { type JSX } from 'react'
 import { render } from '@testing-library/react'
 
 import { Link } from './Link'
-import { LegacyReactElement } from '../../types/legacyReactElement'
 
 describe('Link component', () => {
   beforeEach(() => {
@@ -71,7 +70,7 @@ describe('Link component', () => {
       children,
       className,
       ...linkProps
-    }: CustomLinkProps): LegacyReactElement => (
+    }: CustomLinkProps): JSX.Element => (
       <a href={to} className={className} {...linkProps}>
         {children}
       </a>

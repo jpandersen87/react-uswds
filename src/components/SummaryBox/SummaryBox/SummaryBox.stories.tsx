@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React, { type JSX } from 'react'
 import { SummaryBox } from './SummaryBox'
 import { SummaryBoxHeading } from '../SummaryBoxHeading/SummaryBoxHeading'
 import { SummaryBoxContent } from '../SummaryBoxContent/SummaryBoxContent'
-import { LegacyReactElement } from '../../../types/legacyReactElement'
 
 export default {
   title: 'Components/Summary box',
@@ -62,7 +61,7 @@ const summaryBoxContent = (
   </ul>
 )
 
-export const SummaryBoxDefault = (): LegacyReactElement => (
+export const SummaryBoxDefault = (): JSX.Element => (
   <SummaryBox>
     <SummaryBoxHeading headingLevel="h3">Key Information</SummaryBoxHeading>
     <SummaryBoxContent>{summaryBoxContent}</SummaryBoxContent>
