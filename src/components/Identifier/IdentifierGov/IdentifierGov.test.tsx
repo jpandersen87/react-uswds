@@ -21,7 +21,7 @@ describe('IdentifierGov component', () => {
   })
 
   it('renders consistently in Spanish', () => {
-    const tree = render(
+    const { container } = render(
       <IdentifierGov>
         <div className="usa-identifier__usagov-description">
           ¿Necesita información y servicios del Gobierno?
@@ -32,6 +32,6 @@ describe('IdentifierGov component', () => {
         </a>
       </IdentifierGov>
     )
-    expect(tree.container).toMatchSnapshot()
+    expect(container.firstChild).toMatchSnapshot()
   })
 })

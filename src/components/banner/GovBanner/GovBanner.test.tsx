@@ -31,28 +31,28 @@ describe('GovBanner component', () => {
 
   describe('static content', () => {
     it('renders consistently with default props', () => {
-      const tree = render(<GovBanner />)
-      expect(tree.container).toMatchSnapshot()
+      const { container } = render(<GovBanner />)
+      expect(container.firstChild).toMatchSnapshot()
     })
 
     it('renders consistently in English for .gov sites', () => {
-      const tree = render(<GovBanner language="english" tld=".gov" />)
-      expect(tree.container).toMatchSnapshot()
+      const { container } = render(<GovBanner language="english" tld=".gov" />)
+      expect(container.firstChild).toMatchSnapshot()
     })
 
     it('renders consistently in English for .mil sites', () => {
-      const tree = render(<GovBanner language="english" tld=".mil" />)
-      expect(tree.container).toMatchSnapshot()
+      const { container } = render(<GovBanner language="english" tld=".mil" />)
+      expect(container.firstChild).toMatchSnapshot()
     })
 
     it('renders consistently in Spanish for .gov sites', () => {
-      const tree = render(<GovBanner language="spanish" tld=".gov" />)
-      expect(tree.container).toMatchSnapshot()
+      const { container } = render(<GovBanner language="spanish" tld=".gov" />)
+      expect(container.firstChild).toMatchSnapshot()
     })
 
     it('renders consistently in Spanish for .mil sites', () => {
-      const tree = render(<GovBanner language="spanish" tld=".mil" />)
-      expect(tree.container).toMatchSnapshot()
+      const { container } = render(<GovBanner language="spanish" tld=".mil" />)
+      expect(container.firstChild).toMatchSnapshot()
     })
   })
 })

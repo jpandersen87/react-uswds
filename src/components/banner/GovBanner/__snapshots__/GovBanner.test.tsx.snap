@@ -1,699 +1,689 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`GovBanner component > static content > renders consistently in English for .gov sites 1`] = `
-<div>
-  <section
-    aria-label="Official website of the United States government"
-    class="usa-banner"
-    data-testid="govBanner"
+<section
+  aria-label="Official website of the United States government"
+  class="usa-banner"
+  data-testid="govBanner"
+>
+  <div
+    class="usa-accordion"
   >
-    <div
-      class="usa-accordion"
+    <header
+      class="usa-banner__header"
     >
-      <header
-        class="usa-banner__header"
-      >
-        <div
-          class="usa-banner__inner"
-          data-testid="banner-header-inner-div"
-        >
-          <div
-            class="grid-col-auto"
-            data-testid="banner-header-flag-div"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              class="usa-banner__header-flag"
-              src="test-file-stub"
-            />
-          </div>
-          <div
-            aria-hidden="true"
-            class="grid-col-fill tablet:grid-col-auto"
-            data-testid="banner-header-grid-div"
-          >
-            <p
-              class="usa-banner__header-text"
-            >
-              An official website of the United States government
-            </p>
-            <p
-              aria-hidden="true"
-              class="usa-banner__header-action"
-            >
-              Here’s how you know
-            </p>
-          </div>
-          <button
-            aria-controls="gov-banner"
-            aria-expanded="false"
-            class="usa-accordion__button usa-banner__button"
-            type="button"
-          >
-            <span
-              class="usa-banner__button-text"
-            >
-              Here’s how you know
-            </span>
-          </button>
-        </div>
-      </header>
       <div
-        class="usa-banner__content usa-accordion__content"
-        hidden=""
-        id="gov-banner"
+        class="usa-banner__inner"
+        data-testid="banner-header-inner-div"
       >
         <div
-          class="grid-row grid-gap-lg"
+          class="grid-col-auto"
+          data-testid="banner-header-flag-div"
         >
-          <div
-            class="usa-banner__guidance tablet:grid-col-6"
+          <img
+            alt=""
+            aria-hidden="true"
+            class="usa-banner__header-flag"
+            src="test-file-stub"
+          />
+        </div>
+        <div
+          aria-hidden="true"
+          class="grid-col-fill tablet:grid-col-auto"
+          data-testid="banner-header-grid-div"
+        >
+          <p
+            class="usa-banner__header-text"
           >
-            <img
-              alt=""
-              aria-hidden="true"
-              class="usa-banner__icon usa-media-block__img"
-              src="test-file-stub"
-            />
-            <div
-              class="usa-media-block__body"
-            >
-              <p>
-                <strong>
-                  Official websites use .gov
-                </strong>
-                <br />
-                A 
-                <strong>
-                  .gov
-                </strong>
-                 website belongs to an official government organization in the United States.
-              </p>
-            </div>
-          </div>
-          <div
-            class="usa-banner__guidance tablet:grid-col-6"
+            An official website of the United States government
+          </p>
+          <p
+            aria-hidden="true"
+            class="usa-banner__header-action"
           >
-            <img
-              alt=""
-              aria-hidden="true"
-              class="usa-banner__icon usa-media-block__img"
-              src="test-file-stub"
-            />
-            <div
-              class="usa-media-block__body"
-            >
-              <p>
-                <strong>
-                  Secure .gov websites use HTTPS
-                </strong>
-                <br />
-                A
-                 
-                <strong>
-                  lock (
-                  <svg
-                    aria-label="Locked padlock icon"
-                    class="usa-icon"
-                    focusable="false"
-                    role="img"
-                  />
-                  )
-                </strong>
-                 
-                or 
-                <strong>
-                  https://
-                </strong>
-                 means you’ve safely connected to the
-                 
+            Here’s how you know
+          </p>
+        </div>
+        <button
+          aria-controls="gov-banner"
+          aria-expanded="false"
+          class="usa-accordion__button usa-banner__button"
+          type="button"
+        >
+          <span
+            class="usa-banner__button-text"
+          >
+            Here’s how you know
+          </span>
+        </button>
+      </div>
+    </header>
+    <div
+      class="usa-banner__content usa-accordion__content"
+      hidden=""
+      id="gov-banner"
+    >
+      <div
+        class="grid-row grid-gap-lg"
+      >
+        <div
+          class="usa-banner__guidance tablet:grid-col-6"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            class="usa-banner__icon usa-media-block__img"
+            src="test-file-stub"
+          />
+          <div
+            class="usa-media-block__body"
+          >
+            <p>
+              <strong>
+                Official websites use .gov
+              </strong>
+              <br />
+              A 
+              <strong>
                 .gov
-                 website. Share sensitive information only on official, secure websites.
-              </p>
-            </div>
+              </strong>
+               website belongs to an official government organization in the United States.
+            </p>
+          </div>
+        </div>
+        <div
+          class="usa-banner__guidance tablet:grid-col-6"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            class="usa-banner__icon usa-media-block__img"
+            src="test-file-stub"
+          />
+          <div
+            class="usa-media-block__body"
+          >
+            <p>
+              <strong>
+                Secure .gov websites use HTTPS
+              </strong>
+              <br />
+              A
+               
+              <strong>
+                lock (
+                <svg
+                  aria-label="Locked padlock icon"
+                  class="usa-icon"
+                  focusable="false"
+                  role="img"
+                />
+                )
+              </strong>
+               
+              or 
+              <strong>
+                https://
+              </strong>
+               means you’ve safely connected to the
+               
+              .gov
+               website. Share sensitive information only on official, secure websites.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>
 `;
 
 exports[`GovBanner component > static content > renders consistently in English for .mil sites 1`] = `
-<div>
-  <section
-    aria-label="Official website of the United States government"
-    class="usa-banner"
-    data-testid="govBanner"
+<section
+  aria-label="Official website of the United States government"
+  class="usa-banner"
+  data-testid="govBanner"
+>
+  <div
+    class="usa-accordion"
   >
-    <div
-      class="usa-accordion"
+    <header
+      class="usa-banner__header"
     >
-      <header
-        class="usa-banner__header"
-      >
-        <div
-          class="usa-banner__inner"
-          data-testid="banner-header-inner-div"
-        >
-          <div
-            class="grid-col-auto"
-            data-testid="banner-header-flag-div"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              class="usa-banner__header-flag"
-              src="test-file-stub"
-            />
-          </div>
-          <div
-            aria-hidden="true"
-            class="grid-col-fill tablet:grid-col-auto"
-            data-testid="banner-header-grid-div"
-          >
-            <p
-              class="usa-banner__header-text"
-            >
-              An official website of the United States government
-            </p>
-            <p
-              aria-hidden="true"
-              class="usa-banner__header-action"
-            >
-              Here’s how you know
-            </p>
-          </div>
-          <button
-            aria-controls="gov-banner"
-            aria-expanded="false"
-            class="usa-accordion__button usa-banner__button"
-            type="button"
-          >
-            <span
-              class="usa-banner__button-text"
-            >
-              Here’s how you know
-            </span>
-          </button>
-        </div>
-      </header>
       <div
-        class="usa-banner__content usa-accordion__content"
-        hidden=""
-        id="gov-banner"
+        class="usa-banner__inner"
+        data-testid="banner-header-inner-div"
       >
         <div
-          class="grid-row grid-gap-lg"
+          class="grid-col-auto"
+          data-testid="banner-header-flag-div"
         >
-          <div
-            class="usa-banner__guidance tablet:grid-col-6"
+          <img
+            alt=""
+            aria-hidden="true"
+            class="usa-banner__header-flag"
+            src="test-file-stub"
+          />
+        </div>
+        <div
+          aria-hidden="true"
+          class="grid-col-fill tablet:grid-col-auto"
+          data-testid="banner-header-grid-div"
+        >
+          <p
+            class="usa-banner__header-text"
           >
-            <img
-              alt=""
-              aria-hidden="true"
-              class="usa-banner__icon usa-media-block__img"
-              src="test-file-stub"
-            />
-            <div
-              class="usa-media-block__body"
-            >
-              <p>
-                <strong>
-                  Official websites use .mil
-                </strong>
-                <br />
-                A 
-                <strong>
-                  .mil
-                </strong>
-                 website belongs to an official U.S. Department of Defense organization.
-              </p>
-            </div>
-          </div>
-          <div
-            class="usa-banner__guidance tablet:grid-col-6"
+            An official website of the United States government
+          </p>
+          <p
+            aria-hidden="true"
+            class="usa-banner__header-action"
           >
-            <img
-              alt=""
-              aria-hidden="true"
-              class="usa-banner__icon usa-media-block__img"
-              src="test-file-stub"
-            />
-            <div
-              class="usa-media-block__body"
-            >
-              <p>
-                <strong>
-                  Secure .mil websites use HTTPS
-                </strong>
-                <br />
-                A
-                 
-                <strong>
-                  lock (
-                  <svg
-                    aria-label="Locked padlock icon"
-                    class="usa-icon"
-                    focusable="false"
-                    role="img"
-                  />
-                  )
-                </strong>
-                 
-                or 
-                <strong>
-                  https://
-                </strong>
-                 means you’ve safely connected to the
-                 
+            Here’s how you know
+          </p>
+        </div>
+        <button
+          aria-controls="gov-banner"
+          aria-expanded="false"
+          class="usa-accordion__button usa-banner__button"
+          type="button"
+        >
+          <span
+            class="usa-banner__button-text"
+          >
+            Here’s how you know
+          </span>
+        </button>
+      </div>
+    </header>
+    <div
+      class="usa-banner__content usa-accordion__content"
+      hidden=""
+      id="gov-banner"
+    >
+      <div
+        class="grid-row grid-gap-lg"
+      >
+        <div
+          class="usa-banner__guidance tablet:grid-col-6"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            class="usa-banner__icon usa-media-block__img"
+            src="test-file-stub"
+          />
+          <div
+            class="usa-media-block__body"
+          >
+            <p>
+              <strong>
+                Official websites use .mil
+              </strong>
+              <br />
+              A 
+              <strong>
                 .mil
-                 website. Share sensitive information only on official, secure websites.
-              </p>
-            </div>
+              </strong>
+               website belongs to an official U.S. Department of Defense organization.
+            </p>
+          </div>
+        </div>
+        <div
+          class="usa-banner__guidance tablet:grid-col-6"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            class="usa-banner__icon usa-media-block__img"
+            src="test-file-stub"
+          />
+          <div
+            class="usa-media-block__body"
+          >
+            <p>
+              <strong>
+                Secure .mil websites use HTTPS
+              </strong>
+              <br />
+              A
+               
+              <strong>
+                lock (
+                <svg
+                  aria-label="Locked padlock icon"
+                  class="usa-icon"
+                  focusable="false"
+                  role="img"
+                />
+                )
+              </strong>
+               
+              or 
+              <strong>
+                https://
+              </strong>
+               means you’ve safely connected to the
+               
+              .mil
+               website. Share sensitive information only on official, secure websites.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>
 `;
 
 exports[`GovBanner component > static content > renders consistently in Spanish for .gov sites 1`] = `
-<div>
-  <section
-    aria-label="Un sitio oficial del Gobierno de Estados Unidos"
-    class="usa-banner"
-    data-testid="govBanner"
+<section
+  aria-label="Un sitio oficial del Gobierno de Estados Unidos"
+  class="usa-banner"
+  data-testid="govBanner"
+>
+  <div
+    class="usa-accordion"
   >
-    <div
-      class="usa-accordion"
+    <header
+      class="usa-banner__header"
     >
-      <header
-        class="usa-banner__header"
-      >
-        <div
-          class="usa-banner__inner"
-          data-testid="banner-header-inner-div"
-        >
-          <div
-            class="grid-col-auto"
-            data-testid="banner-header-flag-div"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              class="usa-banner__header-flag"
-              src="test-file-stub"
-            />
-          </div>
-          <div
-            aria-hidden="true"
-            class="grid-col-fill tablet:grid-col-auto"
-            data-testid="banner-header-grid-div"
-          >
-            <p
-              class="usa-banner__header-text"
-            >
-              Un sitio oficial del Gobierno de Estados Unidos
-            </p>
-            <p
-              aria-hidden="true"
-              class="usa-banner__header-action"
-            >
-              Así es como usted puede verificarlo
-            </p>
-          </div>
-          <button
-            aria-controls="gov-banner"
-            aria-expanded="false"
-            class="usa-accordion__button usa-banner__button"
-            type="button"
-          >
-            <span
-              class="usa-banner__button-text"
-            >
-              Así es como usted puede verificarlo
-            </span>
-          </button>
-        </div>
-      </header>
       <div
-        class="usa-banner__content usa-accordion__content"
-        hidden=""
-        id="gov-banner"
+        class="usa-banner__inner"
+        data-testid="banner-header-inner-div"
       >
         <div
-          class="grid-row grid-gap-lg"
+          class="grid-col-auto"
+          data-testid="banner-header-flag-div"
         >
-          <div
-            class="usa-banner__guidance tablet:grid-col-6"
+          <img
+            alt=""
+            aria-hidden="true"
+            class="usa-banner__header-flag"
+            src="test-file-stub"
+          />
+        </div>
+        <div
+          aria-hidden="true"
+          class="grid-col-fill tablet:grid-col-auto"
+          data-testid="banner-header-grid-div"
+        >
+          <p
+            class="usa-banner__header-text"
           >
-            <img
-              alt=""
-              aria-hidden="true"
-              class="usa-banner__icon usa-media-block__img"
-              src="test-file-stub"
-            />
-            <div
-              class="usa-media-block__body"
-            >
-              <p>
-                <strong>
-                  Los sitios web oficiales usan .gov
-                </strong>
-                <br />
-                Un sitio web 
-                <strong>
-                  .gov
-                </strong>
-                 pertenece a una organización oficial del Gobierno de Estados Unidos.
-              </p>
-            </div>
-          </div>
-          <div
-            class="usa-banner__guidance tablet:grid-col-6"
+            Un sitio oficial del Gobierno de Estados Unidos
+          </p>
+          <p
+            aria-hidden="true"
+            class="usa-banner__header-action"
           >
-            <img
-              alt=""
-              aria-hidden="true"
-              class="usa-banner__icon usa-media-block__img"
-              src="test-file-stub"
-            />
-            <div
-              class="usa-media-block__body"
-            >
-              <p>
-                <strong>
-                  Los sitios web seguros .gov usan HTTPS
-                </strong>
-                <br />
-                Un
-                 
-                <strong>
-                  candado (
-                  <svg
-                    aria-label="Icono de candado cerrado"
-                    class="usa-icon"
-                    focusable="false"
-                    role="img"
-                  />
-                  )
-                </strong>
-                 
-                o 
-                <strong>
-                  https://
-                </strong>
-                 significa que usted se conectó de forma segura a un sitio web 
+            Así es como usted puede verificarlo
+          </p>
+        </div>
+        <button
+          aria-controls="gov-banner"
+          aria-expanded="false"
+          class="usa-accordion__button usa-banner__button"
+          type="button"
+        >
+          <span
+            class="usa-banner__button-text"
+          >
+            Así es como usted puede verificarlo
+          </span>
+        </button>
+      </div>
+    </header>
+    <div
+      class="usa-banner__content usa-accordion__content"
+      hidden=""
+      id="gov-banner"
+    >
+      <div
+        class="grid-row grid-gap-lg"
+      >
+        <div
+          class="usa-banner__guidance tablet:grid-col-6"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            class="usa-banner__icon usa-media-block__img"
+            src="test-file-stub"
+          />
+          <div
+            class="usa-media-block__body"
+          >
+            <p>
+              <strong>
+                Los sitios web oficiales usan .gov
+              </strong>
+              <br />
+              Un sitio web 
+              <strong>
                 .gov
-                . Comparta información sensible sólo en sitios web oficiales y seguros.
-              </p>
-            </div>
+              </strong>
+               pertenece a una organización oficial del Gobierno de Estados Unidos.
+            </p>
+          </div>
+        </div>
+        <div
+          class="usa-banner__guidance tablet:grid-col-6"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            class="usa-banner__icon usa-media-block__img"
+            src="test-file-stub"
+          />
+          <div
+            class="usa-media-block__body"
+          >
+            <p>
+              <strong>
+                Los sitios web seguros .gov usan HTTPS
+              </strong>
+              <br />
+              Un
+               
+              <strong>
+                candado (
+                <svg
+                  aria-label="Icono de candado cerrado"
+                  class="usa-icon"
+                  focusable="false"
+                  role="img"
+                />
+                )
+              </strong>
+               
+              o 
+              <strong>
+                https://
+              </strong>
+               significa que usted se conectó de forma segura a un sitio web 
+              .gov
+              . Comparta información sensible sólo en sitios web oficiales y seguros.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>
 `;
 
 exports[`GovBanner component > static content > renders consistently in Spanish for .mil sites 1`] = `
-<div>
-  <section
-    aria-label="Un sitio oficial del Gobierno de Estados Unidos"
-    class="usa-banner"
-    data-testid="govBanner"
+<section
+  aria-label="Un sitio oficial del Gobierno de Estados Unidos"
+  class="usa-banner"
+  data-testid="govBanner"
+>
+  <div
+    class="usa-accordion"
   >
-    <div
-      class="usa-accordion"
+    <header
+      class="usa-banner__header"
     >
-      <header
-        class="usa-banner__header"
-      >
-        <div
-          class="usa-banner__inner"
-          data-testid="banner-header-inner-div"
-        >
-          <div
-            class="grid-col-auto"
-            data-testid="banner-header-flag-div"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              class="usa-banner__header-flag"
-              src="test-file-stub"
-            />
-          </div>
-          <div
-            aria-hidden="true"
-            class="grid-col-fill tablet:grid-col-auto"
-            data-testid="banner-header-grid-div"
-          >
-            <p
-              class="usa-banner__header-text"
-            >
-              Un sitio oficial del Gobierno de Estados Unidos
-            </p>
-            <p
-              aria-hidden="true"
-              class="usa-banner__header-action"
-            >
-              Así es como usted puede verificarlo
-            </p>
-          </div>
-          <button
-            aria-controls="gov-banner"
-            aria-expanded="false"
-            class="usa-accordion__button usa-banner__button"
-            type="button"
-          >
-            <span
-              class="usa-banner__button-text"
-            >
-              Así es como usted puede verificarlo
-            </span>
-          </button>
-        </div>
-      </header>
       <div
-        class="usa-banner__content usa-accordion__content"
-        hidden=""
-        id="gov-banner"
+        class="usa-banner__inner"
+        data-testid="banner-header-inner-div"
       >
         <div
-          class="grid-row grid-gap-lg"
+          class="grid-col-auto"
+          data-testid="banner-header-flag-div"
         >
-          <div
-            class="usa-banner__guidance tablet:grid-col-6"
+          <img
+            alt=""
+            aria-hidden="true"
+            class="usa-banner__header-flag"
+            src="test-file-stub"
+          />
+        </div>
+        <div
+          aria-hidden="true"
+          class="grid-col-fill tablet:grid-col-auto"
+          data-testid="banner-header-grid-div"
+        >
+          <p
+            class="usa-banner__header-text"
           >
-            <img
-              alt=""
-              aria-hidden="true"
-              class="usa-banner__icon usa-media-block__img"
-              src="test-file-stub"
-            />
-            <div
-              class="usa-media-block__body"
-            >
-              <p>
-                <strong>
-                  Los sitios web oficiales usan .mil
-                </strong>
-                <br />
-                Un sitio web 
-                <strong>
-                  .mil
-                </strong>
-                 pertenece a una organización oficial del Departamento de Defensa de EE. UU.
-              </p>
-            </div>
-          </div>
-          <div
-            class="usa-banner__guidance tablet:grid-col-6"
+            Un sitio oficial del Gobierno de Estados Unidos
+          </p>
+          <p
+            aria-hidden="true"
+            class="usa-banner__header-action"
           >
-            <img
-              alt=""
-              aria-hidden="true"
-              class="usa-banner__icon usa-media-block__img"
-              src="test-file-stub"
-            />
-            <div
-              class="usa-media-block__body"
-            >
-              <p>
-                <strong>
-                  Los sitios web seguros .mil usan HTTPS
-                </strong>
-                <br />
-                Un
-                 
-                <strong>
-                  candado (
-                  <svg
-                    aria-label="Icono de candado cerrado"
-                    class="usa-icon"
-                    focusable="false"
-                    role="img"
-                  />
-                  )
-                </strong>
-                 
-                o 
-                <strong>
-                  https://
-                </strong>
-                 significa que usted se conectó de forma segura a un sitio web 
+            Así es como usted puede verificarlo
+          </p>
+        </div>
+        <button
+          aria-controls="gov-banner"
+          aria-expanded="false"
+          class="usa-accordion__button usa-banner__button"
+          type="button"
+        >
+          <span
+            class="usa-banner__button-text"
+          >
+            Así es como usted puede verificarlo
+          </span>
+        </button>
+      </div>
+    </header>
+    <div
+      class="usa-banner__content usa-accordion__content"
+      hidden=""
+      id="gov-banner"
+    >
+      <div
+        class="grid-row grid-gap-lg"
+      >
+        <div
+          class="usa-banner__guidance tablet:grid-col-6"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            class="usa-banner__icon usa-media-block__img"
+            src="test-file-stub"
+          />
+          <div
+            class="usa-media-block__body"
+          >
+            <p>
+              <strong>
+                Los sitios web oficiales usan .mil
+              </strong>
+              <br />
+              Un sitio web 
+              <strong>
                 .mil
-                . Comparta información sensible sólo en sitios web oficiales y seguros.
-              </p>
-            </div>
+              </strong>
+               pertenece a una organización oficial del Departamento de Defensa de EE. UU.
+            </p>
+          </div>
+        </div>
+        <div
+          class="usa-banner__guidance tablet:grid-col-6"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            class="usa-banner__icon usa-media-block__img"
+            src="test-file-stub"
+          />
+          <div
+            class="usa-media-block__body"
+          >
+            <p>
+              <strong>
+                Los sitios web seguros .mil usan HTTPS
+              </strong>
+              <br />
+              Un
+               
+              <strong>
+                candado (
+                <svg
+                  aria-label="Icono de candado cerrado"
+                  class="usa-icon"
+                  focusable="false"
+                  role="img"
+                />
+                )
+              </strong>
+               
+              o 
+              <strong>
+                https://
+              </strong>
+               significa que usted se conectó de forma segura a un sitio web 
+              .mil
+              . Comparta información sensible sólo en sitios web oficiales y seguros.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>
 `;
 
 exports[`GovBanner component > static content > renders consistently with default props 1`] = `
-<div>
-  <section
-    aria-label="Official website of the United States government"
-    class="usa-banner"
-    data-testid="govBanner"
+<section
+  aria-label="Official website of the United States government"
+  class="usa-banner"
+  data-testid="govBanner"
+>
+  <div
+    class="usa-accordion"
   >
-    <div
-      class="usa-accordion"
+    <header
+      class="usa-banner__header"
     >
-      <header
-        class="usa-banner__header"
-      >
-        <div
-          class="usa-banner__inner"
-          data-testid="banner-header-inner-div"
-        >
-          <div
-            class="grid-col-auto"
-            data-testid="banner-header-flag-div"
-          >
-            <img
-              alt=""
-              aria-hidden="true"
-              class="usa-banner__header-flag"
-              src="test-file-stub"
-            />
-          </div>
-          <div
-            aria-hidden="true"
-            class="grid-col-fill tablet:grid-col-auto"
-            data-testid="banner-header-grid-div"
-          >
-            <p
-              class="usa-banner__header-text"
-            >
-              An official website of the United States government
-            </p>
-            <p
-              aria-hidden="true"
-              class="usa-banner__header-action"
-            >
-              Here’s how you know
-            </p>
-          </div>
-          <button
-            aria-controls="gov-banner"
-            aria-expanded="false"
-            class="usa-accordion__button usa-banner__button"
-            type="button"
-          >
-            <span
-              class="usa-banner__button-text"
-            >
-              Here’s how you know
-            </span>
-          </button>
-        </div>
-      </header>
       <div
-        class="usa-banner__content usa-accordion__content"
-        hidden=""
-        id="gov-banner"
+        class="usa-banner__inner"
+        data-testid="banner-header-inner-div"
       >
         <div
-          class="grid-row grid-gap-lg"
+          class="grid-col-auto"
+          data-testid="banner-header-flag-div"
         >
-          <div
-            class="usa-banner__guidance tablet:grid-col-6"
+          <img
+            alt=""
+            aria-hidden="true"
+            class="usa-banner__header-flag"
+            src="test-file-stub"
+          />
+        </div>
+        <div
+          aria-hidden="true"
+          class="grid-col-fill tablet:grid-col-auto"
+          data-testid="banner-header-grid-div"
+        >
+          <p
+            class="usa-banner__header-text"
           >
-            <img
-              alt=""
-              aria-hidden="true"
-              class="usa-banner__icon usa-media-block__img"
-              src="test-file-stub"
-            />
-            <div
-              class="usa-media-block__body"
-            >
-              <p>
-                <strong>
-                  Official websites use .gov
-                </strong>
-                <br />
-                A 
-                <strong>
-                  .gov
-                </strong>
-                 website belongs to an official government organization in the United States.
-              </p>
-            </div>
-          </div>
-          <div
-            class="usa-banner__guidance tablet:grid-col-6"
+            An official website of the United States government
+          </p>
+          <p
+            aria-hidden="true"
+            class="usa-banner__header-action"
           >
-            <img
-              alt=""
-              aria-hidden="true"
-              class="usa-banner__icon usa-media-block__img"
-              src="test-file-stub"
-            />
-            <div
-              class="usa-media-block__body"
-            >
-              <p>
-                <strong>
-                  Secure .gov websites use HTTPS
-                </strong>
-                <br />
-                A
-                 
-                <strong>
-                  lock (
-                  <svg
-                    aria-label="Locked padlock icon"
-                    class="usa-icon"
-                    focusable="false"
-                    role="img"
-                  />
-                  )
-                </strong>
-                 
-                or 
-                <strong>
-                  https://
-                </strong>
-                 means you’ve safely connected to the
-                 
+            Here’s how you know
+          </p>
+        </div>
+        <button
+          aria-controls="gov-banner"
+          aria-expanded="false"
+          class="usa-accordion__button usa-banner__button"
+          type="button"
+        >
+          <span
+            class="usa-banner__button-text"
+          >
+            Here’s how you know
+          </span>
+        </button>
+      </div>
+    </header>
+    <div
+      class="usa-banner__content usa-accordion__content"
+      hidden=""
+      id="gov-banner"
+    >
+      <div
+        class="grid-row grid-gap-lg"
+      >
+        <div
+          class="usa-banner__guidance tablet:grid-col-6"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            class="usa-banner__icon usa-media-block__img"
+            src="test-file-stub"
+          />
+          <div
+            class="usa-media-block__body"
+          >
+            <p>
+              <strong>
+                Official websites use .gov
+              </strong>
+              <br />
+              A 
+              <strong>
                 .gov
-                 website. Share sensitive information only on official, secure websites.
-              </p>
-            </div>
+              </strong>
+               website belongs to an official government organization in the United States.
+            </p>
+          </div>
+        </div>
+        <div
+          class="usa-banner__guidance tablet:grid-col-6"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            class="usa-banner__icon usa-media-block__img"
+            src="test-file-stub"
+          />
+          <div
+            class="usa-media-block__body"
+          >
+            <p>
+              <strong>
+                Secure .gov websites use HTTPS
+              </strong>
+              <br />
+              A
+               
+              <strong>
+                lock (
+                <svg
+                  aria-label="Locked padlock icon"
+                  class="usa-icon"
+                  focusable="false"
+                  role="img"
+                />
+                )
+              </strong>
+               
+              or 
+              <strong>
+                https://
+              </strong>
+               means you’ve safely connected to the
+               
+              .gov
+               website. Share sensitive information only on official, secure websites.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>
 `;
