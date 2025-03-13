@@ -47,8 +47,8 @@ const genId = (): string => {
   }
 }
 
-export function Tooltip(props: DefaultTooltipProps): ReactElement
-export function Tooltip<T>(props: CustomTooltipProps<T>): ReactElement
+export function Tooltip(props: DefaultTooltipProps): LegacyReactElement
+export function Tooltip<T>(props: CustomTooltipProps<T>): LegacyReactElement
 export function Tooltip<
   FCProps extends React.PropsWithChildren<object> = DefaultTooltipProps,
 >({
