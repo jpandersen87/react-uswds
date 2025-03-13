@@ -266,7 +266,7 @@ export function Tooltip<
     )
 
     return (
-      // the span that wraps the element with have the tooltip class
+      // the span that wraps the element will have the tooltip class
       <span data-testid="tooltipWrapper" className={wrapperClasses}>
         <button
           {...remainingProps}
