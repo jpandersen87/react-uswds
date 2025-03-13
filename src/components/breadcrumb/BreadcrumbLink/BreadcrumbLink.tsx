@@ -8,7 +8,6 @@ import {
 } from '../../Link/Link'
 
 export function BreadcrumbLink(props: DefaultLinkProps): JSX.Element
-
 export function BreadcrumbLink<T>(props: CustomLinkProps<T>): JSX.Element
 export function BreadcrumbLink<FCProps = DefaultLinkProps>({
   className,
